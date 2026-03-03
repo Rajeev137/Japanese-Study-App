@@ -430,6 +430,39 @@
 import React, { useEffect, useState } from "react";
 import kuromoji from "kuromoji/build/kuromoji.js";
 
+// --- GLOBAL CACHE (Runs only once, outside the component) ---
+let globalTokenizer = null;
+let isInitializing = false;
+let initializationQueue = [];
+
+const getKuromojiTokenizer = (callback) => {
+  // 1. If it's already loaded, return it instantly!
+  if (globalTokenizer) {
+    return callback(null, globalTokenizer);
+  }
+  
+  // 2. If it's currently loading, wait in line instead of downloading again
+  if (isInitializing) {
+    initializationQueue.push(callback);
+    return;
+  }
+
+  // 3. First time loading: fetch from CDN
+  isInitializing = true;
+  kuromoji
+    .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict" })
+    .build((err, tokenizer) => {
+      if (!err) globalTokenizer = tokenizer; // Save it to memory
+      
+      callback(err, tokenizer);
+      
+      // Tell anyone else waiting that it's ready
+      initializationQueue.forEach((cb) => cb(err, tokenizer));
+      initializationQueue = [];
+      isInitializing = false;
+    });
+};
+
 const convertToHiragana = (katakanaStr) => {
   if (!katakanaStr) return "";
   return katakanaStr.replace(/[\u30a1-\u30f6]/g, (match) => {
@@ -448,32 +481,34 @@ export default function StudyModule({ lessonData, onBack }) {
 
   useEffect(() => {
     setIsDictLoading(true);
-    try {
-      kuromoji
-        .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict" })
-        .build((err, tokenizer) => {
-          if (err) {
-            console.error("Kuromoji failed:", err);
-            setErrorMessage("Failed to load Kuromoji dictionary.");
-            return;
-          }
+    
+    // Call our smart caching function instead of building from scratch
+    getKuromojiTokenizer((err, tokenizer) => {
+      if (err) {
+        console.error("Kuromoji failed:", err);
+        setErrorMessage("Failed to load Kuromoji dictionary.");
+        setIsDictLoading(false);
+        return;
+      }
 
-          const rawText = lessonData?.full_essay_japanese || "";
-          const paragraphs = rawText.split("\n\n");
+      try {
+        const rawText = lessonData?.full_essay_japanese || "";
+        const paragraphs = rawText.split("\n\n");
 
-          const parsedParagraphs = paragraphs.map((paragraph) => {
-            if (!paragraph.trim()) return [];
-            return tokenizer.tokenize(paragraph);
-          });
-
-          setTokenizedParagraphs(parsedParagraphs);
-          setIsDictLoading(false);
+        const parsedParagraphs = paragraphs.map((paragraph) => {
+          if (!paragraph.trim()) return [];
+          return tokenizer.tokenize(paragraph);
         });
-    } catch (error) {
-      console.error(error);
-      setErrorMessage(error.message);
-    }
-  }, [lessonData]); // Re-run if lesson changes
+
+        setTokenizedParagraphs(parsedParagraphs);
+        setIsDictLoading(false);
+      } catch (error) {
+        console.error(error);
+        setErrorMessage(error.message);
+        setIsDictLoading(false);
+      }
+    });
+  }, [lessonData]);
 
   const toggleSpeech = (text, idx) => {
     if (isSpeaking !== null && isSpeaking !== idx) window.speechSynthesis.cancel();
