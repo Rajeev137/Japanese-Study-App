@@ -1,13 +1,18 @@
 // src/App.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import StudyModule from './components/StudyModule';
 import VocabDeck from './components/VocabDeck';
 import { lessonLibrary, vocabLibrary } from './data/index.js';
+import { loadDictionary } from './utils/kuromojiManager';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('lessons'); // 'lessons' or 'vocab'
   const [activeLesson, setActiveLesson] = useState(null);
   const [activeDeck, setActiveDeck] = useState(null);
+
+  useEffect(() => {
+    loadDictionary().catch(err => console.error("Preload failed", err));
+  }, []);
 
   // ROUTER: If a Lesson is active, show StudyModule
   if (activeLesson) {

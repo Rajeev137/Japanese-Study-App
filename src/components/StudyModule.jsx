@@ -428,40 +428,41 @@
 
 
 import React, { useEffect, useState } from "react";
-import kuromoji from "kuromoji/build/kuromoji.js";
+// import kuromoji from "kuromoji/build/kuromoji.js";
+import { loadDictionary } from '../utils/kuromojiManager';
 
 // --- GLOBAL CACHE (Runs only once, outside the component) ---
 let globalTokenizer = null;
 let isInitializing = false;
 let initializationQueue = [];
 
-const getKuromojiTokenizer = (callback) => {
-  // 1. If it's already loaded, return it instantly!
-  if (globalTokenizer) {
-    return callback(null, globalTokenizer);
-  }
+// const getKuromojiTokenizer = (callback) => {
+//   // 1. If it's already loaded, return it instantly!
+//   if (globalTokenizer) {
+//     return callback(null, globalTokenizer);
+//   }
   
-  // 2. If it's currently loading, wait in line instead of downloading again
-  if (isInitializing) {
-    initializationQueue.push(callback);
-    return;
-  }
+//   // 2. If it's currently loading, wait in line instead of downloading again
+//   if (isInitializing) {
+//     initializationQueue.push(callback);
+//     return;
+//   }
 
-  // 3. First time loading: fetch from CDN
-  isInitializing = true;
-  kuromoji
-    .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict" })
-    .build((err, tokenizer) => {
-      if (!err) globalTokenizer = tokenizer; // Save it to memory
+//   // 3. First time loading: fetch from CDN
+//   isInitializing = true;
+//   kuromoji
+//     .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict" })
+//     .build((err, tokenizer) => {
+//       if (!err) globalTokenizer = tokenizer; // Save it to memory
       
-      callback(err, tokenizer);
+//       callback(err, tokenizer);
       
-      // Tell anyone else waiting that it's ready
-      initializationQueue.forEach((cb) => cb(err, tokenizer));
-      initializationQueue = [];
-      isInitializing = false;
-    });
-};
+//       // Tell anyone else waiting that it's ready
+//       initializationQueue.forEach((cb) => cb(err, tokenizer));
+//       initializationQueue = [];
+//       isInitializing = false;
+//     });
+// };
 
 const convertToHiragana = (katakanaStr) => {
   if (!katakanaStr) return "";
@@ -479,19 +480,43 @@ export default function StudyModule({ lessonData, onBack }) {
   const [isRecording, setIsRecording] = useState(null);
   const [userSpeech, setUserSpeech] = useState({});
 
+  // useEffect(() => {
+  //   setIsDictLoading(true);
+    
+  //   // Call our smart caching function instead of building from scratch
+  //   getKuromojiTokenizer((err, tokenizer) => {
+  //     if (err) {
+  //       console.error("Kuromoji failed:", err);
+  //       setErrorMessage("Failed to load Kuromoji dictionary.");
+  //       setIsDictLoading(false);
+  //       return;
+  //     }
+
+  //     try {
+  //       const rawText = lessonData?.full_essay_japanese || "";
+  //       const paragraphs = rawText.split("\n\n");
+
+  //       const parsedParagraphs = paragraphs.map((paragraph) => {
+  //         if (!paragraph.trim()) return [];
+  //         return tokenizer.tokenize(paragraph);
+  //       });
+
+  //       setTokenizedParagraphs(parsedParagraphs);
+  //       setIsDictLoading(false);
+  //     } catch (error) {
+  //       console.error(error);
+  //       setErrorMessage(error.message);
+  //       setIsDictLoading(false);
+  //     }
+  //   });
+  // }, [lessonData]);
+
   useEffect(() => {
     setIsDictLoading(true);
-    
-    // Call our smart caching function instead of building from scratch
-    getKuromojiTokenizer((err, tokenizer) => {
-      if (err) {
-        console.error("Kuromoji failed:", err);
-        setErrorMessage("Failed to load Kuromoji dictionary.");
-        setIsDictLoading(false);
-        return;
-      }
+    setErrorMessage(null);
 
-      try {
+    loadDictionary()
+      .then((tokenizer) => {
         const rawText = lessonData?.full_essay_japanese || "";
         const paragraphs = rawText.split("\n\n");
 
@@ -502,12 +527,11 @@ export default function StudyModule({ lessonData, onBack }) {
 
         setTokenizedParagraphs(parsedParagraphs);
         setIsDictLoading(false);
-      } catch (error) {
-        console.error(error);
-        setErrorMessage(error.message);
+      })
+      .catch((error) => {
+        setErrorMessage("Network error: Could not load the dictionary. Please refresh.");
         setIsDictLoading(false);
-      }
-    });
+      });
   }, [lessonData]);
 
   const toggleSpeech = (text, idx) => {
