@@ -22,7 +22,7 @@ export const loadDictionary = () => {
     console.log("Starting dictionary background download...");
 
     kuromoji
-      .builder({ dicPath: "https://unpkg.com/kuromoji@0.1.2/dict/" })
+      .builder({ dicPath: "/dict" })
       .build((err, tokenizer) => {
         isInitializing = false; // Free up the lock
 
