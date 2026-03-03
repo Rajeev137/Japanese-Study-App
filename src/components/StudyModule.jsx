@@ -515,23 +515,28 @@ export default function StudyModule({ lessonData, onBack }) {
     setIsDictLoading(true);
     setErrorMessage(null);
 
-    loadDictionary()
-      .then((tokenizer) => {
-        const rawText = lessonData?.full_essay_japanese || "";
-        const paragraphs = rawText.split("\n\n");
+    // Give React 100 milliseconds to actually draw the "Loading..." screen 
+    // before Kuromoji hijacks the CPU to build the massive dictionary.
+    setTimeout(() => {
+      loadDictionary()
+        .then((tokenizer) => {
+          const rawText = lessonData?.full_essay_japanese || "";
+          const paragraphs = rawText.split("\n\n");
 
-        const parsedParagraphs = paragraphs.map((paragraph) => {
-          if (!paragraph.trim()) return [];
-          return tokenizer.tokenize(paragraph);
+          const parsedParagraphs = paragraphs.map((paragraph) => {
+            if (!paragraph.trim()) return [];
+            return tokenizer.tokenize(paragraph);
+          });
+
+          setTokenizedParagraphs(parsedParagraphs);
+          setIsDictLoading(false);
+        })
+        .catch((error) => {
+          setErrorMessage("Network error: Could not load the dictionary. Please refresh.");
+          setIsDictLoading(false);
         });
+    }, 100); 
 
-        setTokenizedParagraphs(parsedParagraphs);
-        setIsDictLoading(false);
-      })
-      .catch((error) => {
-        setErrorMessage("Network error: Could not load the dictionary. Please refresh.");
-        setIsDictLoading(false);
-      });
   }, [lessonData]);
 
   const toggleSpeech = (text, idx) => {
