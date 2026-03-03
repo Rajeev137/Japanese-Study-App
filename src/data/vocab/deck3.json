@@ -1,0 +1,687 @@
+
+{
+"deck_title": "Vocabulary Deck 3",
+"vocabulary": [
+{
+"word_kanji": "ここ",
+"reading_furigana": "",
+"meaning_english": "here, this place",
+"examples": [
+{
+"japanese_sentence": "ここは{教室|きょうしつ}です。",
+"english_translation": "This place is a classroom.",
+"grammar_explanation": "The particle は (wa) marks 'koko' as the topic of the sentence."
+},
+{
+"japanese_sentence": "ここに{座|す}わってください。",
+"english_translation": "Please sit here.",
+"grammar_explanation": "The particle に (ni) indicates the specific location where the action of sitting occurs."
+}
+]
+},
+{
+"word_kanji": "そこ",
+"reading_furigana": "",
+"meaning_english": "there, that place",
+"examples": [
+{
+"japanese_sentence": "そこは{立|た}ち{入|い}り{禁止|きんし}です。",
+"english_translation": "That place is off-limits.",
+"grammar_explanation": "Noun phrase + desu is used to state a fact or rule about a location."
+},
+{
+"japanese_sentence": "そこに{鞄|かばん}を{置|お}いたよ。",
+"english_translation": "I put the bag there.",
+"grammar_explanation": "The casual ending particle よ (yo) adds emphasis to the statement."
+}
+]
+},
+{
+"word_kanji": "あそこ",
+"reading_furigana": "",
+"meaning_english": "that place over there",
+"examples": [
+{
+"japanese_sentence": "あそこに{自動|じどう}{販売|はんばい}{機|き}があります。",
+"english_translation": "There is a vending machine over there.",
+"grammar_explanation": "The verb あります (arimasu) is used for the existence of inanimate objects."
+},
+{
+"japanese_sentence": "あそこまで{走|はし}ろう。",
+"english_translation": "Let's run to that place over there.",
+"grammar_explanation": "The particle まで (made) indicates a destination or limit; 'hashirou' is the casual volitional form."
+}
+]
+},
+{
+"word_kanji": "どこ",
+"reading_furigana": "",
+"meaning_english": "where, what place",
+"examples": [
+{
+"japanese_sentence": "トイレはどこですか。",
+"english_translation": "Where is the toilet?",
+"grammar_explanation": "Interrogative 'doko' followed by the question particle か (ka)."
+},
+{
+"japanese_sentence": "どこへ{行|い}きたい？",
+"english_translation": "Where do you want to go?",
+"grammar_explanation": "The tai-form of the verb 'iku' expresses desire; the particle へ (e) shows direction."
+}
+]
+},
+{
+"word_kanji": "こちら",
+"reading_furigana": "",
+"meaning_english": "this way, polite form of ‘koko’",
+"examples": [
+{
+"japanese_sentence": "どうぞ、こちらへ。",
+"english_translation": "This way, please.",
+"grammar_explanation": "An elliptical polite invitation where the verb of motion is implied."
+},
+{
+"japanese_sentence": "{受|う}け{付|つ}けはこちらでございます。",
+"english_translation": "The reception desk is this way.",
+"grammar_explanation": "A highly formal sentence using 'de gozaimasu' as a humble copula."
+}
+]
+},
+{
+"word_kanji": "そちら",
+"reading_furigana": "",
+"meaning_english": "that way, polite form of ‘soko’",
+"examples": [
+{
+"japanese_sentence": "そちらの{方|ほう}が{安|やす}いです。",
+"english_translation": "That one (over by you) is cheaper.",
+"grammar_explanation": "The noun ほう (hou) is used here to indicate a choice or direction in a comparison."
+},
+{
+"japanese_sentence": "そちらは{暑|あつ}いですか。",
+"english_translation": "Is it hot over there (in your area)?",
+"grammar_explanation": "In polite conversation, 'sochira' can refer to the listener's location or company."
+}
+]
+},
+{
+"word_kanji": "あちら",
+"reading_furigana": "",
+"meaning_english": "that way over there, polite form of ‘asoko’",
+"examples": [
+{
+"japanese_sentence": "あちらが{入口|いりぐち}です。",
+"english_translation": "That way is the entrance.",
+"grammar_explanation": "The particle が (ga) is used here to identify which direction is the entrance."
+},
+{
+"japanese_sentence": "エレベーターはあちらにございます。",
+"english_translation": "The elevator is over that way.",
+"grammar_explanation": "'Gozaimasu' is the polite/formal version of the existence verb 'arimasu'."
+}
+]
+},
+{
+"word_kanji": "教室",
+"reading_furigana": "きょうしつ",
+"meaning_english": "classroom",
+"examples": [
+{
+"japanese_sentence": "{教室|きょうしつ}で{日本語|にほんご}を{勉強|べんきょう}します。",
+"english_translation": "I study Japanese in the classroom.",
+"grammar_explanation": "The particle で (de) indicates the location where an action occurs."
+},
+{
+"japanese_sentence": "{教室|きょうしつ}に{誰|だれ}かいる？",
+"english_translation": "Is anyone in the classroom?",
+"grammar_explanation": "Casual existence question using 'iru' for people; 'dareka' means 'someone/anyone'."
+}
+]
+},
+{
+"word_kanji": "食堂",
+"reading_furigana": "しょくどう",
+"meaning_english": "dining hall, canteen",
+"examples": [
+{
+"japanese_sentence": "{食堂|しょくどう}のカレーは{安|やす}くて{美味|おい}しいです。",
+"english_translation": "The canteen curry is cheap and delicious.",
+"grammar_explanation": "The te-form of an i-adjective (yasukute) is used to connect two adjectives."
+},
+{
+"japanese_sentence": "12{時|じ}に{食堂|しょくどう}で{会|あ}いましょう。",
+"english_translation": "Let's meet at the dining hall at 12 o'clock.",
+"grammar_explanation": "～ましょう (mashou) is the formal volitional form used for making a suggestion."
+}
+]
+},
+{
+"word_kanji": "事務所",
+"reading_furigana": "じむしょ",
+"meaning_english": "office",
+"examples": [
+{
+"japanese_sentence": "{事務所|じむしょ}に{書類|しょるい}を{届|とど}けました。",
+"english_translation": "I delivered the documents to the office.",
+"grammar_explanation": "The particle に (ni) marks the destination of the delivery."
+},
+{
+"japanese_sentence": "{事務所|じむしょ}は{何時|なんじ}までですか。",
+"english_translation": "Until what time is the office open?",
+"grammar_explanation": "～まで (made) indicates the end point of a time range."
+}
+]
+},
+{
+"word_kanji": "会議室",
+"reading_furigana": "かいぎしつ",
+"meaning_english": "conference room, assembly room",
+"examples": [
+{
+"japanese_sentence": "{会議室|かいぎしつ}で{打|う}ち{合|あ}わせをしています。",
+"english_translation": "We are having a meeting in the conference room.",
+"grammar_explanation": "～ています (te imasu) indicates an action currently in progress."
+},
+{
+"japanese_sentence": "{第|だい}3{会議室|かいぎしつ}を{予約|よやく}した。",
+"english_translation": "I reserved conference room number 3.",
+"grammar_explanation": "The plain past tense 'yoyaku shita' is used in casual conversation."
+}
+]
+},
+{
+"word_kanji": "受付",
+"reading_furigana": "うけつけ",
+"meaning_english": "reception desk",
+"examples": [
+{
+"japanese_sentence": "{受付|うけつけ}で{名前|なまえ}を{書|か}いてください。",
+"english_translation": "Please write your name at the reception desk.",
+"grammar_explanation": "The particle で (de) marks the location where the writing takes place."
+},
+{
+"japanese_sentence": "{受付|うけつけ}に{人|ひと}がいません。",
+"english_translation": "There is no one at the reception desk.",
+"grammar_explanation": "Negative existence verb 'imasen' used for people."
+}
+]
+},
+{
+"word_kanji": "ロビー",
+"reading_furigana": "",
+"meaning_english": "lobby",
+"examples": [
+{
+"japanese_sentence": "ロビーで{待|ま}っています。",
+"english_translation": "I am waiting in the lobby.",
+"grammar_explanation": "Continuous state/action expressed using the te-form + imasu."
+},
+{
+"japanese_sentence": "ホテルのロビーはとても{広|ひろ}い。",
+"english_translation": "The hotel lobby is very spacious.",
+"grammar_explanation": "The particle の (no) connects the hotel to the lobby as a possessive/location."
+}
+]
+},
+{
+"word_kanji": "部屋",
+"reading_furigana": "へや",
+"meaning_english": "room",
+"examples": [
+{
+"japanese_sentence": "{私|わたし}の{部屋|へや}は2{階|かい}です。",
+"english_translation": "My room is on the second floor.",
+"grammar_explanation": "Standard copula sentence AはBです."
+},
+{
+"japanese_sentence": "{部屋|へや}を{掃除|そうじ}しなさい。",
+"english_translation": "Clean your room.",
+"grammar_explanation": "The imperative form ～なさい (nasai) is used for giving firm instructions."
+}
+]
+},
+{
+"word_kanji": "お手洗い",
+"reading_furigana": "おてあらい",
+"meaning_english": "toilet, rest room",
+"examples": [
+{
+"japanese_sentence": "お{手洗|てあら}いへ{行|い}ってもいいですか。",
+"english_translation": "May I go to the restroom?",
+"grammar_explanation": "～てもいいですか is a polite way to ask for permission."
+},
+{
+"japanese_sentence": "お{手洗|てあら}いはあちらです。",
+"english_translation": "The restroom is over that way.",
+"grammar_explanation": "'Achira' is the polite directional word used for giving directions."
+}
+]
+},
+{
+"word_kanji": "階段",
+"reading_furigana": "かいだん",
+"meaning_english": "staircase",
+"examples": [
+{
+"japanese_sentence": "{階段|かいだん}を{上|あが}ります。",
+"english_translation": "I will go up the stairs.",
+"grammar_explanation": "The particle を (o) marks the space through which motion occurs (staircase)."
+},
+{
+"japanese_sentence": "{階段|かいだん}から{落|お}ちないでね。",
+"english_translation": "Don't fall down the stairs, okay?",
+"grammar_explanation": "～ないで (naide) is a negative request; 'ne' adds a friendly reminder tone."
+}
+]
+},
+{
+"word_kanji": "エレベーター",
+"reading_furigana": "",
+"meaning_english": "elevator, lift",
+"examples": [
+{
+"japanese_sentence": "エレベーターで5{階|かい}へ{行|い}きます。",
+"english_translation": "I will go to the 5th floor by elevator.",
+"grammar_explanation": "The particle で (de) indicates the means of transportation."
+},
+{
+"japanese_sentence": "エレベーターが{来|こ}ない。",
+"english_translation": "The elevator isn't coming.",
+"grammar_explanation": "Casual negative non-past form of the irregular verb 'kuru'."
+}
+]
+},
+{
+"word_kanji": "エスカレーター",
+"reading_furigana": "",
+"meaning_english": "escalator",
+"examples": [
+{
+"japanese_sentence": "エスカレーターを{使|つか}ってください。",
+"english_translation": "Please use the escalator.",
+"grammar_explanation": "Te-form + 'kudasai' is used for a polite request or instruction."
+},
+{
+"japanese_sentence": "エスカレーターはあそこにあります。",
+"english_translation": "The escalator is over there.",
+"grammar_explanation": "The topic marker は (wa) contrasts the escalator with other locations."
+}
+]
+},
+{
+"word_kanji": "国",
+"reading_furigana": "くに",
+"meaning_english": "country",
+"examples": [
+{
+"japanese_sentence": "お{国|くに}はどちらですか。",
+"english_translation": "Which country are you from?",
+"grammar_explanation": "The honorific 'o' and the polite word 'dochira' are used to ask someone's nationality respectfully."
+},
+{
+"japanese_sentence": "{国|くに}へ{帰|かえ}りたい。",
+"english_translation": "I want to go back to my country.",
+"grammar_explanation": "Tai-form 'kaeritai' expresses the speaker's personal desire to return home."
+}
+]
+},
+{
+"word_kanji": "会社",
+"reading_furigana": "かいしゃ",
+"meaning_english": "company",
+"examples": [
+{
+"japanese_sentence": "{会社|かいしゃ}を{休|やす}みました。",
+"english_translation": "I was absent from the company (took a day off).",
+"grammar_explanation": "Past tense of 'yasumu' indicates a completed action of resting/absence."
+},
+{
+"japanese_sentence": "どんな{会社|かいしゃ}で{働|はたら}いているの？",
+"english_translation": "What kind of company are you working at?",
+"grammar_explanation": "The interrogative 'donna' asks about qualities; 'no' at the end makes it a casual question."
+}
+]
+},
+{
+"word_kanji": "うち",
+"reading_furigana": "",
+"meaning_english": "house, home",
+"examples": [
+{
+"japanese_sentence": "{今日|きょう}はうちでゆっくりします。",
+"english_translation": "I will relax at home today.",
+"grammar_explanation": "The particle で (de) marks the home as the location of the relaxation."
+},
+{
+"japanese_sentence": "そろそろうちに{帰|かえ}るね。",
+"english_translation": "I'm going to head home now.",
+"grammar_explanation": "The particle に (ni) marks the destination 'home' with the verb 'kaeru'."
+}
+]
+},
+{
+"word_kanji": "電話",
+"reading_furigana": "でんわ",
+"meaning_english": "telephone, telephone call",
+"examples": [
+{
+"japanese_sentence": "{電話|でんわ}をかけてもいいですか。",
+"english_translation": "May I make a phone call?",
+"grammar_explanation": "The phrase 'denwa o kakeru' means to make a telephone call."
+},
+{
+"japanese_sentence": "{先生|せんせい}から{電話|でんわ}があったよ。",
+"english_translation": "There was a call from the teacher.",
+"grammar_explanation": "The particle から (kara) marks the source of the phone call."
+}
+]
+},
+{
+"word_kanji": "靴",
+"reading_furigana": "くつ",
+"meaning_english": "shoes",
+"examples": [
+{
+"japanese_sentence": "ここで{靴|くつ}を{脱|ぬ}いでください。",
+"english_translation": "Please take off your shoes here.",
+"grammar_explanation": "Te-form 'nuide' + 'kudasai' for a request."
+},
+{
+"japanese_sentence": "この{靴|くつ}はちょっと{大|おお}きすぎる。",
+"english_translation": "These shoes are a bit too big.",
+"grammar_explanation": "Adjective stem + 'sugiru' indicates an excessive degree of a quality."
+}
+]
+},
+{
+"word_kanji": "ネクタイ",
+"reading_furigana": "",
+"meaning_english": "necktie",
+"examples": [
+{
+"japanese_sentence": "ネクタイを{締|し}めています。",
+"english_translation": "I am wearing (have tied) a necktie.",
+"grammar_explanation": "～ています describes the current state of wearing the accessory."
+},
+{
+"japanese_sentence": "どのネクタイが{好|す}き？",
+"english_translation": "Which necktie do you like?",
+"grammar_explanation": "The interrogative 'dono' must be followed by a noun; preference is marked by が."
+}
+]
+},
+{
+"word_kanji": "ワイン",
+"reading_furigana": "",
+"meaning_english": "wine",
+"examples": [
+{
+"japanese_sentence": "{赤|あか}ワインを{一杯|いっぱい}{飲|の}みました。",
+"english_translation": "I drank a glass of red wine.",
+"grammar_explanation": "The counter 'ippai' is used for cups or glasses of liquid."
+},
+{
+"japanese_sentence": "ワイン、{飲|の}める？",
+"english_translation": "Can you drink wine?",
+"grammar_explanation": "Casual potential form 'nomeru' asking about ability."
+}
+]
+},
+{
+"word_kanji": "タバコ",
+"reading_furigana": "",
+"meaning_english": "tabacco, cigarette",
+"examples": [
+{
+"japanese_sentence": "ここでタバコを{吸|す}わないでください。",
+"english_translation": "Please do not smoke cigarettes here.",
+"grammar_explanation": "～ないでください (naide kudasai) is a polite negative request."
+},
+{
+"japanese_sentence": "タバコを{買|か}ってくる。",
+"english_translation": "I'm going to go buy cigarettes (and come back).",
+"grammar_explanation": "The te-form + kuru indicates doing something and returning."
+}
+]
+},
+{
+"word_kanji": "売り場",
+"reading_furigana": "うりば",
+"meaning_english": "department, counter",
+"examples": [
+{
+"japanese_sentence": "ネクタイ{売|う}り{場|ば}はどこですか。",
+"english_translation": "Where is the necktie department?",
+"grammar_explanation": "Noun + uriba creates a compound noun meaning 'X department/counter'."
+},
+{
+"japanese_sentence": "{売|う}り{場|ば}に{誰|だれ}もいません。",
+"english_translation": "There is no one at the counter.",
+"grammar_explanation": "Interrogative + も + negative verb means 'no one' or 'nothing'."
+}
+]
+},
+{
+"word_kanji": "地下",
+"reading_furigana": "ちか",
+"meaning_english": "basement",
+"examples": [
+{
+"japanese_sentence": "{地下|ちか}1{階|かい}に{食料|しょくりょう}{品|ひん}{売|う}り{場|ば}があります。",
+"english_translation": "There is a grocery department on the first basement floor.",
+"grammar_explanation": "Chika + number + kai is the standard way to count basement floors."
+},
+{
+"japanese_sentence": "{地下|ちか}へ{降|お}りましょう。",
+"english_translation": "Let's go down to the basement.",
+"grammar_explanation": "The verb 'oriru' (to descend) is used with 'mashou' for a suggestion."
+}
+]
+},
+{
+"word_kanji": "～階",
+"reading_furigana": "～かい",
+"meaning_english": "-th floor",
+"examples": [
+{
+"japanese_sentence": "{会議|かいぎ}は3{階|かい}で行われます。",
+"english_translation": "The meeting will be held on the 3rd floor.",
+"grammar_explanation": "The particle で (de) marks the floor where the event happens."
+},
+{
+"japanese_sentence": "{何|なん}{階|がい}まで{行|い}きますか。",
+"english_translation": "Which floor are you going to?",
+"grammar_explanation": "The counter 階 can change to 'gai' after 'nan' for easier pronunciation."
+}
+]
+},
+{
+"word_kanji": "何階",
+"reading_furigana": "なんかい",
+"meaning_english": "what floor",
+"examples": [
+{
+"japanese_sentence": "お{部屋|へや}は{何|なん}{階|がい}ですか。",
+"english_translation": "What floor is your room on?",
+"grammar_explanation": "Interrogative phrase used to ask about the level in a building."
+},
+{
+"japanese_sentence": "{何|なん}{階|がい}で{降|お}りるの？",
+"english_translation": "What floor are you getting off on?",
+"grammar_explanation": "Casual question using the plain form of the verb 'oriru'."
+}
+]
+},
+{
+"word_kanji": "～円",
+"reading_furigana": "～えん",
+"meaning_english": "-yen",
+"examples": [
+{
+"japanese_sentence": "このりんごは100{円|えん}です。",
+"english_translation": "This apple is 100 yen.",
+"grammar_explanation": "Numerical value + 円 (en) is the standard currency format."
+},
+{
+"japanese_sentence": "500{円|えん}{足|た}りない。",
+"english_translation": "I'm 500 yen short.",
+"grammar_explanation": "Casual negative form of 'tariru' (to be sufficient)."
+}
+]
+},
+{
+"word_kanji": "いくら",
+"reading_furigana": "",
+"meaning_english": "how much",
+"examples": [
+{
+"japanese_sentence": "これはいくらですか。",
+"english_translation": "How much is this?",
+"grammar_explanation": "Standard polite question used to ask for the price of an object."
+},
+{
+"japanese_sentence": "いくら{練習|れんしゅう}しても{上手|じょうず}になりません。",
+"english_translation": "No matter how much I practice, I don't get better.",
+"grammar_explanation": "いくら (ikura) + te-form + も (mo) means 'no matter how much...'"
+}
+]
+},
+{
+"word_kanji": "百",
+"reading_furigana": "ひゃく",
+"meaning_english": "hundred",
+"examples": [
+{
+"japanese_sentence": "テニスボールを{百|ひゃく}{個|こ}{買|か}いました。",
+"english_translation": "I bought one hundred tennis balls.",
+"grammar_explanation": "The counter 'ko' is used for small round objects."
+},
+{
+"japanese_translation": "{今日|きょう}は3{百|びゃく}{点|てん}でした。",
+"japanese_sentence": "My score today was 300 points.",
+"english_translation": "My score today was 300 points.",
+"grammar_explanation": "百 becomes 'byaku' when combined with 'san' (3) for easier pronunciation."
+}
+]
+},
+{
+"word_kanji": "千",
+"reading_furigana": "せん",
+"meaning_english": "thousand",
+"examples": [
+{
+"japanese_sentence": "この{鞄|かばん}は5{千|せん}{円|えん}でした。",
+"english_translation": "This bag was 5,000 yen.",
+"grammar_explanation": "The past tense copula 'deshita' is used for historical price or events."
+},
+{
+"japanese_sentence": "{千|ぜん}{羽|わ}{鶴|づる}を{作|つく}りました。",
+"english_translation": "I made a thousand paper cranes.",
+"grammar_explanation": "千 becomes 'zen' in the phrase 'senbazuru' (1,000 cranes)."
+}
+]
+},
+{
+"word_kanji": "万",
+"reading_furigana": "まん",
+"meaning_english": "ten thousand",
+"examples": [
+{
+"japanese_sentence": "{給料|きゅうりょう}は20{万|まん}{円|えん}です。",
+"english_translation": "The salary is 200,000 yen (20 units of 10,000).",
+"grammar_explanation": "Japanese counts large numbers in units of four digits (man)."
+},
+{
+"japanese_sentence": "1{万|まん}{人|にん}の{客|きゃく}が{来|き}た。",
+"english_translation": "Ten thousand guests came.",
+"grammar_explanation": "Casual past tense of 'kuru' used with the counter for people 'nin'."
+}
+]
+},
+{
+"word_kanji": "すみません",
+"reading_furigana": "",
+"meaning_english": "Excuse me",
+"examples": [
+{
+"japanese_sentence": "すみません、トイレはどこですか。",
+"english_translation": "Excuse me, where is the toilet?",
+"grammar_explanation": "Used as an attention-getter before asking a question."
+},
+{
+"japanese_sentence": "お{待|ま}たせして、すみませんでした。",
+"english_translation": "I am sorry for making you wait.",
+"grammar_explanation": "The past tense 'sumimasen deshita' is used for apologies regarding a completed action."
+}
+]
+},
+{
+"word_kanji": "～でございます",
+"reading_furigana": "",
+"meaning_english": "polite form of ‘desu’",
+"examples": [
+{
+"japanese_sentence": "{電話|でんわ}{番号|ばんごう}は123の4567でございます。",
+"english_translation": "The phone number is 123-4567.",
+"grammar_explanation": "A very formal, humble way of stating information to a customer or superior."
+},
+{
+"japanese_sentence": "こちらは{新|あたら}しいモデルでございます。",
+"english_translation": "This is the new model.",
+"grammar_explanation": "'De gozaimasu' adds a high level of hospitality/business etiquette to the statement."
+}
+]
+},
+{
+"word_kanji": "～を見せてください",
+"reading_furigana": "～をみせてください",
+"meaning_english": "Please show me-",
+"examples": [
+{
+"japanese_sentence": "その{時計|とけい}を{見|み}せてください。",
+"english_translation": "Please show me that watch.",
+"grammar_explanation": "The particle を (o) marks the object the speaker wants to see."
+},
+{
+"japanese_sentence": "パスポートを{見|み}せてください。",
+"english_translation": "Please show me your passport.",
+"grammar_explanation": "A standard polite request used at customs or reception desks."
+}
+]
+},
+{
+"word_kanji": "じゃ",
+"reading_furigana": "",
+"meaning_english": "well, then, in that case",
+"examples": [
+{
+"japanese_sentence": "じゃ、これをください。",
+"english_translation": "In that case, I'll have this one.",
+"grammar_explanation": "'Ja' is a casual contraction of 'dewa' used to transition between ideas."
+},
+{
+"japanese_sentence": "じゃ、また{明日|あした}！",
+"english_translation": "Well, see you tomorrow!",
+"grammar_explanation": "A common casual parting phrase."
+}
+]
+},
+{
+"word_kanji": "～をください",
+"reading_furigana": "",
+"meaning_english": "Give me - please.",
+"examples": [
+{
+"japanese_sentence": "りんごを3{つ|つ}ください。",
+"english_translation": "Please give me three apples.",
+"grammar_explanation": "Used when ordering items or making a request for an object."
+},
+{
+"japanese_sentence": "{明日|あした}、{時間|じかん}をください。",
+"english_translation": "Please give me (some of) your time tomorrow.",
+"grammar_explanation": "Can be used figuratively to ask for abstract things like time or attention."
+}
+]
+}
+]
+}

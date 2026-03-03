@@ -1,0 +1,22 @@
+import lesson1 from "./lessons/lesson1.json";
+import lesson2 from "./lessons/lesson2.json";
+import deck1 from "./vocab/deck1.json";
+import deck2 from "./vocab/deck2.json";
+import deck3 from "./vocab/deck3.json";
+import deck4 from "./vocab/deck4.json";
+import deck5 from "./vocab/deck5.json";
+import deck6 from "./vocab/deck6.json";
+import deck7 from "./vocab/deck7.json";
+import deck8 from "./vocab/deck8.json";
+import deck9 from "./vocab/deck9.json";
+import deck10 from "./vocab/deck10.json";
+import deck11 from "./vocab/deck11.json";
+import deck12 from "./vocab/deck12.json";
+import deck13 from "./vocab/deck13.json";
+import deck14 from "./vocab/deck14.json";
+import deck15 from "./vocab/deck15.json";
+import deck16 from "./vocab/deck16.json";
+import deck17 from "./vocab/deck17.json";
+
+export const vocabLibrary = [deck1,deck2,deck3,deck4,deck5,deck6,deck7,deck8,deck9,deck10,deck11,deck12,deck13,deck14,deck15,deck16, deck17];
+export const lessonLibrary = [lesson1, lesson2];

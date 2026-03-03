@@ -1,0 +1,651 @@
+{
+  "deck_title": "Vocabulary Deck 17",
+  "vocabulary": [
+    {
+      "word_kanji": "覚える",
+      "reading_furigana": "おぼえる",
+      "meaning_english": "memorize",
+      "examples": [
+        {
+          "japanese_sentence": "{漢字|かんじ}を100{個|こ}{覚|おぼ}えるつもりです。",
+          "english_translation": "I intend to memorize 100 Kanji.",
+          "grammar_explanation": "～つもりです (tsumori desu) expresses a person's intention or plan to do something."
+        },
+        {
+          "japanese_sentence": "セリフを{覚|おぼ}えてください。",
+          "english_translation": "Please memorize your lines.",
+          "grammar_explanation": "～てください (te kudasai) is used to make a polite request."
+        }
+      ]
+    },
+    {
+      "word_kanji": "忘れる",
+      "reading_furigana": "わすれる",
+      "meaning_english": "forget",
+      "examples": [
+        {
+          "japanese_sentence": "{宿題|しゅくだい}を{忘|わす}れないでください。",
+          "english_translation": "Please don't forget your homework.",
+          "grammar_explanation": "～ないでください (nai de kudasai) is used to politely request that someone does not do an action."
+        },
+        {
+          "japanese_sentence": "{傘|かさ}を{電車|でんしゃ}に{忘|わす}れました。",
+          "english_translation": "I forgot my umbrella on the train.",
+          "grammar_explanation": "The past tense (~mashita) indicates a completed action in the past."
+        }
+      ]
+    },
+    {
+      "word_kanji": "なくす",
+      "reading_furigana": "なくす",
+      "meaning_english": "lose",
+      "examples": [
+        {
+          "japanese_sentence": "{財布|さいふ}をなくしてしまいました。",
+          "english_translation": "I've accidentally lost my wallet.",
+          "grammar_explanation": "～てしまう (te shimau) indicates an action that was completed accidentally or with a sense of regret."
+        },
+        {
+          "japanese_sentence": "パスポートをなくすと{大変|たいへん}ですよ。",
+          "english_translation": "It will be serious if you lose your passport.",
+          "grammar_explanation": "The conditional ～と (to) expresses a natural or certain consequence."
+        }
+      ]
+    },
+    {
+      "word_kanji": "出す",
+      "reading_furigana": "だす",
+      "meaning_english": "hand in (a report)",
+      "examples": [
+        {
+          "japanese_sentence": "{明日|あした}までにレポートを{出|だ}さなければなりません。",
+          "english_translation": "I must hand in the report by tomorrow.",
+          "grammar_explanation": "～なければなりません (nakereba narimasen) expresses obligation or necessity."
+        },
+        {
+          "japanese_sentence": "もうレポートを{出|だ}した？",
+          "english_translation": "Did you hand in the report already?",
+          "grammar_explanation": "Casual past tense (ta-form) used as a question with rising intonation."
+        }
+      ]
+    },
+    {
+      "word_kanji": "払う",
+      "reading_furigana": "はらう",
+      "meaning_english": "pay",
+      "examples": [
+        {
+          "japanese_sentence": "{現金|げんきん}で{払|はら}ってもいいですか。",
+          "english_translation": "Is it okay if I pay with cash?",
+          "grammar_explanation": "～てもいいです (te mo ii desu) is used to ask for permission."
+        },
+        {
+          "japanese_sentence": "{明日|あした}までにお{金|かね}を{払|はら}わなくてもいいです。",
+          "english_translation": "You don't have to pay the money by tomorrow.",
+          "grammar_explanation": "～なくてもいいです (nakutemo ii desu) indicates that an action is not necessary."
+        }
+      ]
+    },
+    {
+      "word_kanji": "返す",
+      "reading_furigana": "かえす",
+      "meaning_english": "give back, return",
+      "examples": [
+        {
+          "japanese_sentence": "{図書館|としょかん}に{本|ほん}を{返|かえ}します。",
+          "english_translation": "I will return the book to the library.",
+          "grammar_explanation": "The particle 'ni' indicates the destination or recipient of the action."
+        },
+        {
+          "japanese_sentence": "{返|かえ}してほしいです。",
+          "english_translation": "I want you to return it.",
+          "grammar_explanation": "～てほしい (te hoshii) is used to express a desire for someone else to do something."
+        }
+      ]
+    },
+    {
+      "word_kanji": "出かける",
+      "reading_furigana": "でかける",
+      "meaning_english": "go out",
+      "examples": [
+        {
+          "japanese_sentence": "これから{出|で}かけます。",
+          "english_translation": "I am going out now.",
+          "grammar_explanation": "The non-past form (masu) can indicate a future action about to take place."
+        },
+        {
+          "japanese_sentence": "{父|ちち}は{出|で}かけています。",
+          "english_translation": "My father is out (has gone out).",
+          "grammar_explanation": "～ている (te iru) can describe a state resulting from a previous action."
+        }
+      ]
+    },
+    {
+      "word_kanji": "脱ぐ",
+      "reading_furigana": "ぬぐ",
+      "meaning_english": "take off (clothes etc)",
+      "examples": [
+        {
+          "japanese_sentence": "ここで{靴|くつ}を{脱|ぬ}いでください。",
+          "english_translation": "Please take off your shoes here.",
+          "grammar_explanation": "The te-form + kudasai is used for making a standard polite request."
+        },
+        {
+          "japanese_sentence": "コートを{脱|ぬ}いでもいい？",
+          "english_translation": "Can I take off my coat?",
+          "grammar_explanation": "Casual form of asking for permission (te-form + mo ii)."
+        }
+      ]
+    },
+    {
+      "word_kanji": "持って行く",
+      "reading_furigana": "もっていく",
+      "meaning_english": "take(something) along",
+      "examples": [
+        {
+          "japanese_sentence": "{弁当|べんとう}を{持|も}って{行|い}きます。",
+          "english_translation": "I will take my lunch box with me.",
+          "grammar_explanation": "Compound verb 'motte' (holding) + 'iku' (going) showing movement away from the speaker."
+        },
+        {
+          "japanese_sentence": "{何|なに}も{持|も}って{行|い}かないでください。",
+          "english_translation": "Please don't take anything with you.",
+          "grammar_explanation": "The 'nai' form + 'de kudasai' for a negative request."
+        }
+      ]
+    },
+    {
+      "word_kanji": "持って来る",
+      "reading_furigana": "もってくる",
+      "meaning_english": "bring (something) along",
+      "examples": [
+        {
+          "japanese_sentence": "{明日|あした}、{辞書|じしょ}を{持|も}って{来|く}てください。",
+          "english_translation": "Please bring a dictionary tomorrow.",
+          "grammar_explanation": "Compound verb 'motte' (holding) + 'kuru' (coming) showing movement toward the speaker."
+        },
+        {
+          "japanese_sentence": "{飲|の}み{物|もの}を{持|も}って{来|く}たほうがいいですよ。",
+          "english_translation": "It's better to bring a drink.",
+          "grammar_explanation": "～たほうがいい (ta hou ga ii) is used to give advice."
+        }
+      ]
+    },
+    {
+      "word_kanji": "心配する",
+      "reading_furigana": "しんぱいする",
+      "meaning_english": "worry",
+      "examples": [
+        {
+          "japanese_sentence": "{心配|しんぱい}しないでください。",
+          "english_translation": "Please don't worry.",
+          "grammar_explanation": "Negative request using the 'nai' form of the suru-verb."
+        },
+        {
+          "japanese_sentence": "{両親|りょうしん}が{心配|しんぱい}しています。",
+          "english_translation": "My parents are worried.",
+          "grammar_explanation": "～ている (te iru) describes a current continuous state or emotion."
+        }
+      ]
+    },
+    {
+      "word_kanji": "残業する",
+      "reading_furigana": "ざんぎょうする",
+      "meaning_english": "work overtime",
+      "examples": [
+        {
+          "japanese_sentence": "{今日|きょう}は{残業|ざんぎょう}したくありません。",
+          "english_translation": "I don't want to work overtime today.",
+          "grammar_explanation": "～たい (tai) expresses desire; its negative form is ～たくない (takunai)."
+        },
+        {
+          "japanese_sentence": "{昨日|きのう}は10{時|じ}まで{残業|ざんぎょう}しました。",
+          "english_translation": "I worked overtime until 10 o'clock yesterday.",
+          "grammar_explanation": "Past tense of a suru-verb in the polite form."
+        }
+      ]
+    },
+    {
+      "word_kanji": "出張する",
+      "reading_furigana": "しゅっちょうする",
+      "meaning_english": "go on a business trip",
+      "examples": [
+        {
+          "japanese_sentence": "{来月|らいげつ}アメリカへ{出張|しゅっちょう}します。",
+          "english_translation": "I will go on a business trip to America next month.",
+          "grammar_explanation": "The particle 'he' (e) indicates the direction/destination."
+        },
+        {
+          "japanese_sentence": "{出張|しゅっちょう}しなければなりませんか。",
+          "english_translation": "Do I have to go on a business trip?",
+          "grammar_explanation": "Question form of obligation (~nakereba narimasen ka)."
+        }
+      ]
+    },
+    {
+      "word_kanji": "飲む",
+      "reading_furigana": "のむ",
+      "meaning_english": "take (medicine)",
+      "examples": [
+        {
+          "japanese_sentence": "{食後|しょくご}に{薬|くすり}を{飲|の}んでください。",
+          "english_translation": "Please take the medicine after meals.",
+          "grammar_explanation": "In Japanese, medicine is 'drunk' (nomu) rather than 'eaten' (taberu)."
+        },
+        {
+          "japanese_sentence": "{薬|くすり}を{飲|の}んだほうがいいです。",
+          "english_translation": "You should take your medicine.",
+          "grammar_explanation": "～たほうがいい (ta hou ga ii) for giving strong advice."
+        }
+      ]
+    },
+    {
+      "word_kanji": "入る",
+      "reading_furigana": "はいる",
+      "meaning_english": "take (a bath)",
+      "examples": [
+        {
+          "japanese_sentence": "お{風呂|ふろ}に{入|はい}ります。",
+          "english_translation": "I will take a bath.",
+          "grammar_explanation": "The particle 'ni' is used with 'hairu' to indicate entering/going into the bath."
+        },
+        {
+          "japanese_sentence": "お{風呂|ふろ}に{入|はい}りたいです。",
+          "english_translation": "I want to take a bath.",
+          "grammar_explanation": "The tai-form added to the verb stem expresses the speaker's desire."
+        }
+      ]
+    },
+    {
+      "word_kanji": "大切",
+      "reading_furigana": "たいせつ",
+      "meaning_english": "important, precious",
+      "examples": [
+        {
+          "japanese_sentence": "これは{大切|たいせつ}な{書類|しょるい}です。",
+          "english_translation": "This is an important document.",
+          "grammar_explanation": "'Taisetsu' is a na-adjective; it uses 'na' when modifying a noun."
+        },
+        {
+          "japanese_sentence": "{家族|かぞく}を{大切|たいせつ}にします。",
+          "english_translation": "I will value/cherish my family.",
+          "grammar_explanation": "～を大切にする (o taisetsu ni suru) is an idiom meaning to cherish or take care of something."
+        }
+      ]
+    },
+    {
+      "word_kanji": "大丈夫",
+      "reading_furigana": "だいじょうぶ",
+      "meaning_english": "all right, it’s okay",
+      "examples": [
+        {
+          "japanese_sentence": "{大丈夫|だいじょうぶ}ですか。",
+          "english_translation": "Are you okay?",
+          "grammar_explanation": "A standard phrase used to check on someone's well-being."
+        },
+        {
+          "japanese_sentence": "いいえ、{大丈夫|だいじょうぶ}じゃありません。",
+          "english_translation": "No, it's not okay.",
+          "grammar_explanation": "'Ja arimasen' is the formal negative form of the copula used with na-adjectives."
+        }
+      ]
+    },
+    {
+      "word_kanji": "危ない",
+      "reading_furigana": "あぶない",
+      "meaning_english": "dangerous",
+      "examples": [
+        {
+          "japanese_sentence": "{危|あぶ}ない！{気|き}をつけて！",
+          "english_translation": "Watch out! Be careful!",
+          "grammar_explanation": "Casual exclamation using the dictionary form of the i-adjective."
+        },
+        {
+          "japanese_sentence": "ここは{危|あぶ}なくないです。",
+          "english_translation": "This place is not dangerous.",
+          "grammar_explanation": "To make an i-adjective negative, replace 'i' with 'kunai'."
+        }
+      ]
+    },
+    {
+      "word_kanji": "問題",
+      "reading_furigana": "もんだい",
+      "meaning_english": "question, problem, trouble",
+      "examples": [
+        {
+          "japanese_sentence": "この{問題|もんだい}は{難|むずか}しいです。",
+          "english_translation": "This problem/question is difficult.",
+          "grammar_explanation": "'Kono' is a pre-noun adjectival that points to an object near the speaker."
+        },
+        {
+          "japanese_sentence": "{何|なに}か{問題|もんだい}がありますか。",
+          "english_translation": "Is there some kind of problem?",
+          "grammar_explanation": "The existence verb 'arimasu' is used for inanimate objects like 'problems'."
+        }
+      ]
+    },
+    {
+      "word_kanji": "答え",
+      "reading_furigana": "こたえ",
+      "meaning_english": "answer",
+      "examples": [
+        {
+          "japanese_sentence": "{正|ただ}しい{答え|こたえ}を{選|えら}んでください。",
+          "english_translation": "Please choose the correct answer.",
+          "grammar_explanation": "The direct object of the verb is marked by the particle 'o'."
+        },
+        {
+          "japanese_sentence": "{答え|こたえ}が{分|わ}かりません。",
+          "english_translation": "I don't know the answer.",
+          "grammar_explanation": "The verb 'wakarimasu' (to understand/know) usually takes the particle 'ga' for its object."
+        }
+      ]
+    },
+    {
+      "word_kanji": "禁煙",
+      "reading_furigana": "きんえん",
+      "meaning_english": "no smoking",
+      "examples": [
+        {
+          "japanese_sentence": "この{部屋|へや}は{禁煙|きんえん}です。",
+          "english_translation": "This room is non-smoking.",
+          "grammar_explanation": "Noun + desu (copula) to state a fact/rule."
+        },
+        {
+          "japanese_sentence": "{禁煙|きんえん}しましょう。",
+          "english_translation": "Let's quit smoking / Let's make it non-smoking.",
+          "grammar_explanation": "～ましょう (mashou) is the volitional form used for making a suggestion or invitation."
+        }
+      ]
+    },
+    {
+      "word_kanji": "健康保険証",
+      "reading_furigana": "けんこうほけんしょう",
+      "meaning_english": "(health) insurance card",
+      "examples": [
+        {
+          "japanese_sentence": "{健康保険証|けんこうほけんしょう}を{持|も}っていますか。",
+          "english_translation": "Do you have your health insurance card?",
+          "grammar_explanation": "～ている (te iru) shows a state of possession with the verb 'motsu'."
+        },
+        {
+          "japanese_sentence": "{健康保険証|けんこうほけんしょう}を{忘|わす}れないで。",
+          "english_translation": "Don't forget your health insurance card.",
+          "grammar_explanation": "Casual negative request (nai-form + de)."
+        }
+      ]
+    },
+    {
+      "word_kanji": "風邪",
+      "reading_furigana": "かぜ",
+      "meaning_english": "cold, flu",
+      "examples": [
+        {
+          "japanese_sentence": "{風邪|かぜ}をひきました。",
+          "english_translation": "I caught a cold.",
+          "grammar_explanation": "'Kaze o hiku' is the standard verb phrase for catching a cold."
+        },
+        {
+          "japanese_sentence": "{風邪|かぜ}かもしれない。",
+          "english_translation": "It might be a cold.",
+          "grammar_explanation": "～かもしれない (ka mo shirenai) expresses possibility or conjecture."
+        }
+      ]
+    },
+    {
+      "word_kanji": "熱",
+      "reading_furigana": "ねつ",
+      "meaning_english": "fever",
+      "examples": [
+        {
+          "japanese_sentence": "{熱|ねつ}があります。",
+          "english_translation": "I have a fever.",
+          "grammar_explanation": "The existence verb 'arimasu' is used to state that you have a symptom."
+        },
+        {
+          "japanese_sentence": "{熱|ねつ}がなかなか{下|さ}がりません。",
+          "english_translation": "The fever just won't go down.",
+          "grammar_explanation": "'Nakanaka' with a negative verb indicates that something doesn't happen easily."
+        }
+      ]
+    },
+    {
+      "word_kanji": "病気",
+      "reading_furigana": "びょうき",
+      "meaning_english": "illness, disease",
+      "examples": [
+        {
+          "japanese_sentence": "{病気|びょうき}になりました。",
+          "english_translation": "I became ill.",
+          "grammar_explanation": "～になる (ni naru) indicates a change of state."
+        },
+        {
+          "japanese_sentence": "{父|ちち}は{病気|びょうき}で{入院|にゅういん}しています。",
+          "english_translation": "My father is in the hospital due to illness.",
+          "grammar_explanation": "The particle 'de' here indicates the reason or cause of the hospitalization."
+        }
+      ]
+    },
+    {
+      "word_kanji": "薬",
+      "reading_furigana": "くすり",
+      "meaning_english": "medicine",
+      "examples": [
+        {
+          "japanese_sentence": "この{薬|くすり}はよく{効|き}きます。",
+          "english_translation": "This medicine works well.",
+          "grammar_explanation": "'Kiku' is the verb used to describe the effectiveness of medicine."
+        },
+        {
+          "japanese_sentence": "{薬|くすり}を{飲|の}みたくないです。",
+          "english_translation": "I don't want to take medicine.",
+          "grammar_explanation": "The negative desire form (stem + takunai desu)."
+        }
+      ]
+    },
+    {
+      "word_kanji": "お風呂",
+      "reading_furigana": "おふろ",
+      "meaning_english": "bath",
+      "examples": [
+        {
+          "japanese_sentence": "お{風呂|ふろ}が{沸|わ}きました。",
+          "english_translation": "The bath is ready (boiled).",
+          "grammar_explanation": "The verb 'wakimasu' refers to water reaching the desired temperature for a bath."
+        },
+        {
+          "japanese_sentence": "ゆっくりお{風呂|ふろ}に{入|はい}ってください。",
+          "english_translation": "Please take a long, relaxing bath.",
+          "grammar_explanation": "The adverb 'yukkuri' (slowly/at ease) modifies the action of taking a bath."
+        }
+      ]
+    },
+    {
+      "word_kanji": "上着",
+      "reading_furigana": "うわぎ",
+      "meaning_english": "jacket, outerwear",
+      "examples": [
+        {
+          "japanese_sentence": "{上着|うわぎ}を{脱|ぬ}いでもいいですよ。",
+          "english_translation": "You may take off your jacket.",
+          "grammar_explanation": "～てもいいです (te mo ii desu) is used here to grant permission."
+        },
+        {
+          "japanese_sentence": "{寒|さむ}いから{上着|うわぎ}を{着|き}なさい。",
+          "english_translation": "Wear your jacket because it's cold.",
+          "grammar_explanation": "～なさい (nasai) is a commanding form often used by parents or teachers."
+        }
+      ]
+    },
+    {
+      "word_kanji": "下着",
+      "reading_furigana": "したぎ",
+      "meaning_english": "underwear",
+      "examples": [
+        {
+          "japanese_sentence": "{下着|したぎ}を{買|か}わなければなりません。",
+          "english_translation": "I must buy some underwear.",
+          "grammar_explanation": "Obligation form using 'nakereba narimasen'."
+        },
+        {
+          "japanese_sentence": "{下着|したぎ}を{洗|あら}った？",
+          "english_translation": "Did you wash the underwear?",
+          "grammar_explanation": "Casual question using the past tense (ta-form)."
+        }
+      ]
+    },
+    {
+      "word_kanji": "先生",
+      "reading_furigana": "せんせい",
+      "meaning_english": "doctor",
+      "examples": [
+        {
+          "japanese_sentence": "{先生|せんせい}に{診|み}てもらいましょう。",
+          "english_translation": "Let's have the doctor check you.",
+          "grammar_explanation": "～てもらう (te morau) implies receiving an action from someone; 'mashou' makes it a suggestion."
+        },
+        {
+          "japanese_sentence": "{先生|せんせい}の{話|はなし}を{聞|き}きました。",
+          "english_translation": "I listened to the doctor's talk.",
+          "grammar_explanation": "The particle 'no' shows possession or relationship between the doctor and the talk."
+        }
+      ]
+    },
+    {
+      "word_kanji": "二、三日",
+      "reading_furigana": "に、さんにち",
+      "meaning_english": "a few days",
+      "examples": [
+        {
+          "japanese_sentence": "{二|に}、{三日|さんにち}{休|やす}んでください。",
+          "english_translation": "Please rest for a few days.",
+          "grammar_explanation": "Used as an adverbial phrase to indicate duration."
+        },
+        {
+          "japanese_sentence": "{二|に}、{三日|さんにち}で{治|なお}るでしょう。",
+          "english_translation": "It will probably get better in a few days.",
+          "grammar_explanation": "～でしょう (deshou) expresses probability or conjecture."
+        }
+      ]
+    },
+    {
+      "word_kanji": "二、三～",
+      "reading_furigana": "に、さん～",
+      "meaning_english": "a few~",
+      "examples": [
+        {
+          "japanese_sentence": "{二|に}、{三枚|さんまい}{紙|かみ}をください。",
+          "english_translation": "Please give me a few sheets of paper.",
+          "grammar_explanation": "'Mai' is a counter for thin, flat objects like paper."
+        },
+        {
+          "japanese_sentence": "{二|に}、{三回|さんかい}{読|よ}みました。",
+          "english_translation": "I read it a few times.",
+          "grammar_explanation": "'Kai' is a counter for the number of times an action occurs."
+        }
+      ]
+    },
+    {
+      "word_kanji": "～までに",
+      "reading_furigana": "",
+      "meaning_english": "before ~, by~",
+      "examples": [
+        {
+          "japanese_sentence": "12{時|じ}までに{帰|かえ}ります。",
+          "english_translation": "I will return by 12 o'clock.",
+          "grammar_explanation": "～までに (made ni) indicates a time limit before which an action must be completed."
+        },
+        {
+          "japanese_sentence": "{土曜日|どようび}までに{書|か}いてください。",
+          "english_translation": "Please write it by Saturday.",
+          "grammar_explanation": "Used with days of the week to set a deadline."
+        }
+      ]
+    },
+    {
+      "word_kanji": "ですから",
+      "reading_furigana": "",
+      "meaning_english": "therefore, so",
+      "examples": [
+        {
+          "japanese_sentence": "{雨|あめ}です。ですから、どこへも{行|い}きません。",
+          "english_translation": "It's raining. Therefore, I'm not going anywhere.",
+          "grammar_explanation": "'Desu kara' is a conjunction used at the start of a sentence to provide a reason for what follows."
+        },
+        {
+          "japanese_sentence": "{危|あぶ}ないですよ。ですから、{触|さわ}らないでください。",
+          "english_translation": "It's dangerous. So, please don't touch it.",
+          "grammar_explanation": "Connects the danger of a situation to a prohibitive request."
+        }
+      ]
+    },
+    {
+      "word_kanji": "どうしましたか",
+      "reading_furigana": "",
+      "meaning_english": "What’s the matter?",
+      "examples": [
+        {
+          "japanese_sentence": "{顔色|かおいろ}が{悪|わる}いですね。どうしましたか。",
+          "english_translation": "You look pale. What's the matter?",
+          "grammar_explanation": "A polite phrase used by doctors or friends to ask about someone's condition."
+        },
+        {
+          "japanese_sentence": "どうしたの？{泣|な}かないで。",
+          "english_translation": "What's wrong? Don't cry.",
+          "grammar_explanation": "'Dou shita no' is the casual version of 'dou shimashita ka'."
+        }
+      ]
+    },
+    {
+      "word_kanji": "～が痛いです",
+      "reading_furigana": "～がいたいです",
+      "meaning_english": "I have a pain (in my ~)",
+      "examples": [
+        {
+          "japanese_sentence": "{頭|あたま}が{痛|いた}いです。",
+          "english_translation": "I have a headache (My head is painful).",
+          "grammar_explanation": "The particle 'ga' marks the subject (the body part) that is painful."
+        },
+        {
+          "japanese_sentence": "どこが{痛|いた}いですか。",
+          "english_translation": "Where does it hurt?",
+          "grammar_explanation": "Question form using the interrogative 'doko'."
+        }
+      ]
+    },
+    {
+      "word_kanji": "のど",
+      "reading_furigana": "",
+      "meaning_english": "throat",
+      "examples": [
+        {
+          "japanese_sentence": "のどが{痛|いた}いです。",
+          "english_translation": "I have a sore throat.",
+          "grammar_explanation": "Standard structure for expressing pain in a specific body part."
+        },
+        {
+          "japanese_sentence": "のどが{乾|かわ}きました。",
+          "english_translation": "I'm thirsty (My throat dried).",
+          "grammar_explanation": "Past tense of 'kawaku' (to dry) is used to express being currently thirsty."
+        }
+      ]
+    },
+    {
+      "word_kanji": "お大事に",
+      "reading_furigana": "おだいじに",
+      "meaning_english": "Take care of yourself. Get well soon.",
+      "examples": [
+        {
+          "japanese_sentence": "お{先|さき}に{失礼|しつれい}します。お{大事|だいじ}に。",
+          "english_translation": "I'll be leaving now. Take care of yourself.",
+          "grammar_explanation": "A set phrase used when parting from someone who is ill."
+        },
+        {
+          "japanese_sentence": "無理しないでくださいね。お大事に。",
+          "english_translation": "Please don't overdo it. Get well soon.",
+          "grammar_explanation": "Often paired with advice to rest or not work too hard."
+        }
+      ]
+    }
+  ]
+}

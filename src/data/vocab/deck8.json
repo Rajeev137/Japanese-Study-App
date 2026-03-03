@@ -1,0 +1,1043 @@
+
+{
+"deck_title": "Vocabulary Deck 8",
+"vocabulary": [
+{
+"word_kanji": "ハンサム",
+"reading_furigana": "",
+"meaning_english": "handsome",
+"examples": [
+{
+"japanese_sentence": "あの{俳優|はいゆう}はとてもハンサムですね。",
+"english_translation": "That actor is very handsome, isn't he?",
+"grammar_explanation": "The sentence-final particle ね (ne) is used to seek agreement from the listener."
+},
+{
+"japanese_sentence": "ハンサムな{人|ひと}に{会|あ}いました。",
+"english_translation": "I met a handsome person.",
+"grammar_explanation": "As a na-adjective, 'na' is required when it directly precedes and modifies a noun."
+}
+]
+},
+{
+"word_kanji": "奇麗",
+"reading_furigana": "きれい",
+"meaning_english": "beautiful, clean",
+"examples": [
+{
+"japanese_sentence": "この{部屋|へや}はあまり{奇麗|きれい}ではありません。",
+"english_translation": "This room is not very clean.",
+"grammar_explanation": "～ではありません (~dewa arimasen) is the formal negative form of the copula for na-adjectives."
+},
+{
+"japanese_sentence": "{奇麗|きれい}な{海|うみ}で{泳|およ}ぎたいです。",
+"english_translation": "I want to swim in a beautiful sea.",
+"grammar_explanation": "～たい (~tai) indicates the speaker's desire to perform an action."
+}
+]
+},
+{
+"word_kanji": "静か",
+"reading_furigana": "しずか",
+"meaning_english": "quiet",
+"examples": [
+{
+"japanese_sentence": "{図書館|としょかん}は{静|しず}かでした。",
+"english_translation": "The library was quiet.",
+"grammar_explanation": "～でした (~deshita) is the polite past tense of the copula for na-adjectives."
+},
+{
+"japanese_sentence": "{静|しず}かな{所|ところ}へ{行|い}きましょう。",
+"english_translation": "Let's go to a quiet place.",
+"grammar_explanation": "～ましょう (~mashou) is the polite volitional form used to make a suggestion."
+}
+]
+},
+{
+"word_kanji": "賑やか",
+"reading_furigana": "にぎやか",
+"meaning_english": "lively",
+"examples": [
+{
+"japanese_sentence": "{大阪|おおさか}はとても{賑|にぎ}やかです。",
+"english_translation": "Osaka is very lively.",
+"grammar_explanation": "Standard polite present tense using 'desu'."
+},
+{
+"japanese_sentence": "{賑|にぎ}やかな{街|まち}に{住|す}んでいます。",
+"english_translation": "I live in a lively town.",
+"grammar_explanation": "～ています (~te imasu) indicates a continuous state, such as where one resides."
+}
+]
+},
+{
+"word_kanji": "有名",
+"reading_furigana": "ゆうめい",
+"meaning_english": "famous",
+"examples": [
+{
+"japanese_sentence": "この{店|みせ}はラーメンで{有名|ゆうめい}だ。",
+"english_translation": "This shop is famous for its ramen.",
+"grammar_explanation": "The particle で (de) indicates the reason or basis for the fame in this context."
+},
+{
+"japanese_sentence": "{有名|ゆうめい}な{山|やま}に{登|のぼ}りました。",
+"english_translation": "I climbed a famous mountain.",
+"grammar_explanation": "The particle に (ni) marks the destination or object of the motion verb 'noboru'."
+}
+]
+},
+{
+"word_kanji": "親切",
+"reading_furigana": "しんせつ",
+"meaning_english": "kind",
+"examples": [
+{
+"japanese_sentence": "{山田|やまだ}さんはとても{親切|しんせつ}です。",
+"english_translation": "Mr. Yamada is very kind.",
+"grammar_explanation": "The adverb 'totemo' is used to intensify the adjective."
+},
+{
+"japanese_sentence": "{親切|しんせつ}な{人|ひと}に{助|たす}けてもらいました。",
+"english_translation": "A kind person helped me.",
+"grammar_explanation": "～てもらう (~te morau) indicates that the speaker received a favor from someone."
+}
+]
+},
+{
+"word_kanji": "元気",
+"reading_furigana": "げんき",
+"meaning_english": "healthy, sound, cheerful",
+"examples": [
+{
+"japanese_sentence": "{毎日|まいにち}、{元気|げんき}にご{飯|はん}を{食|た}べます。",
+"english_translation": "I eat meals healthily every day.",
+"grammar_explanation": "The particle に (ni) converts a na-adjective into an adverb."
+},
+{
+"japanese_sentence": "{田中|たなか}さんはいつも{元気|げんき}だね。",
+"english_translation": "Tanaka is always cheerful, right?",
+"grammar_explanation": "Casual copula だ (da) combined with the agreement-seeking particle ね (ne)."
+}
+]
+},
+{
+"word_kanji": "暇",
+"reading_furigana": "ひま",
+"meaning_english": "free(time)",
+"examples": [
+{
+"japanese_sentence": "{明日|あした}は{暇|ひま}ですか。",
+"english_translation": "Are you free tomorrow?",
+"grammar_explanation": "Using 'hima' as a noun/na-adjective to ask about availability."
+},
+{
+"japanese_sentence": "{暇|ひま}な{時|とき}、{何|なに}をしますか。",
+"english_translation": "What do you do when you are free?",
+"grammar_explanation": "The noun 'toki' (time) is modified by the na-adjective 'hima'."
+}
+]
+},
+{
+"word_kanji": "便利",
+"reading_furigana": "べんり",
+"meaning_english": "convenient",
+"examples": [
+{
+"japanese_sentence": "この{辞書|じしょ}はとても{便利|べんり}です。",
+"english_translation": "This dictionary is very convenient.",
+"grammar_explanation": "Standard attributive use of 'benri' in a polite sentence."
+},
+{
+"japanese_sentence": "{便利|べんり}なアプリを{使|つか}っています。",
+"english_translation": "I am using a convenient app.",
+"grammar_explanation": "Present continuous state 'te imasu' describing current usage."
+}
+]
+},
+{
+"word_kanji": "素敵",
+"reading_furigana": "すてき",
+"meaning_english": "fine, nice, wonderful",
+"examples": [
+{
+"japanese_sentence": "{素敵|すてき}なネクタイですね。",
+"english_translation": "That's a wonderful tie.",
+"grammar_explanation": "Direct modification of a noun using 'na' before the item."
+},
+{
+"japanese_sentence": "{今日|きょう}は{素敵|すてき}な{一日|いちにち}でした。",
+"english_translation": "Today was a wonderful day.",
+"grammar_explanation": "Past tense of the polite copula for a completed time period."
+}
+]
+},
+{
+"word_kanji": "大きい",
+"reading_furigana": "おおきい",
+"meaning_english": "big, large",
+"examples": [
+{
+"japanese_sentence": "この{靴|くつ}はちょっと{大|おお}きいです。",
+"english_translation": "These shoes are a little large.",
+"grammar_explanation": "'Chotto' is an adverb used to soften the statement or express a slight degree."
+},
+{
+"japanese_sentence": "{大|おお}きな{声|こえ}で{話|はな}さないでください。",
+"english_translation": "Please do not speak in a loud voice.",
+"grammar_explanation": "～ないでください (~nai de kudasai) is used for a polite negative request."
+}
+]
+},
+{
+"word_kanji": "小さい",
+"reading_furigana": "ちいさい",
+"meaning_english": "small, little",
+"examples": [
+{
+"japanese_sentence": "{小|ちい}さすぎるカバンを{買|か}ってしまった。",
+"english_translation": "I accidentally bought a bag that is too small.",
+"grammar_explanation": "～すぎる (sugiru) denotes excess, and ～てしまう (te shimau) indicates regret or an accidental action."
+},
+{
+"japanese_sentence": "{小|ちい}さな{花|はな}が{咲|さ}いています。",
+"english_translation": "Small flowers are blooming.",
+"grammar_explanation": "'Chiisana' is a special pre-noun adjectival form often used for subjective feeling."
+}
+]
+},
+{
+"word_kanji": "新しい",
+"reading_furigana": "あたらしい",
+"meaning_english": "new",
+"examples": [
+{
+"japanese_sentence": "{新|あたら}しいパソコンがほしいです。",
+"english_translation": "I want a new computer.",
+"grammar_explanation": "The particle が (ga) is used to mark the object of desire with 'hoshii'."
+},
+{
+"japanese_sentence": "このパソコンは{新|あたら}しくないです。",
+"english_translation": "This computer is not new.",
+"grammar_explanation": "To negate an i-adjective, replace the final ～い (~i) with ～くない (~kunai)."
+}
+]
+},
+{
+"word_kanji": "古い",
+"reading_furigana": "ふるい",
+"meaning_english": "old",
+"examples": [
+{
+"japanese_sentence": "これは{古|ふる}いお{寺|てら}ですね。",
+"english_translation": "This is an old temple, isn't it?",
+"grammar_explanation": "Directly modifying a noun with the i-adjective in a polite sentence."
+},
+{
+"japanese_sentence": "このカメラは{古|ふる}かったが、まだ{使|つか}えます。",
+"english_translation": "This camera was old, but it can still be used.",
+"grammar_explanation": "～かった (~katta) is the past tense form of an i-adjective; が (ga) connects contrasting clauses."
+}
+]
+},
+{
+"word_kanji": "良い",
+"reading_furigana": "よい",
+"meaning_english": "good",
+"examples": [
+{
+"japanese_sentence": "{天気|てんき}がとても{良|よ}いですね。",
+"english_translation": "The weather is very good, isn't it?",
+"grammar_explanation": "Standard use of 'yoi/ii' to describe state."
+},
+{
+"japanese_sentence": "{昨日|きのう}の{映画|えいが}はあまり{良|よ}くなかった。",
+"english_translation": "Yesterday's movie wasn't very good.",
+"grammar_explanation": "For negative/past forms of 'ii/yoi', the stem 'yo-' must be used (yokunai, yokatta)."
+}
+]
+},
+{
+"word_kanji": "悪い",
+"reading_furigana": "わるい",
+"meaning_english": "bad",
+"examples": [
+{
+"japanese_sentence": "{気分|きぶん}が{悪|わる}いです。",
+"english_translation": "I feel unwell.",
+"grammar_explanation": "Standard phrase to describe physical or mental condition."
+},
+{
+"japanese_sentence": "{昨日|きのう}は{天気|てんき}が{悪|わる}かったですね。",
+"english_translation": "The weather was bad yesterday, wasn't it?",
+"grammar_explanation": "Past tense 'warukatta' for i-adjectives."
+}
+]
+},
+{
+"word_kanji": "熱い",
+"reading_furigana": "あつい",
+"meaning_english": "hot",
+"examples": [
+{
+"japanese_sentence": "{熱|あつ}いお{茶|ちゃ}を{飲|の}みましょう。",
+"english_translation": "Let's drink some hot tea.",
+"grammar_explanation": "Used for things that are hot to the touch (liquids, objects)."
+},
+{
+"japanese_sentence": "このお{湯|ゆ}は{熱|あつ}すぎます。",
+"english_translation": "This water is too hot.",
+"grammar_explanation": "Adjective stem + すぎます (sugimasu) means 'too much'."
+}
+]
+},
+{
+"word_kanji": "寒い",
+"reading_furigana": "さむい",
+"meaning_english": "cold (temperature)",
+"examples": [
+{
+"japanese_sentence": "{昨日|きのう}はとても{寒|さむ}かったです。",
+"english_translation": "It was very cold yesterday.",
+"grammar_explanation": "Used specifically for ambient/weather temperature."
+},
+{
+"japanese_sentence": "{寒|さむ}いので、コートを{着|き}てください。",
+"english_translation": "Because it is cold, please put on a coat.",
+"grammar_explanation": "～ので (~node) is used to express a reason or cause."
+}
+]
+},
+{
+"word_kanji": "冷たい",
+"reading_furigana": "つめたい",
+"meaning_english": "cold (touch)",
+"examples": [
+{
+"japanese_sentence": "{冷|つめ}たいジュースはいかがですか。",
+"english_translation": "Would you like a cold juice?",
+"grammar_explanation": "Used for objects that are cold to the touch; 'ikaga desu ka' is a polite offer."
+},
+{
+"japanese_sentence": "{水|みず}が{冷|つめ}たかった。",
+"english_translation": "The water was cold.",
+"grammar_explanation": "Informal past tense of an i-adjective."
+}
+]
+},
+{
+"word_kanji": "難しい",
+"reading_furigana": "むずかしい",
+"meaning_english": "difficult",
+"examples": [
+{
+"japanese_sentence": "テストはとても{難|むずか}しかったです。",
+"english_translation": "The test was very difficult.",
+"grammar_explanation": "Polite past tense of the i-adjective."
+},
+{
+"japanese_sentence": "{難|むずか}しくても、{諦|あきら}めません。",
+"english_translation": "Even if it's difficult, I won't give up.",
+"grammar_explanation": "～ても (~temo) means 'even if' or 'even though'."
+}
+]
+},
+{
+"word_kanji": "易しい",
+"reading_furigana": "やさしい",
+"meaning_english": "easy",
+"examples": [
+{
+"japanese_sentence": "この{問題|もんだい}は{易|やさ}しいです。",
+"english_translation": "This problem is easy.",
+"grammar_explanation": "Standard polite present form."
+},
+{
+"japanese_sentence": "{易|やさ}しい{漢字|かんじ}から{覚|おぼ}えましょう。",
+"english_translation": "Let's memorize from the easy Kanji.",
+"grammar_explanation": "The particle 'kara' indicates the starting point."
+}
+]
+},
+{
+"word_kanji": "高い",
+"reading_furigana": "たかい",
+"meaning_english": "expensive, tall, high",
+"examples": [
+{
+"japanese_sentence": "このレストランはとても{高|たか}いですね。",
+"english_translation": "This restaurant is very expensive, isn't it?",
+"grammar_explanation": "Used here for price; 'ne' seeks confirmation."
+},
+{
+"japanese_sentence": "あの{山|やま}はとても{高|たか}い。",
+"english_translation": "That mountain is very high.",
+"grammar_explanation": "Used here for height in a casual sentence."
+}
+]
+},
+{
+"word_kanji": "安い",
+"reading_furigana": "やすい",
+"meaning_english": "expensive",
+"examples": [
+{
+"japanese_sentence": "{安|やす}いお{弁当|べんとう}を{買|か}いました。",
+"english_translation": "I bought an inexpensive lunch box.",
+"grammar_explanation": "Directly modifying a noun with the i-adjective."
+},
+{
+"japanese_sentence": "リンゴはみかんより{安|やす}いですか。",
+"english_translation": "Are apples cheaper than oranges?",
+"grammar_explanation": "～より (~yori) is used for comparison, meaning 'than'."
+}
+]
+},
+{
+"word_kanji": "低い",
+"reading_furigana": "ひくい",
+"meaning_english": "low",
+"examples": [
+{
+"japanese_sentence": "{低|ひく}い{山|やま}なら{登|のぼ}れます。",
+"english_translation": "I can climb it if it's a low mountain.",
+"grammar_explanation": "～なら (~nara) is a conditional form meaning 'if it is'."
+},
+{
+"japanese_sentence": "この{机|つくえ}は{低|ひく}すぎます。",
+"english_translation": "This desk is too low.",
+"grammar_explanation": "Stem + 'sugimasu' to express excessive degree."
+}
+]
+},
+{
+"word_kanji": "面白い",
+"reading_furigana": "おもしろい",
+"meaning_english": "interesting",
+"examples": [
+{
+"japanese_sentence": "{昨日|きのう}、{面白|おもしろ}い{映画|えいが}を{見|み}ました。",
+"english_translation": "I watched an interesting movie yesterday.",
+"grammar_explanation": "Standard past tense action modified by an adjective."
+},
+{
+"japanese_sentence": "{日本|にほん}の{漫画|まんが}は{面白|おもしろ}い？",
+"english_translation": "Are Japanese manga interesting?",
+"grammar_explanation": "Casual question formed by rising intonation at the end of a dictionary-form adjective."
+}
+]
+},
+{
+"word_kanji": "美味しい",
+"reading_furigana": "おいしい",
+"meaning_english": "delicious, tasty",
+"examples": [
+{
+"japanese_sentence": "このラーメンはとても{美味|おい}しいですね。",
+"english_translation": "This ramen is very delicious, isn't it?",
+"grammar_explanation": "Using 'ne' to share an opinion about taste."
+},
+{
+"japanese_sentence": "もっと{美味|おい}しい{料理|りょうり}を{作|つく}りたいです。",
+"english_translation": "I want to make even more delicious food.",
+"grammar_explanation": "'Motto' is an adverb meaning 'more'."
+}
+]
+},
+{
+"word_kanji": "忙しい",
+"reading_furigana": "いそがしい",
+"meaning_english": "busy",
+"examples": [
+{
+"japanese_sentence": "{今日|きょう}は{仕事|しごと}が{忙|いそが}しいです。",
+"english_translation": "I am busy with work today.",
+"grammar_explanation": "The particle が (ga) marks the subject that is in the state of being busy."
+},
+{
+"japanese_sentence": "{忙|いそが}しくて{遊|あそ}びに行けません。",
+"english_translation": "I am so busy that I cannot go out to play.",
+"grammar_explanation": "The te-form (~kute for adjectives) can express a reason or cause."
+}
+]
+},
+{
+"word_kanji": "楽しい",
+"reading_furigana": "たのしい",
+"meaning_english": "enjoyable",
+"examples": [
+{
+"japanese_sentence": "{旅行|りょこう}はとても{楽|たの}しかったです。",
+"english_translation": "The trip was very enjoyable.",
+"grammar_explanation": "Polite past tense of the i-adjective."
+},
+{
+"japanese_sentence": "{楽|たの}しい{時間|じかん}をありがとうございました。",
+"english_translation": "Thank you for the enjoyable time.",
+"grammar_explanation": "Modifying the noun 'jikan' to express gratitude for an experience."
+}
+]
+},
+{
+"word_kanji": "白い",
+"reading_furigana": "しろい",
+"meaning_english": "white",
+"examples": [
+{
+"japanese_sentence": "{白|しろ}いシャツを{着|き}ています。",
+"english_translation": "I am wearing a white shirt.",
+"grammar_explanation": "I-adjective color directly modifying a noun."
+},
+{
+"japanese_sentence": "あの{鳥|とり}は{白|しろ}いです。",
+"english_translation": "That bird is white.",
+"grammar_explanation": "Predicative use of a color adjective."
+}
+]
+},
+{
+"word_kanji": "黒い",
+"reading_furigana": "くろい",
+"meaning_english": "black",
+"examples": [
+{
+"japanese_sentence": "{黒|くろ}い{車|くるま}がほしいです。",
+"english_translation": "I want a black car.",
+"grammar_explanation": "Combining the color adjective with the desiderative 'hoshii'."
+},
+{
+"japanese_sentence": "{空|そら}が{黒|くろ}くなりました。",
+"english_translation": "The sky has turned black.",
+"grammar_explanation": "Adjective stem + く (ku) + なる (naru) means 'to become'."
+}
+]
+},
+{
+"word_kanji": "赤い",
+"reading_furigana": "あかい",
+"meaning_english": "red",
+"examples": [
+{
+"japanese_sentence": "{赤|あか}いリンゴを{食|た}べた。",
+"english_translation": "I ate a red apple.",
+"grammar_explanation": "Casual past tense of the verb 'taberu' with an adjective."
+},
+{
+"japanese_sentence": "このペンは{赤|あか}くないです。",
+"english_translation": "This pen is not red.",
+"grammar_explanation": "Negative form of the i-adjective."
+}
+]
+},
+{
+"word_kanji": "青い",
+"reading_furigana": "あおい",
+"meaning_english": "blue",
+"examples": [
+{
+"japanese_sentence": "{青|あお}い{海|うみ}に{行|い}きたい。",
+"english_translation": "I want to go to the blue sea.",
+"grammar_explanation": "Casual desiderative form."
+},
+{
+"japanese_sentence": "{空|そら}がとても{青|あお}いですね。",
+"english_translation": "The sky is very blue, isn't it?",
+"grammar_explanation": "Descriptive polite sentence with agreement particle."
+}
+]
+},
+{
+"word_kanji": "桜",
+"reading_furigana": "さくら",
+"meaning_english": "cherry blossom",
+"examples": [
+{
+"japanese_sentence": "{桜|さくら}がとても{奇麗|きれい}です。",
+"english_translation": "The cherry blossoms are very beautiful.",
+"grammar_explanation": "Noun subject followed by a na-adjective."
+},
+{
+"japanese_sentence": "{一緒|いっしょ}に{桜|さくら}を{見|み}に行きませんか。",
+"english_translation": "Won't you go to see the cherry blossoms with me?",
+"grammar_explanation": "～ませんか (~masen ka) is used for a polite invitation."
+}
+]
+},
+{
+"word_kanji": "山",
+"reading_furigana": "やま",
+"meaning_english": "mountain",
+"examples": [
+{
+"japanese_sentence": "{山|やま}に{登|のぼ}るのが{好|す}きです。",
+"english_translation": "I like climbing mountains.",
+"grammar_explanation": "The nominalizer の (no) turns the verb phrase into a noun for 'suki'."
+},
+{
+"japanese_sentence": "{山|やま}の{上|うえ}は{寒|さむ}かった。",
+"english_translation": "It was cold on top of the mountain.",
+"grammar_explanation": "Casual past tense of the i-adjective."
+}
+]
+},
+{
+"word_kanji": "町",
+"reading_furigana": "まち",
+"meaning_english": "town, city",
+"examples": [
+{
+"japanese_sentence": "この{町|まち}はあまり{賑|にぎ}やかではありません。",
+"english_translation": "This town is not very lively.",
+"grammar_explanation": "'Amari' is used with a negative verb to mean 'not very'."
+},
+{
+"japanese_sentence": "{静|しず}かな{町|まち}を{散歩|さんぽ}しました。",
+"english_translation": "I took a walk through a quiet town.",
+"grammar_explanation": "The particle を (o) indicates the path or space through which motion occurs."
+}
+]
+},
+{
+"word_kanji": "食べ物",
+"reading_furigana": "たべもの",
+"meaning_english": "food",
+"examples": [
+{
+"japanese_sentence": "{好|す}きな{食|た}べ{物|もの}は{何|なん}ですか。",
+"english_translation": "What is your favorite food?",
+"grammar_explanation": "'Suki na' modifies the noun 'tabemono' to mean 'favorite'."
+},
+{
+"japanese_sentence": "タイの{食|た}べ{物|もの}は{辛|から}いですね。",
+"english_translation": "Thai food is spicy, isn't it?",
+"grammar_explanation": "Country name + 'no' + 'tabemono' defines the cuisine type."
+}
+]
+},
+{
+"word_kanji": "車",
+"reading_furigana": "くるま",
+"meaning_english": "car, vehicle",
+"examples": [
+{
+"japanese_sentence": "{車|くるま}で{会社|かいしゃ}へ{行|い}きます。",
+"english_translation": "I go to the company by car.",
+"grammar_explanation": "The particle で (de) indicates the means of transportation."
+},
+{
+"japanese_sentence": "{車|くるま}を{持|も}っていますか。",
+"english_translation": "Do you have a car?",
+"grammar_explanation": "～ています (~te imasu) used to denote possession."
+}
+]
+},
+{
+"word_kanji": "所",
+"reading_furigana": "ところ",
+"meaning_english": "place",
+"examples": [
+{
+"japanese_sentence": "ここはどんな{所|ところ}ですか。",
+"english_translation": "What kind of place is this?",
+"grammar_explanation": "'Donna' is used to ask for a description of a noun."
+},
+{
+"japanese_sentence": "{賑|にぎ}やかな{所|ところ}には{行|い}きたくない。",
+"english_translation": "I don't want to go to lively places.",
+"grammar_explanation": "Negative desiderative 'takunai' in casual form."
+}
+]
+},
+{
+"word_kanji": "寮",
+"reading_furigana": "りょう",
+"meaning_english": "dormitory",
+"examples": [
+{
+"japanese_sentence": "{寮|りょう}のご{飯|はん}はおいしいですか。",
+"english_translation": "Is the food at the dormitory delicious?",
+"grammar_explanation": "Standard polite question about a state."
+},
+{
+"japanese_sentence": "{寮|りょう}は{大学|だいがく}の{近|ちか}くにあります。",
+"english_translation": "The dormitory is near the university.",
+"grammar_explanation": "The verb 'arimasu' indicates the existence/location of inanimate objects."
+}
+]
+},
+{
+"word_kanji": "勉強",
+"reading_furigana": "べんきょう",
+"meaning_english": "study",
+"examples": [
+{
+"japanese_sentence": "{日本語|にほんご}の{勉強|べんきょう}は{面白|おもしろ}いです。",
+"english_translation": "Studying Japanese is interesting.",
+"grammar_explanation": "'Benkyou' acts as a noun here, modified by another noun with 'no'."
+},
+{
+"japanese_sentence": "{昨日|きのう}は3{時間|じかん}{勉強|べんきょう}した。",
+"english_translation": "I studied for three hours yesterday.",
+"grammar_explanation": "Casual past tense of the suru-verb 'benkyou suru'."
+}
+]
+},
+{
+"word_kanji": "生活",
+"reading_furigana": "せいかつ",
+"meaning_english": "life",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}の{生活|せいかつ}に{慣|な}れました。",
+"english_translation": "I got used to life in Japan.",
+"grammar_explanation": "The particle に (ni) marks what the subject has become accustomed to."
+},
+{
+"japanese_sentence": "{生活|せいかつ}は{楽|たの}しいですが、{忙|いそが}しいです。",
+"english_translation": "Life is fun, but busy.",
+"grammar_explanation": "～ですが (~desu ga) connects two contrasting polite sentences."
+}
+]
+},
+{
+"word_kanji": "お仕事",
+"reading_furigana": "おしごと",
+"meaning_english": "work, business",
+"examples": [
+{
+"japanese_sentence": "お{仕事|しごと}は{何|なん}ですか。",
+"english_translation": "What is your job?",
+"grammar_explanation": "The honorific prefix 'o' is used to show respect when asking about someone else's work."
+},
+{
+"japanese_sentence": "{仕事|しごと}が{終|お}わってから、{飲|の}みに行きましょう。",
+"english_translation": "After work finishes, let's go for a drink.",
+"grammar_explanation": "～てから (~te kara) indicates that one action happens after another is completed."
+}
+]
+},
+{
+"word_kanji": "仕事をします",
+"reading_furigana": "しごとをします",
+"meaning_english": "do one’s job, work",
+"examples": [
+{
+"japanese_sentence": "7{時|じ}から{仕事|しごと}をします。",
+"english_translation": "I will work from 7 o'clock.",
+"grammar_explanation": "The particle 'kara' indicates the starting time."
+},
+{
+"japanese_sentence": "{昨日|きのう}は{遅|おそ}くまで{仕事|しごと}をした。",
+"english_translation": "I worked until late yesterday.",
+"grammar_explanation": "The adverbial 'osoku made' indicates duration until a point in time."
+}
+]
+},
+{
+"word_kanji": "どう",
+"reading_furigana": "",
+"meaning_english": "how",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}の{生活|せいかつ}はどうですか。",
+"english_translation": "How is life in Japan?",
+"grammar_explanation": "'Dou' is an interrogative used to ask for impressions or current states."
+},
+{
+"japanese_sentence": "テストはどうだった？",
+"english_translation": "How was the test?",
+"grammar_explanation": "Past tense 'dou datta' used in casual conversation."
+}
+]
+},
+{
+"word_kanji": "どんな",
+"reading_furigana": "",
+"meaning_english": "what kind of~",
+"examples": [
+{
+"japanese_sentence": "どんな{料理|りょうり}が{好|す}きですか。",
+"english_translation": "What kind of food do you like?",
+"grammar_explanation": "'Donna' must always be followed by a noun."
+},
+{
+"japanese_sentence": "それはどんな{本|ほん}？",
+"english_translation": "What kind of book is that?",
+"grammar_explanation": "Casual question using 'donna' to ask for details."
+}
+]
+},
+{
+"word_kanji": "とても",
+"reading_furigana": "",
+"meaning_english": "very",
+"examples": [
+{
+"japanese_sentence": "このスープはとても{熱|あつ}いです。",
+"english_translation": "This soup is very hot.",
+"grammar_explanation": "Adverb used to strengthen the following adjective."
+},
+{
+"japanese_sentence": "{今日|きょう}はとても{暇|ひま}だ。",
+"english_translation": "I am very free today.",
+"grammar_explanation": "Casual use with a na-adjective."
+}
+]
+},
+{
+"word_kanji": "あまり",
+"reading_furigana": "",
+"meaning_english": "not so (used with negatives)",
+"examples": [
+{
+"japanese_sentence": "お{酒|さけ}はあまり{飲|の}みません。",
+"english_translation": "I don't drink alcohol much.",
+"grammar_explanation": "'Amari' plus a negative verb indicates low frequency or degree."
+},
+{
+"japanese_sentence": "この{鞄|かばん}はあまり{良|よ}くない。",
+"english_translation": "This bag is not very good.",
+"grammar_explanation": "Casual negative of the i-adjective 'ii/yoi' with 'amari'."
+}
+]
+},
+{
+"word_kanji": "そして",
+"reading_furigana": "",
+"meaning_english": "and (used to connect sentences)",
+"examples": [
+{
+"japanese_sentence": "たなかさんは{親切|しんせつ}です。そして{奇麗|きれい}です。",
+"english_translation": "Ms. Tanaka is kind. And she is beautiful.",
+"grammar_explanation": "Conjunction used to start a new sentence adding more information."
+},
+{
+"japanese_sentence": "ラーメンを{食|た}べた。そしてビールを{飲|の}んだ。",
+"english_translation": "I ate ramen. And then I drank beer.",
+"grammar_explanation": "Used to connect two casual past tense actions chronologically."
+}
+]
+},
+{
+"word_kanji": "～が、～",
+"reading_furigana": "",
+"meaning_english": "~, but~",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}の{食|た}べ{物|もの}はおいしいですが、{高|たか}いです。",
+"english_translation": "Japanese food is delicious, but expensive.",
+"grammar_explanation": "The particle が (ga) acts as a conjunctive particle meaning 'but'."
+},
+{
+"japanese_sentence": "テストは{難|むずか}しかったが、{大丈夫|だいじょうぶ}だった。",
+"english_translation": "The test was difficult, but it was okay.",
+"grammar_explanation": "Casual version of the contrasting conjunction."
+}
+]
+},
+{
+"word_kanji": "お元気ですか",
+"reading_furigana": "おげんきですか",
+"meaning_english": "How are you?",
+"examples": [
+{
+"japanese_sentence": "お{久|ひさ}しぶりです。お{元気|げんき}ですか。",
+"english_translation": "Long time no see. How are you?",
+"grammar_explanation": "A set phrase used to greet someone, especially after a period of time."
+},
+{
+"japanese_sentence": "{家族|かぞく}の{皆|みな}さんもお{元気|げんき}ですか。",
+"english_translation": "Is everyone in your family well, too?",
+"grammar_explanation": "Extending the greeting to others using the inclusion particle も (mo)."
+}
+]
+},
+{
+"word_kanji": "そうですね",
+"reading_furigana": "",
+"meaning_english": "Well let me see…",
+"examples": [
+{
+"japanese_sentence": "「テニスをしませんか。」「そうですね。しましょう。」",
+"english_translation": "'Won't you play tennis?' 'Yes, let's (let me see... okay).'",
+"grammar_explanation": "Used as a filler while thinking or to show agreement."
+},
+{
+"japanese_sentence": "そうですね、{考|かんが}えておきます。",
+"english_translation": "Well let me see, I'll think about it.",
+"grammar_explanation": "Used to stall for time while making a decision."
+}
+]
+},
+{
+"word_kanji": "日本の生活に慣れましたか",
+"reading_furigana": "にほんのせいかつになれましたか",
+"meaning_english": "Have you got used to the life in Japan?",
+"examples": [
+{
+"japanese_sentence": "もう{日本|にほん}の{生活|せいかつ}に{慣|な}れましたか。",
+"english_translation": "Have you already got used to life in Japan?",
+"grammar_explanation": "'Mou' indicates 'already' in this past-interrogative sentence."
+},
+{
+"japanese_sentence": "まだ{日本|にほん}の{生活|せいかつ}に{慣|な}れていません。",
+"english_translation": "I haven't got used to life in Japan yet.",
+"grammar_explanation": "'Mada' plus 'te imasen' indicates an action/state not yet completed."
+}
+]
+},
+{
+"word_kanji": "～もう一杯いかがですか",
+"reading_furigana": "～もういっぱいいかがですか",
+"meaning_english": "Won’t you have another cup of ~?",
+"examples": [
+{
+"japanese_sentence": "お{茶|ちゃ}をもう{一|いっ}{杯|ぱい}いかがですか。",
+"english_translation": "Would you like another cup of tea?",
+"grammar_explanation": "A polite offer using the counter for cups/glasses 'ippai'."
+},
+{
+"japanese_sentence": "ビールをもう{一|いっ}{杯|ぱい}どう？",
+"english_translation": "How about another beer?",
+"grammar_explanation": "Casual version of the offer replacing 'ikaga desu ka' with 'dou'."
+}
+]
+},
+{
+"word_kanji": "もう～ですね",
+"reading_furigana": "",
+"meaning_english": "It’s already ~, isn’t it?",
+"examples": [
+{
+"japanese_sentence": "もう11{時|じ}ですね。",
+"english_translation": "It's already 11 o'clock, isn't it?",
+"grammar_explanation": "'Mou' emphasizes that a certain point in time has been reached."
+},
+{
+"japanese_sentence": "もう{冬|ふゆ}ですね。",
+"english_translation": "It's already winter, isn't it?",
+"grammar_explanation": "Using 'mou' to acknowledge the arrival of a new season."
+}
+]
+},
+{
+"word_kanji": "そろそろ失礼します",
+"reading_furigana": "そろそろしつれいします",
+"meaning_english": "It’s almost time to leave now.",
+"examples": [
+{
+"japanese_sentence": "あ、もう10{時|じ}です。そろそろ{失礼|しつれい}します。",
+"english_translation": "Ah, it's 10 o'clock already. It's almost time to leave now.",
+"grammar_explanation": "A polite set phrase used when leaving someone's house or office."
+},
+{
+"japanese_sentence": "{明日|あした}は{早|はや}いですから、そろそろ{失礼|しつれい}します。",
+"english_translation": "Since I have an early start tomorrow, I'll be leaving soon.",
+"grammar_explanation": "The particle 'kara' explains the reason for departing."
+}
+]
+},
+{
+"word_kanji": "またいらっしゃってください",
+"reading_furigana": "",
+"meaning_english": "Please come again.",
+"examples": [
+{
+"japanese_sentence": "とても{楽|たの}しかったです。またいらっしゃってください。",
+"english_translation": "It was very fun. Please come again.",
+"grammar_explanation": "An honorific invitation for someone to visit again."
+},
+{
+"japanese_sentence": "{是非|ぜひ}またいらっしゃってくださいね。",
+"english_translation": "Please do come again, okay?",
+"grammar_explanation": "'Zehi' is an adverb used to emphasize a request or desire."
+}
+]
+},
+{
+"word_kanji": "富士山",
+"reading_furigana": "ふじさん",
+"meaning_english": "Mt. Fuji",
+"examples": [
+{
+"japanese_sentence": "{富士山|ふじさん}は{日本|にほん}で{一番|いちばん}{高|たか}い{山|やま}です。",
+"english_translation": "Mt. Fuji is the highest mountain in Japan.",
+"grammar_explanation": "'Ichiban' is used to express the superlative degree (the most)."
+},
+{
+"japanese_sentence": "{富士山|ふじさん}に{登|のぼ}ったことがあります。",
+"english_translation": "I have climbed Mt. Fuji before.",
+"grammar_explanation": "～たことがある (~ta koto ga aru) expresses past experience."
+}
+]
+},
+{
+"word_kanji": "琵琶湖",
+"reading_furigana": "びわこ",
+"meaning_english": "Lake Biwa",
+"examples": [
+{
+"japanese_sentence": "{琵琶湖|びわこ}はとても{大|おお}きい{湖|みずうみ}です。",
+"english_translation": "Lake Biwa is a very large lake.",
+"grammar_explanation": "Standard noun-adjective relationship to describe a landmark."
+},
+{
+"japanese_sentence": "{琵琶湖|びわこ}へ{行|い}ったことがありますか。",
+"english_translation": "Have you ever been to Lake Biwa?",
+"grammar_explanation": "Experience grammar used with the destination particle 'e'."
+}
+]
+},
+{
+"word_kanji": "上海",
+"reading_furigana": "しゃんはい",
+"meaning_english": "Shanghai",
+"examples": [
+{
+"japanese_sentence": "{上海|しゃんはい}は{賑|にぎ}やかな{町|まち}です。",
+"english_translation": "Shanghai is a lively city.",
+"grammar_explanation": "Describing a city using a na-adjective."
+},
+{
+"japanese_sentence": "{上海|しゃんはい}へ{出張|しゅっちょう}します。",
+"english_translation": "I will go to Shanghai on a business trip.",
+"grammar_explanation": "The destination particle へ (e) used for travel/motion."
+}
+]
+},
+{
+"word_kanji": "七人の侍",
+"reading_furigana": "しちにんのさむらい",
+"meaning_english": "The Seven Samura",
+"examples": [
+{
+"japanese_sentence": "「{七人|しちにん}の{侍|さむらい}」はとても{有名|ゆうめい}な{映画|えいが}だ。",
+"english_translation": "'The Seven Samurai' is a very famous movie.",
+"grammar_explanation": "Casual copula 'da' used to state a fact about a film."
+},
+{
+"japanese_sentence": "その{映画|えいが}を{見|み}たことがありますか。",
+"english_translation": "Have you ever seen that movie?",
+"grammar_explanation": "Polite question about a specific past experience."
+}
+]
+},
+{
+"word_kanji": "金閣寺",
+"reading_furigana": "きんかくじ",
+"meaning_english": "Kinkakuji Temple, Golden Pavilion",
+"examples": [
+{
+"japanese_sentence": "{金閣寺|きんかくじ}は{奇麗|きれい}でした。",
+"english_translation": "Kinkakuji Temple was beautiful.",
+"grammar_explanation": "Past tense 'deshita' for a na-adjective."
+},
+{
+"japanese_sentence": "{金閣寺|きんかくじ}へ{行|い}きましょう。",
+"english_translation": "Let's go to Kinkakuji Temple.",
+"grammar_explanation": "Volitional form 'ikimashou' used to propose a trip."
+}
+]
+}
+]
+}

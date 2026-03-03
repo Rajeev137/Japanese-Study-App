@@ -1,0 +1,465 @@
+
+{
+"deck_title": "Vocabulary Deck 15",
+"vocabulary": [
+{
+"word_kanji": "立ちます",
+"reading_furigana": "たちます",
+"meaning_english": "stand up",
+"examples": [
+{
+"japanese_sentence": "{名前|なまえ}を{呼|よ}ばれたら、{立|た}ってください。",
+"english_translation": "Please stand up when your name is called.",
+"grammar_explanation": "～たら (tara) indicates a conditional 'when/if', followed by the polite request form ～てください (te kudasai)."
+},
+{
+"japanese_sentence": "みんなで{一斉|いっせい}に{立|た}とう。",
+"english_translation": "Let's all stand up at once.",
+"grammar_explanation": "The casual volitional form (ou-form) indicates a suggestion or invitation to do an action together."
+}
+]
+},
+{
+"word_kanji": "座ります",
+"reading_furigana": "すわります",
+"meaning_english": "sit down",
+"examples": [
+{
+"japanese_sentence": "ここに{座|すわ}ってもいいですか。",
+"english_translation": "May I sit here?",
+"grammar_explanation": "～てもいい (te mo ii) is the standard pattern for asking or giving permission."
+},
+{
+"japanese_sentence": "{椅子|いす}に{座|すわ}りなさい。",
+"english_translation": "Sit in the chair.",
+"grammar_explanation": "Verb stem + なさい (nasai) is used for a firm, often parental or authoritative command."
+}
+]
+},
+{
+"word_kanji": "使います",
+"reading_furigana": "つかいます",
+"meaning_english": "use",
+"examples": [
+{
+"japanese_sentence": "このペンを{使|つか}ってもいいですよ。",
+"english_translation": "You may use this pen.",
+"grammar_explanation": "The particle ～よ (yo) is added to the permission pattern to provide gentle assurance."
+},
+{
+"japanese_sentence": "{箸|はし}を{使|つか}うのは{難|むずか}しい。",
+"english_translation": "Using chopsticks is difficult.",
+"grammar_explanation": "The nominalizer の (no) turns the verb 'use' into a noun phrase to act as the subject of the sentence."
+}
+]
+},
+{
+"word_kanji": "置きます",
+"reading_furigana": "おきます",
+"meaning_english": "put",
+"examples": [
+{
+"japanese_sentence": "カバンを{机|つくえ}の{上|うえ}に{置|お}きました。",
+"english_translation": "I put the bag on the desk.",
+"grammar_explanation": "The particle に (ni) marks the specific location where the object is placed."
+},
+{
+"japanese_sentence": "そこに{置|お}いといて。",
+"english_translation": "Leave it there (for now).",
+"grammar_explanation": "～といて (toite) is a casual contraction of ～ておいて, meaning to do something in preparation or leave a state as is."
+}
+]
+},
+{
+"word_kanji": "作ります",
+"reading_furigana": "つくります",
+"meaning_english": "make, produce",
+"examples": [
+{
+"japanese_sentence": "{母|はは}と{一緒|いっしょ}に{料理|りょうり}を{作|つく}りました。",
+"english_translation": "I made a meal together with my mother.",
+"grammar_explanation": "The particle と (to) with 一緒に (issho ni) expresses 'together with' a person."
+},
+{
+"japanese_sentence": "このお{酒|さけ}は{米|こめ}から{作|つく}られる。",
+"english_translation": "This sake is made from rice.",
+"grammar_explanation": "The passive form ～られる (rareru) is used here to indicate what something is produced from."
+}
+]
+},
+{
+"word_kanji": "売ります",
+"reading_furigana": "うります",
+"meaning_english": "sell",
+"examples": [
+{
+"japanese_sentence": "あの{店|みせ}で古い{本|ほん}を{売|う}っています。",
+"english_translation": "They sell old books at that shop.",
+"grammar_explanation": "～ています (te imasu) indicates a repeated action or a business occupation (selling as a practice)."
+},
+{
+"japanese_sentence": "{車|くるま}を{高|たか}く{売|う}りたい。",
+"english_translation": "I want to sell my car for a high price.",
+"grammar_explanation": "The desiderative form ～たい (tai) expresses the speaker's desire to perform an action."
+}
+]
+},
+{
+"word_kanji": "知ります",
+"reading_furigana": "しります",
+"meaning_english": "to know",
+"examples": [
+{
+"japanese_sentence": "その{話|はなし}を{聞|き}いて{驚|おどろ}きを{知|し}りました。",
+"english_translation": "I learned (came to know) surprise by hearing that story.",
+"grammar_explanation": "While 'shitte imasu' is used for state, 'shirimasu' often refers to the moment of learning or coming to know."
+},
+{
+"japanese_sentence": "だれも{真実|しんじつ}を{知|し}ることはない。",
+"english_translation": "No one will ever know the truth.",
+"grammar_explanation": "Dictionary form + ことはない (koto wa nai) indicates that there is no possibility or necessity for something to happen."
+}
+]
+},
+{
+"word_kanji": "住みます",
+"reading_furigana": "すみまう",
+"meaning_english": "to live, to reside",
+"examples": [
+{
+"japanese_sentence": "{将来|しょうらい}は{田舎|いなか}に{住|す}みたいです。",
+"english_translation": "I want to live in the countryside in the future.",
+"grammar_explanation": "The particle に (ni) marks the destination or target of the residence."
+},
+{
+"japanese_sentence": "{来月|らいげつ}から{東京|とうきょう}に{住|す}むことになった。",
+"english_translation": "It has been decided that I will live in Tokyo from next month.",
+"grammar_explanation": "～ことになった (koto ni natta) indicates a decision made by an external factor or organization."
+}
+]
+},
+{
+"word_kanji": "研究します",
+"reading_furigana": "けんきゅうします",
+"meaning_english": "to research, to study",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}の{歴史|れきし}を{研究|けんきゅう}しています。",
+"english_translation": "I am researching Japanese history.",
+"grammar_explanation": "～ています (te imasu) indicates an ongoing, continuous research activity."
+},
+{
+"japanese_sentence": "{新|あたら}しい{薬|くすり}を{研究|けんきゅう}しましょう。",
+"english_translation": "Let's research new medicine.",
+"grammar_explanation": "～ましょう (mashou) is the polite volitional form used for making a suggestion."
+}
+]
+},
+{
+"word_kanji": "知っています",
+"reading_furigana": "しっています",
+"meaning_english": "know",
+"examples": [
+{
+"japanese_sentence": "あの方の名前を{知|し}っていますか。",
+"english_translation": "Do you know that person's name?",
+"grammar_explanation": "The state of 'knowing' must always be expressed in the continuous form ～ている for affirmative statements."
+},
+{
+"japanese_sentence": "いや、{知|し}らない。",
+"english_translation": "No, I don't know.",
+"grammar_explanation": "The negative of 'shitte imasu' is 'shiranai' (casual) or 'shirimasen' (formal), not 'shitte imasen'."
+}
+]
+},
+{
+"word_kanji": "住んでいます",
+"reading_furigana": "すんでいます",
+"meaning_english": "live, reside",
+"examples": [
+{
+"japanese_sentence": "{今|いま}はアパートに{住|す}んでいます。",
+"english_translation": "I am living in an apartment now.",
+"grammar_explanation": "～ています (te imasu) denotes a continuous state of residence."
+},
+{
+"japanese_sentence": "どこに{住|す}んでるの？",
+"english_translation": "Where do you live?",
+"grammar_explanation": "～てる (teru) is a casual contraction of ～ている, and the final の (no) creates a soft, searching question tone."
+}
+]
+},
+{
+"word_kanji": "大阪に住んでいます",
+"reading_furigana": "おおさかにすんでいます",
+"meaning_english": "live in Osaka",
+"examples": [
+{
+"japanese_sentence": "{大学|だいがく}に{入|はい}ってから{大阪|おおさか}に{住|す}んでいます。",
+"english_translation": "I have been living in Osaka since I entered university.",
+"grammar_explanation": "～てから (te kara) indicates that the state has continued ever since a specific starting event."
+},
+{
+"japanese_sentence": "{大阪|おおさか}に{住|す}んでいたことがある。",
+"english_translation": "I have lived in Osaka before.",
+"grammar_explanation": "Verb past tense + ことがある (koto ga aru) indicates a past experience."
+}
+]
+},
+{
+"word_kanji": "資料",
+"reading_furigana": "しりょう",
+"meaning_english": "materials, data",
+"examples": [
+{
+"japanese_sentence": "この{資料|しりょう}を5{枚|まい}コピーしてください。",
+"english_translation": "Please copy 5 pages/copies of these materials.",
+"grammar_explanation": "The counter ～枚 (mai) is used for flat objects like paper/materials."
+},
+{
+"japanese_sentence": "{会議|かいぎ}の{資料|しりょう}、もう{読|よ}んだ？",
+"english_translation": "Did you already read the meeting materials?",
+"grammar_explanation": "A casual question using the plain past tense with rising intonation."
+}
+]
+},
+{
+"word_kanji": "カタログ",
+"reading_furigana": "",
+"meaning_english": "catalog",
+"examples": [
+{
+"japanese_sentence": "{新|あたら}しいカタログをお{送|おく}りします。",
+"english_translation": "I will send you the new catalog.",
+"grammar_explanation": "お + stem + します is a humble form (kenjougo) used to show respect to the recipient."
+},
+{
+"japanese_sentence": "カタログを{見|み}て、{欲|ほ}しいものを{選|えら}ぼう。",
+"english_translation": "Let's look at the catalog and choose what we want.",
+"grammar_explanation": "The te-form connects two actions, where looking at the catalog is the first step."
+}
+]
+},
+{
+"word_kanji": "時刻表",
+"reading_furigana": "じこくひょう",
+"meaning_english": "timetable",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}で{時刻表|じこくひょう}を{確認|かくにん}しましょう。",
+"english_translation": "Let's check the timetable at the station.",
+"grammar_explanation": "The particle で (de) marks the location of the action 'checking'."
+},
+{
+"japanese_sentence": "{時刻表|じこくひょう}によると、{次|つぎ}の{電車|でんしゃ}は10{時|じ}だ。",
+"english_translation": "According to the timetable, the next train is at 10 o'clock.",
+"grammar_explanation": "～によると (ni yoru to) is used to specify a source of information."
+}
+]
+},
+{
+"word_kanji": "服",
+"reading_furigana": "ふく",
+"meaning_english": "clothes",
+"examples": [
+{
+"japanese_sentence": "{新|あたら}しい{服|ふく}を{買|か}いに行きませんか。",
+"english_translation": "Won't you go to buy new clothes with me?",
+"grammar_explanation": "Verb stem + に行く (ni iku) indicates the purpose of going somewhere."
+},
+{
+"japanese_sentence": "その{服|ふく}、とても{似合|にあ}っているね。",
+"english_translation": "Those clothes really suit you, don't they?",
+"grammar_explanation": "～ている (te iru) describes the current state of the clothes looking good on the person."
+}
+]
+},
+{
+"word_kanji": "製品",
+"reading_furigana": "せいひん",
+"meaning_english": "products",
+"examples": [
+{
+"japanese_sentence": "これは{日本|にほん}の{製品|せいひん}です。",
+"english_translation": "This is a Japanese product.",
+"grammar_explanation": "Standard noun A は noun B です sentence structure."
+},
+{
+"japanese_sentence": "プラスチック{製品|せいひん}を減らそう。",
+"english_translation": "Let's reduce plastic products.",
+"grammar_explanation": "The volitional form of the Group 1 verb 'herasu' (to reduce) is 'herasou'."
+}
+]
+},
+{
+"word_kanji": "ソフト",
+"reading_furigana": "",
+"meaning_english": "software",
+"examples": [
+{
+"japanese_sentence": "このソフトの{使|つか}い{方|かた}を教えてください。",
+"english_translation": "Please teach me how to use this software.",
+"grammar_explanation": "Verb stem + 方 (kata) expresses the method or 'how to' of an action."
+},
+{
+"japanese_sentence": "{新|あたら}しいソフトをインストールした。",
+"english_translation": "I installed new software.",
+"grammar_explanation": "Katakana words like 'sofuto' are often used with 'suru' verbs or direct loanword verbs."
+}
+]
+},
+{
+"word_kanji": "専門",
+"reading_furigana": "せんもん",
+"meaning_english": "specialty, field of study",
+"examples": [
+{
+"japanese_sentence": "{私|わたし}の{専門|せんもん}は{経済|けいざい}です。",
+"english_translation": "My specialty is economics.",
+"grammar_explanation": "Use of the possessive particle の (no) to link the speaker to their field."
+},
+{
+"japanese_sentence": "もっと{専門|せんもん}{的|てき}な{意見|いけん}が{聞|き}きたい。",
+"english_translation": "I want to hear a more professional/specialized opinion.",
+"grammar_explanation": "Adding ～的 (teki) turns the noun 'specialty' into an 'na-adjective' meaning 'professional/specialized'."
+}
+]
+},
+{
+"word_kanji": "歯医者",
+"reading_furigana": "はいしゃ",
+"meaning_english": "dentist, dentist’s",
+"examples": [
+{
+"japanese_sentence": "{昨日|きのう}、{歯医者|はいしゃ}へ行きました。",
+"english_translation": "I went to the dentist yesterday.",
+"grammar_explanation": "The particle へ (e) indicates the direction/destination."
+},
+{
+"japanese_sentence": "{歯医者|はいしゃ}は{怖|こわ}いから{嫌|きら}いだ。",
+"english_translation": "I hate the dentist because it's scary.",
+"grammar_explanation": "～から (kara) provides the reason ('because') for the speaker's dislike."
+}
+]
+},
+{
+"word_kanji": "プレイガイド",
+"reading_furigana": "",
+"meaning_english": "(theater) ticket agency",
+"examples": [
+{
+"japanese_sentence": "プレイガイドでチケットを{買|か}いました。",
+"english_translation": "I bought the ticket at the ticket agency.",
+"grammar_explanation": "The particle で (de) marks the location where the exchange/purchase happened."
+},
+{
+"japanese_sentence": "{一番|いちばん}{近|ちか}いプレイガイドはどこ？",
+"english_translation": "Where is the nearest ticket agency?",
+"grammar_explanation": "一番 (ichiban) + adjective creates the superlative form (the most/the -est)."
+}
+]
+},
+{
+"word_kanji": "独身",
+"reading_furigana": "どくしん",
+"meaning_english": "single, unmarried",
+"examples": [
+{
+"japanese_sentence": "{田中|たなか}さんはまだ{独身|どくしん}ですか。",
+"english_translation": "Is Mr. Tanaka still single?",
+"grammar_explanation": "まだ (mada) means 'still' when used with an affirmative state."
+},
+{
+"japanese_sentence": "{独身|どくしん}の{生活|せいかつ}を{楽|たの}しもう。",
+"english_translation": "Let's enjoy single life.",
+"grammar_explanation": "The particle の (no) is used to describe the noun 'life' with the attribute 'single'."
+}
+]
+},
+{
+"word_kanji": "特に",
+"reading_furigana": "とくに",
+"meaning_english": "especially",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}の{料理|りょうり}は、{特|とく}に{寿司|すし}が{好|す}きです。",
+"english_translation": "I like Japanese food, especially sushi.",
+"grammar_explanation": "特に (tokuni) is an adverb used to single out a specific item for emphasis."
+},
+{
+"japanese_sentence": "{今日|きょう}は{特|とく}に{忙|いそが}しくない。",
+"english_translation": "I am not particularly busy today.",
+"grammar_explanation": "When used with a negative, 'tokuni' translates to 'not particularly' or 'not especially'."
+}
+]
+},
+{
+"word_kanji": "思い出します",
+"reading_furigana": "おもいだします",
+"meaning_english": "remember, recollect",
+"examples": [
+{
+"japanese_sentence": "{子供|こども}のころを{思|おも}い{出|だ}しました。",
+"english_translation": "I remembered my childhood.",
+"grammar_explanation": "～のころ (no koro) means 'at the time of' or 'during'."
+},
+{
+"japanese_sentence": "{名前|なまえ}が{思|おも}い{出|だ}せない。",
+"english_translation": "I can't remember (recall) the name.",
+"grammar_explanation": "The potential negative form ～せない (senai) expresses the inability to recall information."
+}
+]
+},
+{
+"word_kanji": "ご家族",
+"reading_furigana": "ごかぞく",
+"meaning_english": "your family",
+"examples": [
+{
+"japanese_sentence": "ご{家族|かぞく}はどちらにいらっしゃいますか。",
+"english_translation": "Where is your family?",
+"grammar_explanation": "The prefix 'go' and the verb 'irasshaimasu' are honorifics used to speak respectfully about someone else's family."
+},
+{
+"japanese_sentence": "ご{家族|かぞく}によろしくお{伝|つた}えください。",
+"english_translation": "Please give my regards to your family.",
+"grammar_explanation": "A set polite phrase for sending greetings through another person."
+}
+]
+},
+{
+"word_kanji": "いらっしゃいます",
+"reading_furigana": "",
+"meaning_english": "be (honorific equivalent of imasu)",
+"examples": [
+{
+"japanese_sentence": "{先生|せんせい}は{研究|けんきゅう}{室|しつ}にいらっしゃいます。",
+"english_translation": "The professor is in the research office.",
+"grammar_explanation": "This is the honorific (sonkeigo) form of 'imasu', used for people of higher status."
+},
+{
+"japanese_sentence": "あそこにいらっしゃるのはどなたですか。",
+"english_translation": "Who is that person over there?",
+"grammar_explanation": "The dictionary form 'irassharu' is used here as a relative clause modifying 'no' (the person)."
+}
+]
+},
+{
+"word_kanji": "高校",
+"reading_furigana": "こうこう",
+"meaning_english": "senior high school",
+"examples": [
+{
+"japanese_sentence": "{高校|こうこう}で{野球|やきゅう}をやっていました。",
+"english_translation": "I used to play baseball in high school.",
+"grammar_explanation": "～ていました (te imashita) indicates a habitual action that took place in the past."
+},
+{
+"japanese_sentence": "{高校|こうこう}{生|せい}のとき、よくこの{店|みせ}に{来|き}た。",
+"english_translation": "When I was a high school student, I often came to this shop.",
+"grammar_explanation": "Noun + のとき (no toki) specifies the time or period in one's life."
+}
+]
+}
+]
+}

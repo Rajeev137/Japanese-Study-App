@@ -1,0 +1,805 @@
+
+{
+"deck_title": "Vocabulary Deck 2",
+"vocabulary": [
+{
+"word_kanji": "これ",
+"reading_furigana": "",
+"meaning_english": "this",
+"examples": [
+{
+"japanese_sentence": "これは{私|わたし}の{辞書|じしょ}です。",
+"english_translation": "This is my dictionary.",
+"grammar_explanation": "The particle は (wa) marks 'kore' as the topic of the sentence."
+},
+{
+"japanese_sentence": "これを{食|た}べてもいいですか。",
+"english_translation": "Is it okay if I eat this?",
+"grammar_explanation": "The particle を (o) marks 'kore' as the direct object of the verb 'taberu'."
+}
+]
+},
+{
+"word_kanji": "それ",
+"reading_furigana": "",
+"meaning_english": "that (thing near you0",
+"examples": [
+{
+"japanese_sentence": "それは{何|なん}ですか。",
+"english_translation": "What is that?",
+"grammar_explanation": "A standard question structure using the interrogative 'nan'."
+},
+{
+"japanese_sentence": "それを{見|み}せてください。",
+"english_translation": "Please show me that.",
+"grammar_explanation": "The te-form of the verb + 'kudasai' is used for making a polite request."
+}
+]
+},
+{
+"word_kanji": "あれ",
+"reading_furigana": "",
+"meaning_english": "that (that thing over there)",
+"examples": [
+{
+"japanese_sentence": "あれは{病院|びょういん}です。",
+"english_translation": "That over there is a hospital.",
+"grammar_explanation": "'Are' refers to an object far from both the speaker and the listener."
+},
+{
+"japanese_sentence": "あれを{買|か}いたい。",
+"english_translation": "I want to buy that over there.",
+"grammar_explanation": "The tai-form of the verb 'kau' (to buy) expresses the speaker's desire."
+}
+]
+},
+{
+"word_kanji": "この〜",
+"reading_furigana": "",
+"meaning_english": "this (noun) here",
+"examples": [
+{
+"japanese_sentence": "この{本|ほん}はとても{面白|おもしろ}いです。",
+"english_translation": "This book is very interesting.",
+"grammar_explanation": "'Kono' is a pre-noun adjectival that must be followed directly by a noun."
+},
+{
+"japanese_sentence": "この{傘|かさ}、だれの？",
+"english_translation": "Whose is this umbrella?",
+"grammar_explanation": "Casual sentence structure where the copula 'desu' is omitted."
+}
+]
+},
+{
+"word_kanji": "その〜",
+"reading_furigana": "",
+"meaning_english": "that (noun) near you",
+"examples": [
+{
+"japanese_sentence": "その{時計|とけい}はいくらですか。",
+"english_translation": "How much is that watch?",
+"grammar_explanation": "'Sono' refers to an item near the listener; 'ikura' is the interrogative for price."
+},
+{
+"japanese_sentence": "その{雑誌|ざっし}を{読|よ}んでもいい？",
+"english_translation": "Can I read that magazine?",
+"grammar_explanation": "Casual permission form using the te-form of the verb followed by 'mo ii'."
+}
+]
+},
+{
+"word_kanji": "あの〜",
+"reading_furigana": "",
+"meaning_english": "that (noun) over there",
+"examples": [
+{
+"japanese_sentence": "あの{人|ひと}は{先生|せんせい}です。",
+"english_translation": "That person over there is a teacher.",
+"grammar_explanation": "'Ano' is used for things or people distant from both participants."
+},
+{
+"japanese_sentence": "あの{自動車|じどうしゃ}は{高|たか}そうです。",
+"english_translation": "That car over there looks expensive.",
+"grammar_explanation": "The suffix 'sou' attached to the stem of an i-adjective indicates appearance or impression."
+}
+]
+},
+{
+"word_kanji": "本",
+"reading_furigana": "ほん",
+"meaning_english": "book",
+"examples": [
+{
+"japanese_sentence": "{毎日|まいにち}{本|ほん}を{読|よ}みます。",
+"english_translation": "I read books every day.",
+"grammar_explanation": "Standard polite present tense using the 'masu' form."
+},
+{
+"japanese_sentence": "{本|ほん}を{棚|たな}に{戻|もど}した。",
+"english_translation": "I put the book back on the shelf.",
+"grammar_explanation": "Plain past tense (ta-form) used in casual speech or narrative."
+}
+]
+},
+{
+"word_kanji": "辞書",
+"reading_furigana": "じしょ",
+"meaning_english": "dictionary",
+"examples": [
+{
+"japanese_sentence": "{電子|でんし}{辞書|じしょ}を{持|も}っています。",
+"english_translation": "I have an electronic dictionary.",
+"grammar_explanation": "～ています (te imasu) shows the state of possessing an item."
+},
+{
+"japanese_sentence": "{辞書|じしょ}を{引|ひ}かなければなりません。",
+"english_translation": "I must look it up in a dictionary.",
+"grammar_explanation": "～なければなりません indicates obligation; 'jisho o hiku' is the idiom for 'to look up in a dictionary'."
+}
+]
+},
+{
+"word_kanji": "雑誌",
+"reading_furigana": "ざっし",
+"meaning_english": "magazine",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}で{雑誌|ざっし}を{買|か}いました。",
+"english_translation": "I bought a magazine at the station.",
+"grammar_explanation": "The particle で (de) marks the location where the action of buying occurred."
+},
+{
+"japanese_sentence": "{雑誌|ざっし}を{見|み}ている。",
+"english_translation": "I am looking at a magazine.",
+"grammar_explanation": "Continuous action form using the plain form of ～ている."
+}
+]
+},
+{
+"word_kanji": "新聞",
+"reading_furigana": "しんぶん",
+"meaning_english": "newspaper",
+"examples": [
+{
+"japanese_sentence": "{父|ちち}は{毎朝|まいあさ}{新聞|しんぶん}を{読|よ}みます。",
+"english_translation": "My father reads the newspaper every morning.",
+"grammar_explanation": "The topic marker は indicates the person performing the habitual action."
+},
+{
+"japanese_sentence": "{新聞|しんぶん}に{名前|なまえ}が{載|の}りました。",
+"english_translation": "My name appeared in the newspaper.",
+"grammar_explanation": "The particle に (ni) marks the location where information is recorded or placed."
+}
+]
+},
+{
+"word_kanji": "ノート",
+"reading_furigana": "",
+"meaning_english": "notebook",
+"examples": [
+{
+"japanese_sentence": "新しいノートが{欲|ほ}しいです。",
+"english_translation": "I want a new notebook.",
+"grammar_explanation": "The adjective 'hoshii' takes the particle が to mark the object of desire."
+},
+{
+"japanese_sentence": "ノートに{漢字|かんじ}を{書|か}いた。",
+"english_translation": "I wrote Kanji in the notebook.",
+"grammar_explanation": "The particle に indicates the destination of the writing."
+}
+]
+},
+{
+"word_kanji": "手帳",
+"reading_furigana": "てちょう",
+"meaning_english": "pocket notebook",
+"examples": [
+{
+"japanese_sentence": "{手帳|てちょう}に{予定|よてい}を{書|か}きこみます。",
+"english_translation": "I write my schedule in my pocket notebook.",
+"grammar_explanation": "The compound verb 'kakikomu' means to fill in or record information."
+},
+{
+"japanese_sentence": "{手帳|てちょう}を{忘|わす}れないでください。",
+"english_translation": "Please don't forget your pocket notebook.",
+"grammar_explanation": "～ないでください is the polite negative request form."
+}
+]
+},
+{
+"word_kanji": "名刺",
+"reading_furigana": "めいし",
+"meaning_english": "business card",
+"examples": [
+{
+"japanese_sentence": "{名刺|めいし}を{交換|こうかん}しましょう。",
+"english_translation": "Let's exchange business cards.",
+"grammar_explanation": "～ましょう (mashou) is the volitional form used for making suggestions."
+},
+{
+"japanese_sentence": "{名刺|めいし}を{持|も}ってくるのを{忘|わす}れた。",
+"english_translation": "I forgot to bring my business cards.",
+"grammar_explanation": "The particle の nominalizes the preceding verb phrase 'motte kuru'."
+}
+]
+},
+{
+"word_kanji": "カード",
+"reading_furigana": "",
+"meaning_english": "card",
+"examples": [
+{
+"japanese_sentence": "カードで{払|はら}えますか。",
+"english_translation": "Can I pay by card?",
+"grammar_explanation": "The particle で marks the means or method; 'haraeru' is the potential form of 'harau'."
+},
+{
+"japanese_sentence": "{誕生日|たんじょうび}カードを{送|おく}った。",
+"english_translation": "I sent a birthday card.",
+"grammar_explanation": "Plain past tense of the verb 'okuru'."
+}
+]
+},
+{
+"word_kanji": "テレホンカード",
+"reading_furigana": "",
+"meaning_english": "telephone card",
+"examples": [
+{
+"japanese_sentence": "テレホンカードはどこで{売|う}っていますか。",
+"english_translation": "Where are telephone cards sold?",
+"grammar_explanation": "～ています expresses a state, here referring to where they are habitually available."
+},
+{
+"japanese_sentence": "このテレホンカードはもう{使|つか}えません。",
+"english_translation": "This telephone card can no longer be used.",
+"grammar_explanation": "Negative potential form of the verb 'tsukau'."
+}
+]
+},
+{
+"word_kanji": "鉛筆",
+"reading_furigana": "えんぴつ",
+"meaning_english": "pencil",
+"examples": [
+{
+"japanese_sentence": "{鉛筆|えんぴつ}で{書|か}いてもいいですか。",
+"english_translation": "Is it okay if I write in pencil?",
+"grammar_explanation": "The particle で indicates the instrument used for the action."
+},
+{
+"japanese_sentence": "{鉛筆|えんぴつ}を{削|けず}らなければならない。",
+"english_translation": "I have to sharpen my pencil.",
+"grammar_explanation": "Casual obligation form using ～なければならない."
+}
+]
+},
+{
+"word_kanji": "ボールペン",
+"reading_furigana": "",
+"meaning_english": "ballpoint pen",
+"examples": [
+{
+"japanese_sentence": "{黒|くろ}いボールペンを{貸|か}してください。",
+"english_translation": "Please lend me a black ballpoint pen.",
+"grammar_explanation": "The adjective 'kuroi' modifies the noun directly."
+},
+{
+"japanese_sentence": "ボールペンのインクがなくなった。",
+"english_translation": "The ballpoint pen ran out of ink.",
+"grammar_explanation": "Past tense of 'nakunaru' (to become non-existent/run out)."
+}
+]
+},
+{
+"word_kanji": "シャープペンシル",
+"reading_furigana": "",
+"meaning_english": "mechanical pencil",
+"examples": [
+{
+"japanese_sentence": "シャープペンシルを{落|お}としました。",
+"english_translation": "I dropped my mechanical pencil.",
+"grammar_explanation": "Polite past tense of the transitive verb 'otosu'."
+},
+{
+"japanese_sentence": "シャープペンシルの{芯|しん}を{入|い}れる。",
+"english_translation": "I will put lead in the mechanical pencil.",
+"grammar_explanation": "Plain non-past form used for habitual or future actions."
+}
+]
+},
+{
+"word_kanji": "かぎ",
+"reading_furigana": "",
+"meaning_english": "key",
+"examples": [
+{
+"japanese_sentence": "{車|くるま}のかぎをなくしました。",
+"english_translation": "I lost my car keys.",
+"grammar_explanation": "The particle の connects two nouns to show possession or category."
+},
+{
+"japanese_sentence": "ドアにかぎをかける。",
+"english_translation": "I will lock the door.",
+"grammar_explanation": "The phrase 'kagi o kakeru' is the standard verb phrase for 'to lock'."
+}
+]
+},
+{
+"word_kanji": "時計",
+"reading_furigana": "とけい",
+"meaning_english": "watch/clock",
+"examples": [
+{
+"japanese_sentence": "この{時計|とけい}は{進|すす}んでいます。",
+"english_translation": "This clock is running fast.",
+"grammar_explanation": "～ています describes the current continuous state of the clock."
+},
+{
+"japanese_sentence": "{時計|とけい}を{見|み}たら、もう12{時|じ}だった。",
+"english_translation": "When I looked at my watch, it was already 12:00.",
+"grammar_explanation": "The tara-conditional form 'mitara' here indicates 'when' in the past."
+}
+]
+},
+{
+"word_kanji": "傘",
+"reading_furigana": "かさ",
+"meaning_english": "umbrella",
+"examples": [
+{
+"japanese_sentence": "{雨|あめ}が{降|ふ}っていますから、{傘|かさ}をさします。",
+"english_translation": "Because it is raining, I will open an umbrella.",
+"grammar_explanation": "The conjunction 'kara' provides the reason for the second clause."
+},
+{
+"japanese_sentence": "{傘|かさ}を{忘|わす}れないようにね。",
+"english_translation": "Don't forget your umbrella, okay?",
+"grammar_explanation": "～ないように is used as a soft command/reminder, ending with the particle 'ne'."
+}
+]
+},
+{
+"word_kanji": "かばん",
+"reading_furigana": "",
+"meaning_english": "bag/briefcase",
+"examples": [
+{
+"japanese_sentence": "かばんの{中|なか}に{何|なに}がありますか。",
+"english_translation": "What is inside the bag?",
+"grammar_explanation": "The structure 'A no naka ni B ga arimasu' indicates location and existence."
+},
+{
+"japanese_sentence": "このかばんはとても{重|おも}い。",
+"english_translation": "This bag is very heavy.",
+"grammar_explanation": "Casual statement using the dictionary form of an i-adjective."
+}
+]
+},
+{
+"word_kanji": "カセットテープ",
+"reading_furigana": "",
+"meaning_english": "(casette) tape",
+"examples": [
+{
+"japanese_sentence": "カセットテープを{聞|き}きました。",
+"english_translation": "I listened to a cassette tape.",
+"grammar_explanation": "Polite past tense of the verb 'kiku'."
+},
+{
+"japanese_sentence": "古いカセットテープがたくさんある。",
+"english_translation": "There are many old cassette tapes.",
+"grammar_explanation": "Plain existence verb 'aru' for inanimate objects."
+}
+]
+},
+{
+"word_kanji": "テープレコーダー",
+"reading_furigana": "",
+"meaning_english": "tape recorder",
+"examples": [
+{
+"japanese_sentence": "テープレコーダーが{壊|こわ}れました。",
+"english_translation": "The tape recorder broke.",
+"grammar_explanation": "Intransitive verb 'kowareru' in the past tense."
+},
+{
+"japanese_sentence": "テープレコーダーで{録音|ろくおん}する。",
+"english_translation": "I will record using the tape recorder.",
+"grammar_explanation": "The particle で indicates the instrument used for the action."
+}
+]
+},
+{
+"word_kanji": "テレビ",
+"reading_furigana": "",
+"meaning_english": "television",
+"examples": [
+{
+"japanese_sentence": "{毎晩|まいばん}テレビを{見|み}ます。",
+"english_translation": "I watch TV every night.",
+"grammar_explanation": "Habitual action expressed in the masu-form."
+},
+{
+"japanese_sentence": "テレビをつけよう。",
+"english_translation": "Let's turn on the TV.",
+"grammar_explanation": "Volitional form 'tsukeyou' for making a casual suggestion."
+}
+]
+},
+{
+"word_kanji": "ラジオ",
+"reading_furigana": "",
+"meaning_english": "radio",
+"examples": [
+{
+"japanese_sentence": "ラジオを{聞|き}きながら{朝|あさ}ごはんを{食|た}べます。",
+"english_translation": "I eat breakfast while listening to the radio.",
+"grammar_explanation": "～ながら (nagara) connects two simultaneous actions."
+},
+{
+"japanese_sentence": "ラジオの{音|おと}を{大|おお}きくした。",
+"english_translation": "I turned up the volume of the radio.",
+"grammar_explanation": "Adjective stem + 'ku suru' means to make something into a certain state."
+}
+]
+},
+{
+"word_kanji": "カメラ",
+"reading_furigana": "",
+"meaning_english": "camera",
+"examples": [
+{
+"japanese_sentence": "そのカメラで{写真|しゃしん}を{撮|と}ってください。",
+"english_translation": "Please take a photo with that camera.",
+"grammar_explanation": "Particle で for the tool; 'totte kudasai' for a request."
+},
+{
+"japanese_sentence": "新しいカメラを{買|か}いたいな。",
+"english_translation": "I'd really like to buy a new camera.",
+"grammar_explanation": "Tai-form + sentence particle 'na' for expressing a wish to oneself."
+}
+]
+},
+{
+"word_kanji": "コンピューター",
+"reading_furigana": "",
+"meaning_english": "computer",
+"examples": [
+{
+"japanese_sentence": "コンピューターで{仕事|しごと}をします。",
+"english_translation": "I work using a computer.",
+"grammar_explanation": "The particle で indicates the means of the action."
+},
+{
+"japanese_sentence": "コンピューターが{動|うご}かない。",
+"english_translation": "The computer won't work/move.",
+"grammar_explanation": "Negative plain form of 'ugoku'."
+}
+]
+},
+{
+"word_kanji": "自動車",
+"reading_furigana": "じどうしゃ",
+"meaning_english": "automobile/car",
+"examples": [
+{
+"japanese_sentence": "{自動車|じどうしゃ}を{運転|うんてん}できます。",
+"english_translation": "I can drive a car.",
+"grammar_explanation": "Potential form of 'unten suru' (to drive)."
+},
+{
+"japanese_sentence": "{自動車|じどうしゃ}の{修理|しゅうり}は{高|たか}い。",
+"english_translation": "Repairing automobiles is expensive.",
+"grammar_explanation": "The particle の connects two nouns; the i-adjective 'takai' ends the casual sentence."
+}
+]
+},
+{
+"word_kanji": "机",
+"reading_furigana": "つくえ",
+"meaning_english": "desk",
+"examples": [
+{
+"japanese_sentence": "{机|つくえ}の{上|うえ}にペンがあります。",
+"english_translation": "There is a pen on the desk.",
+"grammar_explanation": "The particle 'no' shows spatial relationship; 'arimasu' for inanimate existence."
+},
+{
+"japanese_sentence": "{机|つくえ}をきれいにして。",
+"english_translation": "Clean up your desk.",
+"grammar_explanation": "Casual command using the te-form of the phrase 'kirei ni suru'."
+}
+]
+},
+{
+"word_kanji": "椅子",
+"reading_furigana": "いす",
+"meaning_english": "chair",
+"examples": [
+{
+"japanese_sentence": "あそこに{椅子|いす}が{並|なら}んでいます。",
+"english_translation": "Chairs are lined up over there.",
+"grammar_explanation": "Intransitive verb in te-form + 'imasu' describes a resulting state."
+},
+{
+"japanese_sentence": "この{椅子|いす}に{座|す}わってもいいですか。",
+"english_translation": "May I sit on this chair?",
+"grammar_explanation": "Permission form ～てもいい followed by 'desu ka'."
+}
+]
+},
+{
+"word_kanji": "チョコレート",
+"reading_furigana": "",
+"meaning_english": "chocolate",
+"examples": [
+{
+"japanese_sentence": "チョコレートを{食|た}べすぎました。",
+"english_translation": "I ate too much chocolate.",
+"grammar_explanation": "Verb stem + 'sugiru' indicates doing an action to excess."
+},
+{
+"japanese_sentence": "甘いチョコレートが{好|す}き。",
+"english_translation": "I like sweet chocolate.",
+"grammar_explanation": "Casual preference statement with the object of liking marked by が."
+}
+]
+},
+{
+"word_kanji": "コーヒー",
+"reading_furigana": "",
+"meaning_english": "coffee",
+"examples": [
+{
+"japanese_sentence": "コーヒーを{飲|の}みませんか。",
+"english_translation": "Would you like to drink some coffee?",
+"grammar_explanation": "Negative question form ～ませんか used for making invitations."
+},
+{
+"japanese_sentence": "コーヒー、もう{一杯|いっぱい}どう？",
+"english_translation": "How about another cup of coffee?",
+"grammar_explanation": "Casual invitation/offer using 'dou'."
+}
+]
+},
+{
+"word_kanji": "英語",
+"reading_furigana": "えいご",
+"meaning_english": "the English language",
+"examples": [
+{
+"japanese_sentence": "{英語|えいご}を{教|おし}えています。",
+"english_translation": "I am teaching English.",
+"grammar_explanation": "Continuous action using ～ています."
+},
+{
+"japanese_sentence": "{英語|えいご}がとても{上手|じょうず}ですね。",
+"english_translation": "You are very good at English, aren't you?",
+"grammar_explanation": "The particle 'ga' is used with the na-adjective 'jouzu' to mark the skill."
+}
+]
+},
+{
+"word_kanji": "日本語",
+"reading_furigana": "にほんご",
+"meaning_english": "the Japanese language",
+"examples": [
+{
+"japanese_sentence": "{日本語|にほんご}で{話|はな}しましょう。",
+"english_translation": "Let's talk in Japanese.",
+"grammar_explanation": "Particle で marks the language/medium of communication."
+},
+{
+"japanese_sentence": "{日本語|にほんご}の{勉強|べんきょう}を{始|はじ}めた。",
+"english_translation": "I started studying Japanese.",
+"grammar_explanation": "Plain past tense of 'hajimeru'."
+}
+]
+},
+{
+"word_kanji": "〜語",
+"reading_furigana": "〜ご",
+"meaning_english": "~language",
+"examples": [
+{
+"japanese_sentence": "フランス{語|ご}がわかりますか。",
+"english_translation": "Do you understand French?",
+"grammar_explanation": "Suffix ～語 is added to a country name to denote the language."
+},
+{
+"japanese_sentence": "ベトナム{語|ご}は{難|むずか}しそうですね。",
+"english_translation": "Vietnamese seems difficult, doesn't it?",
+"grammar_explanation": "Adjective stem + 'sou' expresses the speaker's conjecture."
+}
+]
+},
+{
+"word_kanji": "何",
+"reading_furigana": "なん",
+"meaning_english": "what",
+"examples": [
+{
+"japanese_sentence": "{何|なに}を{買|か}いましたか。",
+"english_translation": "What did you buy?",
+"grammar_explanation": "The interrogative 'nani' marks the direct object of the question."
+},
+{
+"japanese_sentence": "{何|なん}の{本|ほん}を{読|よ}んでいるの？",
+"english_translation": "What (kind of) book are you reading?",
+"grammar_explanation": "'Nan no' is used to ask about the category or subject matter of the noun."
+}
+]
+},
+{
+"word_kanji": "そう",
+"reading_furigana": "",
+"meaning_english": "so",
+"examples": [
+{
+"japanese_sentence": "{私|わたし}もそう{思|おも}います。",
+"english_translation": "I think so too.",
+"grammar_explanation": "The particle も replaces は to mean 'also'."
+},
+{
+"japanese_sentence": "あっ、そうか。",
+"english_translation": "Ah, I see (so that's it).",
+"grammar_explanation": "Casual realization using 'sou' with the plain question particle 'ka'."
+}
+]
+},
+{
+"word_kanji": "違います",
+"reading_furigana": "ちがいます",
+"meaning_english": "No, it isn’t./You are wrong.",
+"examples": [
+{
+"japanese_sentence": "いいえ、{違|ちが}います。",
+"english_translation": "No, that's not right.",
+"grammar_explanation": "A standard formal negative response."
+},
+{
+"japanese_sentence": "{意味|いみ}が{違|ちが}うよ。",
+"english_translation": "The meaning is different!",
+"grammar_explanation": "Plain form 'chigau' with the assertive sentence-final particle 'yo'."
+}
+]
+},
+{
+"word_kanji": "そうですか",
+"reading_furigana": "",
+"meaning_english": "I see./Is that so?",
+"examples": [
+{
+"japanese_sentence": "そうですか。わかりました。",
+"english_translation": "I see. I understand.",
+"grammar_explanation": "Used as an acknowledgement of new information."
+},
+{
+"japanese_sentence": "そうですか？{知|し}らなかった。",
+"english_translation": "Is that so? I didn't know.",
+"grammar_explanation": "Used with rising intonation to express surprise or doubt."
+}
+]
+},
+{
+"word_kanji": "あのう",
+"reading_furigana": "",
+"meaning_english": "well",
+"examples": [
+{
+"japanese_sentence": "あのう、すみません。",
+"english_translation": "Um, excuse me.",
+"grammar_explanation": "An interjection used to get someone's attention politely."
+},
+{
+"japanese_sentence": "あのう、お{名前|なまえ}は？",
+"english_translation": "Well, what's your name?",
+"grammar_explanation": "Used as a hesitation filler before asking a question."
+}
+]
+},
+{
+"word_kanji": "ほんの気持ちです",
+"reading_furigana": "ほんのきもちです",
+"meaning_english": "It’s nothing./It’s a token of my gratitude.",
+"examples": [
+{
+"japanese_sentence": "これ、{本|ほん}の{気持|きも}ちです。どうぞ。",
+"english_translation": "This is just a small token of my gratitude. Here you go.",
+"grammar_explanation": "A set phrase used when giving a gift to remain humble."
+},
+{
+"japanese_sentence": "{本|ほん}の{気持|きも}ちですが、お{受|う}け{取|と}りください。",
+"english_translation": "It is just a small token, but please accept it.",
+"grammar_explanation": "Adding 'ga' (but) and a formal request 'ouketori kudasai' increases politeness."
+}
+]
+},
+{
+"word_kanji": "どうぞ",
+"reading_furigana": "",
+"meaning_english": "Please./Here you are.",
+"examples": [
+{
+"japanese_sentence": "どうぞ、お{入|はい}りください。",
+"english_translation": "Please, come in.",
+"grammar_explanation": "'Douzo' is used to invite someone to perform an action."
+},
+{
+"japanese_sentence": "コーヒーをどうぞ。",
+"english_translation": "Please have some coffee / Here is your coffee.",
+"grammar_explanation": "Used when offering or presenting an item."
+}
+]
+},
+{
+"word_kanji": "どうも",
+"reading_furigana": "",
+"meaning_english": "Well thanks.",
+"examples": [
+{
+"japanese_sentence": "どうも、すみません。",
+"english_translation": "I am very sorry.",
+"grammar_explanation": "'Doumo' acts as an intensifier for apologies or thanks."
+},
+{
+"japanese_sentence": "あ、どうも。",
+"english_translation": "Ah, thanks.",
+"grammar_explanation": "A casual, short way to say thank you."
+}
+]
+},
+{
+"word_kanji": "（どうも）ありがとうございます（ございます）",
+"reading_furigana": "",
+"meaning_english": "Thank you (very much)",
+"examples": [
+{
+"japanese_sentence": "{親切|しんせつ}に、どうもありがとうございました。",
+"english_translation": "Thank you very much for your kindness.",
+"grammar_explanation": "Past tense 'arigatou gozaimashita' is used for an action that has been completed."
+},
+{
+"japanese_sentence": "いつもありがとう！",
+"english_translation": "Thanks for everything!",
+"grammar_explanation": "Casual version 'arigatou' with 'itsumo' (always)."
+}
+]
+},
+{
+"word_kanji": "これからお世話になります",
+"reading_furigana": "これからおせわになります",
+"meaning_english": "I hope for your kind assistance hereafter.",
+"examples": [
+{
+"japanese_sentence": "{新入社員|しんにゅうしゃいん}の{田中|たなか}です。これからお{世話|せわ}になります。",
+"english_translation": "I am the new employee, Tanaka. I look forward to working with you.",
+"grammar_explanation": "A standard self-introduction phrase in professional settings."
+},
+{
+"japanese_sentence": "{隣|となり}に{引|ひ}き{越|こ}してきました。これからお{世話|せわ}になります。",
+"english_translation": "I moved in next door. I hope we get along well.",
+"grammar_explanation": "Commonly used when meeting new neighbors."
+}
+]
+},
+{
+"word_kanji": "こちらこそよろしく",
+"reading_furigana": "",
+"meaning_english": "I am pleased to meet you too.",
+"examples": [
+{
+"japanese_sentence": "「よろしくお願いします。」「こちらこそよろしくお願いします。」",
+"english_translation": "'I look forward to working with you.' 'Likewise, pleased to meet you too.'",
+"grammar_explanation": "The particle 'koso' emphasizes that the feeling is mutual (reciprocity)."
+},
+{
+"japanese_sentence": "「ありがとう。」「こちらこそ。」",
+"english_translation": "'Thank you.' 'No, thank you (it is I who should thank you).'",
+"grammar_explanation": "Shortened casual response to express mutual gratitude."
+}
+]
+}
+]
+}

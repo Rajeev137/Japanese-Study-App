@@ -1,0 +1,822 @@
+
+{
+"deck_title": "Vocabulary Deck 10",
+"vocabulary": [
+{
+"word_kanji": "います",
+"reading_furigana": "",
+"meaning_english": "exist, be (people/animals)",
+"examples": [
+{
+"japanese_sentence": "{教室|きょうしつ}に{学生|がくせい}がいます。",
+"english_translation": "There are students in the classroom.",
+"grammar_explanation": "The particle に indicates the location of existence, and が marks the subject (people/animals)."
+},
+{
+"japanese_sentence": "{庭|にわ}に{犬|いぬ}がいた。",
+"english_translation": "There was a dog in the garden.",
+"grammar_explanation": "Casual past tense form of 'imasu' used to describe a previous state of existence."
+}
+]
+},
+{
+"word_kanji": "あります",
+"reading_furigana": "",
+"meaning_english": "exist, be (things)",
+"examples": [
+{
+"japanese_sentence": "{机|つくえ}の{上|うえ}に{本|ほん}があります。",
+"english_translation": "There is a book on the desk.",
+"grammar_explanation": "The verb 'arimasu' is used specifically for inanimate objects or plants."
+},
+{
+"japanese_sentence": "{明日|あした}は{試験|しけん}があるから、{勉強|べんきょう}する。",
+"english_translation": "Because there is an exam tomorrow, I will study.",
+"grammar_explanation": "Casual dictionary form 'aru' followed by 'kara' to indicate a reason or cause."
+}
+]
+},
+{
+"word_kanji": "色々",
+"reading_furigana": "いろいろ",
+"meaning_english": "various",
+"examples": [
+{
+"japanese_sentence": "{色々|いろいろ}な{国|くに}の{料理|りょうり}を{食|た}べたいです。",
+"english_translation": "I want to eat food from various countries.",
+"grammar_explanation": "As a na-adjective, 'na' is used to connect 'iroiro' directly to a noun."
+},
+{
+"japanese_sentence": "{店|みせ}には{物|もの}が{色々|いろいろ}あった。",
+"english_translation": "There were various things in the store.",
+"grammar_explanation": "Used here as an adverbial phrase to describe the variety of items present."
+}
+]
+},
+{
+"word_kanji": "男の人",
+"reading_furigana": "おとこのひと",
+"meaning_english": "man",
+"examples": [
+{
+"japanese_sentence": "あの{男|おとこ}の{人|ひと}は{誰|だれ}ですか。",
+"english_translation": "Who is that man?",
+"grammar_explanation": "Polite question using the demonstrative 'ano' to specify a person."
+},
+{
+"japanese_sentence": "{背|せ}の{高|たか}い{男|おとこ}の{人|ひと}が{走|はし}っている。",
+"english_translation": "A tall man is running.",
+"grammar_explanation": "The relative clause 'se no takai' (tall) modifies the noun 'otoko no hito'."
+}
+]
+},
+{
+"word_kanji": "女の人",
+"reading_furigana": "おんなのひと",
+"meaning_english": "woman",
+"examples": [
+{
+"japanese_sentence": "{綺麗|きれい}な{女|おんな}の{人|ひと}に{会|あ}いました。",
+"english_translation": "I met a beautiful woman.",
+"grammar_explanation": "The particle 'ni' is used with the verb 'aimasu' to indicate the person met."
+},
+{
+"japanese_sentence": "{女|おんな}の{人|ひと}が3{人|にん}います。",
+"english_translation": "There are three women.",
+"grammar_explanation": "The counter 'nin' is used to count the number of people."
+}
+]
+},
+{
+"word_kanji": "男の子",
+"reading_furigana": "おとこのこ",
+"meaning_english": "boy",
+"examples": [
+{
+"japanese_sentence": "{男|おとこ}の{子|こ}たちが{公園|こうえん}で{遊|あそ}んでいます。",
+"english_translation": "Boys are playing in the park.",
+"grammar_explanation": "The suffix 'tachi' makes the noun plural, and 'te-imasu' shows ongoing action."
+},
+{
+"japanese_sentence": "あそこにいるのは{男|おとこ}の{子|こ}だよ。",
+"english_translation": "The one over there is a boy.",
+"grammar_explanation": "Casual sentence ending with 'da' (copula) and 'yo' (assertion/emphasis)."
+}
+]
+},
+{
+"word_kanji": "女の子",
+"reading_furigana": "おんなのこ",
+"meaning_english": "girl",
+"examples": [
+{
+"japanese_sentence": "この{可愛|かわい}い{女|おんな}の{子|こ}は{妹|いもうと}です。",
+"english_translation": "This cute girl is my younger sister.",
+"grammar_explanation": "The i-adjective 'kawaii' directly modifies the noun 'onna no ko'."
+},
+{
+"japanese_sentence": "{女|おんな}の{子|こ}が1{人|ひとり}だけいた。",
+"english_translation": "There was only one girl.",
+"grammar_explanation": "'Dake' is a particle meaning 'only' used to limit the quantity."
+}
+]
+},
+{
+"word_kanji": "犬",
+"reading_furigana": "いぬ",
+"meaning_english": "dog",
+"examples": [
+{
+"japanese_sentence": "{犬|いぬ}を{飼|か}いたいです。",
+"english_translation": "I want to have (keep) a dog.",
+"grammar_explanation": "The form 'tai' attached to the verb stem 'ka' (from kau) expresses desire."
+},
+{
+"japanese_sentence": "{白|しろ}い{犬|いぬ}が{散歩|さんぽ}しているね。",
+"english_translation": "A white dog is taking a walk, isn't it?",
+"grammar_explanation": "The particle 'ne' is used at the end to seek agreement from the listener."
+}
+]
+},
+{
+"word_kanji": "猫",
+"reading_furigana": "ねこ",
+"meaning_english": "cat",
+"examples": [
+{
+"japanese_sentence": "{家|いえ}に{猫|ねこ}が2{匹|ひき}います。",
+"english_translation": "There are two cats in the house.",
+"grammar_explanation": "The counter 'hiki' is used for counting small animals like cats."
+},
+{
+"japanese_sentence": "{猫|ねこ}はどこにいる？",
+"english_translation": "Where is the cat?",
+"grammar_explanation": "Casual question using 'doko' (where) with a rising intonation."
+}
+]
+},
+{
+"word_kanji": "木",
+"reading_furigana": "き",
+"meaning_english": "tree",
+"examples": [
+{
+"japanese_sentence": "{大|おお}きい{木|き}の{下|した}で{休|やす}みましょう。",
+"english_translation": "Let's rest under the big tree.",
+"grammar_explanation": "The 'mashou' form is used to make a polite suggestion or invitation."
+},
+{
+"japanese_sentence": "{木|き}が{倒|たお}れました。",
+"english_translation": "The tree fell down.",
+"grammar_explanation": "Simple past tense of the intransitive verb 'taoreru'."
+}
+]
+},
+{
+"word_kanji": "物",
+"reading_furigana": "もの",
+"meaning_english": "thing",
+"examples": [
+{
+"japanese_sentence": "{大切|たいせつ}な{物|もの}を{忘|わす}れないでください。",
+"english_translation": "Please don't forget important things.",
+"grammar_explanation": "The negative request form 'nai de kudasai' is used for polite instructions."
+},
+{
+"japanese_sentence": "これは{誰|だれ}の{物|もの}？",
+"english_translation": "Whose thing is this?",
+"grammar_explanation": "Casual possessive question using 'dare no' (whose) without the formal 'desu ka'."
+}
+]
+},
+{
+"word_kanji": "フィルム",
+"reading_furigana": "",
+"meaning_english": "film",
+"examples": [
+{
+"japanese_sentence": "カメラのフィルムを{買|か}わなければなりません。",
+"english_translation": "I must buy film for my camera.",
+"grammar_explanation": "The 'nakereba narimasen' structure expresses obligation or necessity."
+},
+{
+"japanese_sentence": "このフィルム、まだ{使|つか}えるかな？",
+"english_translation": "I wonder if I can still use this film?",
+"grammar_explanation": "Potential form 'tsukaeru' followed by 'kana' to express a personal doubt or question."
+}
+]
+},
+{
+"word_kanji": "電池",
+"reading_furigana": "でんち",
+"meaning_english": "battery",
+"examples": [
+{
+"japanese_sentence": "{電池|でんち}が{切|き}れました。",
+"english_translation": "The battery died (ran out).",
+"grammar_explanation": "The verb 'kireru' indicates that something has been used up or exhausted."
+},
+{
+"japanese_sentence": "{新|あたら}しい{電池|でんち}を{入|い}れて。",
+"english_translation": "Put in a new battery.",
+"grammar_explanation": "The te-form of the verb 'ireru' acts as a casual command or request."
+}
+]
+},
+{
+"word_kanji": "箱",
+"reading_furigana": "はこ",
+"meaning_english": "box",
+"examples": [
+{
+"japanese_sentence": "その{箱|はこ}を{開|あ}けてもいいですか。",
+"english_translation": "May I open that box?",
+"grammar_explanation": "The 'te-mo ii desu ka' structure is used to ask for permission."
+},
+{
+"japanese_sentence": "{箱|はこ}の{中|なか}に{何|なに}が入っているの？",
+"english_translation": "What is inside the box?",
+"grammar_explanation": "Explaining emphasis with 'no' at the end of a casual question."
+}
+]
+},
+{
+"word_kanji": "スイッチ",
+"reading_furigana": "",
+"meaning_english": "switch",
+"examples": [
+{
+"japanese_sentence": "スイッチを{押|お}してください。",
+"english_translation": "Please press the switch.",
+"grammar_explanation": "The te-form followed by 'kudasai' makes a polite request."
+},
+{
+"japanese_sentence": "スイッチはどこにある？",
+"english_translation": "Where is the switch?",
+"grammar_explanation": "Casual question about the location of an object."
+}
+]
+},
+{
+"word_kanji": "冷蔵庫",
+"reading_furigana": "れいぞうこ",
+"meaning_english": "regrigerator",
+"examples": [
+{
+"japanese_sentence": "{冷蔵庫|れいぞうこ}にミルクがあります。",
+"english_translation": "There is milk in the refrigerator.",
+"grammar_explanation": "Standard polite sentence for describing the location of an item."
+},
+{
+"japanese_sentence": "{冷蔵庫|れいぞうこ}を{閉|し}めてね。",
+"english_translation": "Close the refrigerator, okay?",
+"grammar_explanation": "Te-form used as a casual request, softened by the particle 'ne'."
+}
+]
+},
+{
+"word_kanji": "テーブル",
+"reading_furigana": "",
+"meaning_english": "table",
+"examples": [
+{
+"japanese_sentence": "テーブルの{上|うえ}を{片付|かたづ}けましょう。",
+"english_translation": "Let's clean up (the top of) the table.",
+"grammar_explanation": "Volitional 'mashou' form used to suggest a collective action."
+},
+{
+"japanese_sentence": "テーブルが{汚|よご}れているよ。",
+"english_translation": "The table is dirty!",
+"grammar_explanation": "State of being with 'te-iru' and informative particle 'yo'."
+}
+]
+},
+{
+"word_kanji": "ベッド",
+"reading_furigana": "",
+"meaning_english": "bed",
+"examples": [
+{
+"japanese_sentence": "ベッドで{本|ほん}を{読|よ}みます。",
+"english_translation": "I read books in bed.",
+"grammar_explanation": "The particle 'de' marks the location where an action (reading) occurs."
+},
+{
+"japanese_sentence": "このベッド、{柔|やわ}らかいね。",
+"english_translation": "This bed is soft, isn't it?",
+"grammar_explanation": "Using a simple i-adjective and 'ne' for shared observation."
+}
+]
+},
+{
+"word_kanji": "棚",
+"reading_furigana": "たな",
+"meaning_english": "shelf",
+"examples": [
+{
+"japanese_sentence": "{本棚|ほんだな}に{辞書|じしょ}を{戻|もど}してください。",
+"english_translation": "Please put the dictionary back on the bookshelf.",
+"grammar_explanation": "Polite request using the te-form of 'modosu'."
+},
+{
+"japanese_sentence": "{棚|たな}からカバンを{取|と}った。",
+"english_translation": "I took the bag from the shelf.",
+"grammar_explanation": "The particle 'kara' indicates the starting point or origin of an action."
+}
+]
+},
+{
+"word_kanji": "ドア",
+"reading_furigana": "",
+"meaning_english": "door",
+"examples": [
+{
+"japanese_sentence": "ドアを{閉|し}めてもいいですか。",
+"english_translation": "May I close the door?",
+"grammar_explanation": "Permission grammar 'te-mo ii desu ka' used with the verb 'shimeru'."
+},
+{
+"japanese_sentence": "ドアが{開|あ}かないんだけど。",
+"english_translation": "The door won't open, though.",
+"grammar_explanation": "Negative intransitive 'akanai' with 'n dakedo' to explain a situation or seek help."
+}
+]
+},
+{
+"word_kanji": "窓",
+"reading_furigana": "まど",
+"meaning_english": "window",
+"examples": [
+{
+"japanese_sentence": "{窓|まど}から{海|うみ}が{見|み}えます。",
+"english_translation": "The sea can be seen from the window.",
+"grammar_explanation": "The potential verb 'miemasu' indicates that something is visible naturally."
+},
+{
+"japanese_sentence": "{寒|さむ}いから、{窓|まど}を{開|あ}けないで。",
+"english_translation": "It's cold, so don't open the window.",
+"grammar_explanation": "Casual negative request using 'nai de' (short for 'nai de kudasai')."
+}
+]
+},
+{
+"word_kanji": "ポスト",
+"reading_furigana": "",
+"meaning_english": "mailbox, postbox",
+"examples": [
+{
+"japanese_sentence": "ポストに{手紙|てがみ}を{入|い}れました。",
+"english_translation": "I put the letter in the mailbox.",
+"grammar_explanation": "Transitive verb 'ireru' used with particle 'ni' for the destination."
+},
+{
+"japanese_sentence": "ポストはどこにあるかわかる？",
+"english_translation": "Do you know where the postbox is?",
+"grammar_explanation": "Embedded question with 'ka' followed by 'wakaru' in casual style."
+}
+]
+},
+{
+"word_kanji": "ビル",
+"reading_furigana": "",
+"meaning_english": "building",
+"examples": [
+{
+"japanese_sentence": "あの{高|たか}いビルは{病院|びょういん}です。",
+"english_translation": "That tall building is a hospital.",
+"grammar_explanation": "Noun modification using the i-adjective 'takai'."
+},
+{
+"japanese_sentence": "ビルが{沢山|たくさん}{並|なら}んでいる。",
+"english_translation": "Buildings are lined up in great numbers.",
+"grammar_explanation": "Te-iru form shows the current state of the buildings."
+}
+]
+},
+{
+"word_kanji": "公園",
+"reading_furigana": "こうえん",
+"meaning_english": "park",
+"examples": [
+{
+"japanese_sentence": "{公園|こうえん}を{散歩|さんぽ}しませんか。",
+"english_translation": "Won't you take a walk in the park?",
+"grammar_explanation": "The 'masen ka' form is used for a polite invitation."
+},
+{
+"japanese_sentence": "{公園|こうえん}でサッカーをしよう！",
+"english_translation": "Let's play soccer at the park!",
+"grammar_explanation": "Casual volitional 'shiyou' used to propose an activity."
+}
+]
+},
+{
+"word_kanji": "喫茶店",
+"reading_furigana": "きっさてん",
+"meaning_english": "coffee shop",
+"examples": [
+{
+"japanese_sentence": "{静|しず}かな{喫茶店|きっさてん}に{行|い}きたいです。",
+"english_translation": "I want to go to a quiet coffee shop.",
+"grammar_explanation": "Desiderative 'tai' form combined with a na-adjective modifying a noun."
+},
+{
+"japanese_sentence": "あそこの{喫茶店|きっさてん}、コーヒーがおいしいよ。",
+"english_translation": "That coffee shop over there has delicious coffee.",
+"grammar_explanation": "Casual sentence with the 'ga' particle marking the subject of the adjective."
+}
+]
+},
+{
+"word_kanji": "本屋",
+"reading_furigana": "ほんや",
+"meaning_english": "bookstore",
+"examples": [
+{
+"japanese_sentence": "{本屋|ほんや}で{雑誌|ざっし}を{買|か}いました。",
+"english_translation": "I bought a magazine at the bookstore.",
+"grammar_explanation": "The particle 'de' marks the location of the transaction."
+},
+{
+"japanese_sentence": "{一番|いちばん}{近|ちか}い{本屋|ほんや}はどこ？",
+"english_translation": "Where is the nearest bookstore?",
+"grammar_explanation": "Superlative 'ichiban' used with 'chikai' to mean 'closest/nearest'."
+}
+]
+},
+{
+"word_kanji": "屋",
+"reading_furigana": "や",
+"meaning_english": "~store",
+"examples": [
+{
+"japanese_sentence": "{花屋|はなや}でプレゼンを{買|か}いました。",
+"english_translation": "I bought a present at the flower shop.",
+"grammar_explanation": "The suffix '~ya' is added to nouns to indicate a retail shop of that type."
+},
+{
+"japanese_sentence": "{肉屋|にくや}はあそこだね。",
+"english_translation": "The butcher shop is over there, right?",
+"grammar_explanation": "Casual identifier using 'da' and tag question particle 'ne'."
+}
+]
+},
+{
+"word_kanji": "乗り場",
+"reading_furigana": "のりば",
+"meaning_english": "taxi or bus stop",
+"examples": [
+{
+"japanese_sentence": "タクシーの{乗|の}り{場|ば}はあちらです。",
+"english_translation": "The taxi stand is over there (polite direction).",
+"grammar_explanation": "Polite direction indicator 'achira' with the copula 'desu'."
+},
+{
+"japanese_sentence": "バスの{乗|の}り{場|ば}、どこか{知|し}ってる？",
+"english_translation": "Do you know where the bus stop is?",
+"grammar_explanation": "Casual 'shitteru' (contracted from shitte-iru) for asking about knowledge."
+}
+]
+},
+{
+"word_kanji": "県",
+"reading_furigana": "けん",
+"meaning_english": "prefecture",
+"examples": [
+{
+"japanese_sentence": "{青森県|あおもりけん}は{寒|さむ}いですか。",
+"english_translation": "Is Aomori Prefecture cold?",
+"grammar_explanation": "The suffix 'ken' is used for administrative regions in Japan."
+},
+{
+"japanese_sentence": "どの{県|けん}に{住|す}みたい？",
+"english_translation": "Which prefecture do you want to live in?",
+"grammar_explanation": "Desiderative 'sumitai' used in a casual question with 'dono'."
+}
+]
+},
+{
+"word_kanji": "上",
+"reading_furigana": "うえ",
+"meaning_english": "on, above, over",
+"examples": [
+{
+"japanese_sentence": "{棚|たな}の{上|うえ}にカメラがあります。",
+"english_translation": "There is a camera on the shelf.",
+"grammar_explanation": "Location phrase 'Noun + no + ue' to specify position."
+},
+{
+"japanese_sentence": "{上|うえ}を{見|み}て！",
+"english_translation": "Look up!",
+"grammar_explanation": "Te-form used as a casual imperative command."
+}
+]
+},
+{
+"word_kanji": "下",
+"reading_furigana": "した",
+"meaning_english": "under, below, beneath",
+"examples": [
+{
+"japanese_sentence": "{椅子|いす}の{下|した}に{猫|ねこ}がいます。",
+"english_translation": "There is a cat under the chair.",
+"grammar_explanation": "Relative position using 'no shita' for location of existence."
+},
+{
+"japanese_sentence": "{階段|かいだん}の{下|した}で{待|ま}ってて。",
+"english_translation": "Wait at the bottom of the stairs.",
+"grammar_explanation": "Contracted te-form 'mattete' (from matte-ite) for a casual request."
+}
+]
+},
+{
+"word_kanji": "前",
+"reading_furigana": "まえ",
+"meaning_english": "front, before",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}の{前|まえ}で{友達|ともだち}に{会|あ}います。",
+"english_translation": "I will meet a friend in front of the station.",
+"grammar_explanation": "Spatial 'mae' combined with particle 'de' for the action location."
+},
+{
+"japanese_sentence": "{走|はし}る{前|まえ}に{水|みず}を{飲|の}む。",
+"english_translation": "I drink water before running.",
+"grammar_explanation": "Temporal 'mae' follows a verb in dictionary form to mean 'before doing X'."
+}
+]
+},
+{
+"word_kanji": "後ろ",
+"reading_furigana": "うしろ",
+"meaning_english": "back, behind",
+"examples": [
+{
+"japanese_sentence": "{田中|たなか}さんの{後|うし}ろに{座|すわ}りました。",
+"english_translation": "I sat behind Mr. Tanaka.",
+"grammar_explanation": "Directional/location particle 'ni' marks where the action of sitting concluded."
+},
+{
+"japanese_sentence": "{後|うし}ろを{向|む}かないで。",
+"english_translation": "Don't look back.",
+"grammar_explanation": "Negative request 'nai de' used with 'muku' (to turn/face)."
+}
+]
+},
+{
+"word_kanji": "右",
+"reading_furigana": "みぎ",
+"meaning_english": "right(side)",
+"examples": [
+{
+"japanese_sentence": "{右|みぎ}へ{曲|ま}がってください。",
+"english_translation": "Please turn right.",
+"grammar_explanation": "Directional particle 'e' indicates the way to turn."
+},
+{
+"japanese_sentence": "{銀行|ぎんこう}はスーパーの{右|みぎ}にあるよ。",
+"english_translation": "The bank is to the right of the supermarket.",
+"grammar_explanation": "Casual state of existence using 'aru' and informative 'yo'."
+}
+]
+},
+{
+"word_kanji": "左",
+"reading_furigana": "ひだり",
+"meaning_english": "left(side)",
+"examples": [
+{
+"japanese_sentence": "そのカバンは{私|わたし}の{左|ひだり}にあります。",
+"english_translation": "That bag is on my left.",
+"grammar_explanation": "Describing position relative to oneself using 'no hidari'."
+},
+{
+"japanese_sentence": "{左|ひだり}を{見|み}てから{道|みち}を{渡|わた}ろう。",
+"english_translation": "Let's cross the street after looking left.",
+"grammar_explanation": "Te-kara form indicates doing one action after another."
+}
+]
+},
+{
+"word_kanji": "中",
+"reading_furigana": "なか",
+"meaning_english": "in, inside",
+"examples": [
+{
+"japanese_sentence": "{教室|きょうしつ}の{中|なか}で{食|た}べないでください。",
+"english_translation": "Please do not eat inside the classroom.",
+"grammar_explanation": "Location 'no naka de' specifies the interior space for an action."
+},
+{
+"japanese_sentence": "{鞄|かばん}の{中|なか}を{見|み}せて。",
+"english_translation": "Show me the inside of the bag.",
+"grammar_explanation": "Causative/request 'misete' for 'let me see/show me'."
+}
+]
+},
+{
+"word_kanji": "外",
+"reading_furigana": "そと",
+"meaning_english": "outside",
+"examples": [
+{
+"japanese_sentence": "{外|そと}はとても{暑|あつ}いです。",
+"english_translation": "It is very hot outside.",
+"grammar_explanation": "Using 'soto' as the topic of the sentence."
+},
+{
+"japanese_sentence": "{外|そと}で{遊|あそ}ぼう！",
+"english_translation": "Let's play outside!",
+"grammar_explanation": "Casual volitional form 'asobou' to suggest an activity."
+}
+]
+},
+{
+"word_kanji": "隣",
+"reading_furigana": "となり",
+"meaning_english": "next, next door",
+"examples": [
+{
+"japanese_sentence": "{隣|となり}の{部屋|へや}に{誰|だれ}かいますか。",
+"english_translation": "Is there someone in the next room?",
+"grammar_explanation": "Interrogative 'dareka' asks if 'anyone/someone' exists."
+},
+{
+"japanese_sentence": "{田中|たなか}さんの{隣|となり}に{座|すわ}った。",
+"english_translation": "I sat next to Mr. Tanaka.",
+"grammar_explanation": "Casual past tense describing a physical proximity."
+}
+]
+},
+{
+"word_kanji": "近く",
+"reading_furigana": "ちかく",
+"meaning_english": "near, vicinity",
+"examples": [
+{
+"japanese_sentence": "{家|いえ}の{近|ちか}くに{郵便局|ゆうびんきょく}があります。",
+"english_translation": "There is a post office near my house.",
+"grammar_explanation": "'Chikaku' functions as a noun of location here."
+},
+{
+"japanese_sentence": "もっと{近|ちか}くへ{来|き}て。",
+"english_translation": "Come closer.",
+"grammar_explanation": "Adverbial 'chikaku' with directional 'e' and casual te-form command."
+}
+]
+},
+{
+"word_kanji": "間",
+"reading_furigana": "あいだ",
+"meaning_english": "between, among",
+"examples": [
+{
+"japanese_sentence": "{銀行|ぎんこう}と{郵便局|ゆうびんきょく}の{間|あいだ}にあります。",
+"english_translation": "It is between the bank and the post office.",
+"grammar_explanation": "Structure 'A to B no aida ni' to define a space between two points."
+},
+{
+"japanese_sentence": "AとBの{間|あいだ}に{何|なに}があるの？",
+"english_translation": "What is between A and B?",
+"grammar_explanation": "Casual question about existence within a range."
+}
+]
+},
+{
+"word_kanji": "～や～など",
+"reading_furigana": "",
+"meaning_english": "~,~ and so on",
+"examples": [
+{
+"japanese_sentence": "{鞄|かばん}に{本|ほん}やペンなどがあります。",
+"english_translation": "There are books, pens, and so on in the bag.",
+"grammar_explanation": "The particle 'ya' suggests an incomplete list, while 'nado' means 'etc'."
+},
+{
+"japanese_sentence": "{果物|くだもの}や{野菜|やさい}などを{買|か}った。",
+"english_translation": "I bought fruits, vegetables, and such.",
+"grammar_explanation": "Casual past tense used with the non-exhaustive listing particle 'ya'."
+}
+]
+},
+{
+"word_kanji": "一番",
+"reading_furigana": "いちばん",
+"meaning_english": "the most~",
+"examples": [
+{
+"japanese_sentence": "この{料理|りょうり}が{一番|いちばん}おいしいです。",
+"english_translation": "This dish is the most delicious.",
+"grammar_explanation": "'Ichiban' is used as an adverb to create the superlative form."
+},
+{
+"japanese_sentence": "{日本|にほん}で{一番|いちばん}{高|たか}い{山|やま}は{富士山|ふじさん}だよ。",
+"english_translation": "The highest mountain in Japan is Mt. Fuji.",
+"grammar_explanation": "Casual declaration using 'da' and emphasis particle 'yo'."
+}
+]
+},
+{
+"word_kanji": "～段目",
+"reading_furigana": "～だんめ",
+"meaning_english": "the nth shelf",
+"examples": [
+{
+"japanese_sentence": "{上|うえ}から2{段目|だんめ}にあります。",
+"english_translation": "It is on the second shelf from the top.",
+"grammar_explanation": "The counter 'dan' for shelves combined with 'me' indicates order/sequence."
+},
+{
+"japanese_sentence": "3{段目|だんめ}を{見|み}て。",
+"english_translation": "Look at the third shelf.",
+"grammar_explanation": "Casual request specifying a particular level of a shelf/rack."
+}
+]
+},
+{
+"word_kanji": "どうもすみません",
+"reading_furigana": "",
+"meaning_english": "Thank you.",
+"examples": [
+{
+"japanese_sentence": "あ、どうもすみません。",
+"english_translation": "Oh, thank you very much.",
+"grammar_explanation": "Used here as a polite expression of gratitude (often when someone does a small favor)."
+},
+{
+"japanese_sentence": "どうもすみません、{助|たす}かりました。",
+"english_translation": "Thank you, that was a big help.",
+"grammar_explanation": "'Tasukarimashita' is often used alongside gratitude to show relief/thanks."
+}
+]
+},
+{
+"word_kanji": "奥",
+"reading_furigana": "おく",
+"meaning_english": "the back",
+"examples": [
+{
+"japanese_sentence": "{冷蔵庫|れいぞうこ}の{奥|おく}にあります。",
+"english_translation": "It is in the back of the refrigerator.",
+"grammar_explanation": "Refers to the deepest part or far end of a space."
+},
+{
+"japanese_sentence": "{部屋|へや}の{奥|おく}へ{行|い}こう。",
+"english_translation": "Let's go to the back of the room.",
+"grammar_explanation": "Directional 'e' with casual volitional 'ikou'."
+}
+]
+},
+{
+"word_kanji": "スパイスコーナー",
+"reading_furigana": "",
+"meaning_english": "spice corner",
+"examples": [
+{
+"japanese_sentence": "スパイスコーナーはどこですか。",
+"english_translation": "Where is the spice corner?",
+"grammar_explanation": "Polite inquiry about a specific location in a store."
+},
+{
+"japanese_sentence": "スパイスコーナーでコショウを{買|か}おう。",
+"english_translation": "Let's buy pepper at the spice corner.",
+"grammar_explanation": "Location 'de' for action and volitional 'kaou' (from kau)."
+}
+]
+},
+{
+"word_kanji": "チリソース",
+"reading_furigana": "",
+"meaning_english": "chili sauce",
+"examples": [
+{
+"japanese_sentence": "チリソースをかけてもいいですか。",
+"english_translation": "May I put chili sauce on it?",
+"grammar_explanation": "'Kakeru' means to pour/sprinkle; 'te-mo ii desu ka' asks for permission."
+},
+{
+"japanese_sentence": "このチリソース、かなり{辛|から}い！",
+"english_translation": "This chili sauce is quite spicy!",
+"grammar_explanation": "Casual exclamation using an i-adjective."
+}
+]
+},
+{
+"word_kanji": "東京ディズニーランド",
+"reading_furigana": "とうきょうでぃずにーらんど",
+"meaning_english": "Tokyo Disneyland",
+"examples": [
+{
+"japanese_sentence": "{来週|らいしゅう}{東京|とうきょう}ディズニーランドへ{行|い}きます。",
+"english_translation": "I will go to Tokyo Disneyland next week.",
+"grammar_explanation": "Future plan expressed with the polite present-progressive verb 'ikimasu'."
+},
+{
+"japanese_sentence": "{東京|とうきょう}ディズニーランドに{行|い}ったことある？",
+"english_translation": "Have you ever been to Tokyo Disneyland?",
+"grammar_explanation": "Casual 'ta koto aru' structure for asking about past experiences."
+}
+]
+}
+]
+}

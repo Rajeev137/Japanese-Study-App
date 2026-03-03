@@ -1,0 +1,1046 @@
+
+{
+"deck_title": "Vocabulary Deck 11",
+"vocabulary": [
+{
+"word_kanji": "子供がいます",
+"reading_furigana": "こどもがいます",
+"meaning_english": "have (a child)",
+"examples": [
+{
+"japanese_sentence": "{私|わたし}には{子供|こども}が{二人|ふたり}います。",
+"english_translation": "I have two children.",
+"grammar_explanation": "The particle が (ga) is used with the verb います (imasu) to indicate possession or existence of animate beings."
+},
+{
+"japanese_sentence": "{子供|こども}がいるなら、この{公園|こうえん}はいいですよ。",
+"english_translation": "If you have a child, this park is good.",
+"grammar_explanation": "The conditional form ～なら (~nara) is used here to provide a suggestion based on a context."
+}
+]
+},
+{
+"word_kanji": "日本にいます",
+"reading_furigana": "にほんにいます",
+"meaning_english": "stay, be (in Japan)",
+"examples": [
+{
+"japanese_sentence": "{来月|らいげつ}まで{日本|にほん}にいます。",
+"english_translation": "I will stay in Japan until next month.",
+"grammar_explanation": "The particle に (ni) marks the location where the subject exists or stays."
+},
+{
+"japanese_sentence": "どのくらい{日本|にほん}にいるの？",
+"english_translation": "How long are you staying in Japan?",
+"grammar_explanation": "The sentence ends in the dictionary form 'iru' followed by the particle 'no' to create a casual question."
+}
+]
+},
+{
+"word_kanji": "かかります",
+"reading_furigana": "",
+"meaning_english": "take (time;money)",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}まで{歩|ある}いて15{分|ふん}かかります。",
+"english_translation": "It takes 15 minutes to walk to the station.",
+"grammar_explanation": "The verb かかります (kakarimasu) is used without a particle for the duration or amount of money."
+},
+{
+"japanese_sentence": "これにはすごくお{金|かね}がかかった。",
+"english_translation": "This took a lot of money.",
+"grammar_explanation": "The past tense casual form 'kakatta' is used here to indicate a completed cost."
+}
+]
+},
+{
+"word_kanji": "会社を休みます",
+"reading_furigana": "かいしゃをやすみます",
+"meaning_english": "take a day off (work)",
+"examples": [
+{
+"japanese_sentence": "{風邪|かぜ}をひいたので、{会社|かいしゃ}を{休|やす}みます。",
+"english_translation": "Since I caught a cold, I will take a day off work.",
+"grammar_explanation": "～ので (~node) provides a reason, and the particle を (o) marks the place being taken off from."
+},
+{
+"japanese_sentence": "{明日|あした}、{会社|かいしゃ}を{休|やす}める？",
+"english_translation": "Can you take tomorrow off work?",
+"grammar_explanation": "The potential form 休める (yasumeru) is used in a casual question format."
+}
+]
+},
+{
+"word_kanji": "一つ",
+"reading_furigana": "ひとつ",
+"meaning_english": "one",
+"examples": [
+{
+"japanese_sentence": "リンゴを{一|ひと}つください。",
+"english_translation": "One apple, please.",
+"grammar_explanation": "一つ (hitotsu) is a general counter used for small objects."
+},
+{
+"japanese_sentence": "{答|こた}えは{一|ひと}つだけじゃない。",
+"english_translation": "The answer is not just one.",
+"grammar_explanation": "～じゃない (~janai) is the casual negative form of the copula 'desu'."
+}
+]
+},
+{
+"word_kanji": "二つ",
+"reading_furigana": "ふたつ",
+"meaning_english": "two",
+"examples": [
+{
+"japanese_sentence": "ミカンを{二|ふた}つ{食|た}べました。",
+"english_translation": "I ate two mandarin oranges.",
+"grammar_explanation": "The counter 二つ (futatsu) usually follows the object and the particle を (o)."
+},
+{
+"japanese_sentence": "{二|ふた}つとも{買|か}おう。",
+"english_translation": "Let's buy both (two).",
+"grammar_explanation": "～とも (~tomo) following a number indicates 'all of' or 'both of' that amount."
+}
+]
+},
+{
+"word_kanji": "三つ",
+"reading_furigana": "みっつ",
+"meaning_english": "three",
+"examples": [
+{
+"japanese_sentence": "そこに{卵|たまご}が{三|みっ}つあります。",
+"english_translation": "There are three eggs there.",
+"grammar_explanation": "General counters like 三つ (mittsu) are placed before the verb 'arimasu'."
+},
+{
+"japanese_sentence": "{三|みっ}つに{分|わ}けてね。",
+"english_translation": "Divide it into three, okay?",
+"grammar_explanation": "～てね (~te ne) is a casual request used with the te-form of the verb."
+}
+]
+},
+{
+"word_kanji": "四つ",
+"reading_furigana": "よっつ",
+"meaning_english": "four",
+"examples": [
+{
+"japanese_sentence": "{椅子|いす}を{四|よっ}つ{並|なら}べてください。",
+"english_translation": "Please line up four chairs.",
+"grammar_explanation": "～てください (~te kudasai) is a polite request used with the te-form of the verb."
+},
+{
+"japanese_sentence": "{四|よっ}つで1000{円|えん}だ。",
+"english_translation": "It is 1000 yen for four.",
+"grammar_explanation": "The particle で (de) is used to indicate a total or grouping for a price."
+}
+]
+},
+{
+"word_kanji": "五つ",
+"reading_furigana": "いつつ",
+"meaning_english": "five",
+"examples": [
+{
+"japanese_sentence": "ハンバーガーを{五|いつ}つ{持|も}ってきました。",
+"english_translation": "I brought five hamburgers.",
+"grammar_explanation": "The compound verb 持ってきました (motte kimashita) means 'brought' (te-form of carry + come)."
+},
+{
+"japanese_sentence": "{五|いつ}つ{星|ほし}のホテルに{泊|と}まった。",
+"english_translation": "I stayed at a five-star hotel.",
+"grammar_explanation": "The past tense verb 'tomatta' is used for staying at a place like a hotel."
+}
+]
+},
+{
+"word_kanji": "六つ",
+"reading_furigana": "むっつ",
+"meaning_english": "six",
+"examples": [
+{
+"japanese_sentence": "ドーナツを{六|むっ}つ{買|か}いました。",
+"english_translation": "I bought six donuts.",
+"grammar_explanation": "Polite past tense form of 買います (kaimasu)."
+},
+{
+"japanese_sentence": "グラスを{六|むっ}つ{出|だ}してくれる？",
+"english_translation": "Can you take out six glasses?",
+"grammar_explanation": "～てくれる (~te kureru) is used for a casual request, asking for a favor."
+}
+]
+},
+{
+"word_kanji": "七つ",
+"reading_furigana": "ななつ",
+"meaning_english": "seven",
+"examples": [
+{
+"japanese_sentence": "{箱|はこ}が{七|なな}つあります。",
+"english_translation": "There are seven boxes.",
+"grammar_explanation": "Standard polite existence sentence for inanimate objects."
+},
+{
+"japanese_sentence": "{七|なな}つもいらないよ。",
+"english_translation": "I don't need as many as seven.",
+"grammar_explanation": "The particle も (mo) following a number emphasizes a large amount."
+}
+]
+},
+{
+"word_kanji": "八つ",
+"reading_furigana": "やっつ",
+"meaning_english": "eight",
+"examples": [
+{
+"japanese_sentence": "ケーキを{八|やっ}つに{切|き}りました。",
+"english_translation": "I cut the cake into eight (pieces).",
+"grammar_explanation": "The particle に (ni) indicates the result of the action (cutting into parts)."
+},
+{
+"japanese_sentence": "ここにリンゴが{八|やっ}つある。",
+"english_translation": "There are eight apples here.",
+"grammar_explanation": "Casual existence sentence using the dictionary form 'aru'."
+}
+]
+},
+{
+"word_kanji": "九つ",
+"reading_furigana": "ここのつ",
+"meaning_english": "nine",
+"examples": [
+{
+"japanese_sentence": "あそこに{九|ここの}つ{荷物|にもつ}があります。",
+"english_translation": "There are nine pieces of luggage over there.",
+"grammar_explanation": "Noun and counter order used in a polite existence sentence."
+},
+{
+"japanese_sentence": "{九|ここの}つあるから、{足|た}りるかな？",
+"english_translation": "Since there are nine, I wonder if it's enough?",
+"grammar_explanation": "～かな (~kana) expresses a self-addressed question or uncertainty."
+}
+]
+},
+{
+"word_kanji": "十",
+"reading_furigana": "とお",
+"meaning_english": "ten",
+"examples": [
+{
+"japanese_sentence": "お{皿|さら}を{十|とお}{枚|まい}お{願|ねが}いします。",
+"english_translation": "Ten plates, please.",
+"grammar_explanation": "十 (too) is the native Japanese reading for 'ten' in the hitotsu-futatsu series."
+},
+{
+"japanese_sentence": "もう{十|とお}も{食|た}べたの？",
+"english_translation": "Did you eat ten already?",
+"grammar_explanation": "The sentence-final 'no' converts the statement into a casual question."
+}
+]
+},
+{
+"word_kanji": "幾つ",
+"reading_furigana": "いくつ",
+"meaning_english": "how many",
+"examples": [
+{
+"japanese_sentence": "リンゴを{幾|いく}つ{買|か}いましたか。",
+"english_translation": "How many apples did you buy?",
+"grammar_explanation": "幾つ (ikutsu) is the interrogative for general counters."
+},
+{
+"japanese_sentence": "お{子|こ}さんは{幾|いく}つですか。",
+"english_translation": "How old is your child?",
+"grammar_explanation": "幾つ (ikutsu) can also be used as a polite way to ask for someone's age."
+}
+]
+},
+{
+"word_kanji": "一人",
+"reading_furigana": "ひとり",
+"meaning_english": "one person",
+"examples": [
+{
+"japanese_sentence": "{一人|ひとり}で{映画|えいが}を{見|み}に{行|い}きます。",
+"english_translation": "I am going to see a movie by myself.",
+"grammar_explanation": "The particle で (de) is used with numbers to indicate the condition or quantity of the action's subject."
+},
+{
+"japanese_sentence": "{教室|きょうしつ}に{学生|がくせい}が{一人|ひとり}いる。",
+"english_translation": "There is one student in the classroom.",
+"grammar_explanation": "Casual existence sentence for a person."
+}
+]
+},
+{
+"word_kanji": "二人",
+"reading_furigana": "ふたり",
+"meaning_english": "two people",
+"examples": [
+{
+"japanese_sentence": "{私|わたし}たちは{二人|ふたり}で{住|す}んでいます。",
+"english_translation": "The two of us are living together.",
+"grammar_explanation": "～ています (~te imasu) indicates a continuous state or action."
+},
+{
+"japanese_sentence": "{二人|ふたり}きりで{話|はな}したい。",
+"english_translation": "I want to talk just the two of us.",
+"grammar_explanation": "～きり (~kiri) following a number means 'only' or 'just'."
+}
+]
+},
+{
+"word_kanji": "〜人",
+"reading_furigana": "〜にん",
+"meaning_english": "~ people",
+"examples": [
+{
+"japanese_sentence": "{会議室|かいぎしつ}に5{人|にん}います。",
+"english_translation": "There are five people in the meeting room.",
+"grammar_explanation": "～人 (~nin) is the standard counter for people (3 and above)."
+},
+{
+"japanese_sentence": "{何|なん}{人|にん}{来|く}るか{知|し}らない。",
+"english_translation": "I don't know how many people are coming.",
+"grammar_explanation": "Interrogative + counter + か (ka) creates an embedded question."
+}
+]
+},
+{
+"word_kanji": "〜台",
+"reading_furigana": "〜だい",
+"meaning_english": "counter for machines, cars etc.",
+"examples": [
+{
+"japanese_sentence": "{家|いえ}に{車|くるま}が2{台|だい}あります。",
+"english_translation": "There are two cars at home.",
+"grammar_explanation": "～台 (~dai) is used for counting mechanical items or vehicles."
+},
+{
+"japanese_sentence": "パソコンを3{台|だい}{壊|こわ}した。",
+"english_translation": "I broke three PCs.",
+"grammar_explanation": "Casual past tense of 壊します (kowashimasu)."
+}
+]
+},
+{
+"word_kanji": "〜枚",
+"reading_furigana": "〜まい",
+"meaning_english": "counter for paper, stamps etc.",
+"examples": [
+{
+"japanese_sentence": "シャツを2{枚|まい}{買|か}いました。",
+"english_translation": "I bought two shirts.",
+"grammar_explanation": "～枚 (~mai) is used for flat, thin objects like paper, plates, or clothing."
+},
+{
+"japanese_sentence": "{写真|しゃしん}を5{枚|まい}撮ったよ。",
+"english_translation": "I took five photos!",
+"grammar_explanation": "Sentence ending particle よ (yo) adds emphasis to the statement."
+}
+]
+},
+{
+"word_kanji": "〜回",
+"reading_furigana": "〜かい",
+"meaning_english": "~ times",
+"examples": [
+{
+"japanese_sentence": "1{日|にち}に3{回|かい}{薬|くすり}を{飲|の}んでください。",
+"english_translation": "Please take medicine three times a day.",
+"grammar_explanation": "The particle に (ni) indicates the frequency within a time period."
+},
+{
+"japanese_sentence": "{一|いち}{回|かい}だけ{見|み}たことがある。",
+"english_translation": "I have seen it only once.",
+"grammar_explanation": "～たことがある (~ta koto ga aru) indicates past experience."
+}
+]
+},
+{
+"word_kanji": "リンゴ",
+"reading_furigana": "",
+"meaning_english": "apple",
+"examples": [
+{
+"japanese_sentence": "{赤|あか}いリンゴを{買|か}いました。",
+"english_translation": "I bought a red apple.",
+"grammar_explanation": "Red is 'akai', an i-adjective modifying the noun 'ringo'."
+},
+{
+"japanese_sentence": "リンゴ、{食|た}べる？",
+"english_translation": "Do you want to eat an apple?",
+"grammar_explanation": "Casual question formed by using the dictionary form with rising intonation."
+}
+]
+},
+{
+"word_kanji": "ミカン",
+"reading_furigana": "",
+"meaning_english": "mandarin orange",
+"examples": [
+{
+"japanese_sentence": "このミカンはとても{甘|あま}いです。",
+"english_translation": "This mandarin orange is very sweet.",
+"grammar_explanation": "Standard polite sentence using an i-adjective."
+},
+{
+"japanese_sentence": "ミカンをもう{一|ひと}つ{食|た}べたい。",
+"english_translation": "I want to eat one more mandarin orange.",
+"grammar_explanation": "～たい (~tai) attached to the verb stem expresses the speaker's desire."
+}
+]
+},
+{
+"word_kanji": "サンドイッチ",
+"reading_furigana": "",
+"meaning_english": "sandwich",
+"examples": [
+{
+"japanese_sentence": "サンドイッチを{作|つく}りましょう。",
+"english_translation": "Let's make sandwiches.",
+"grammar_explanation": "～ましょう (~mashou) is the polite volitional form used to suggest an action."
+},
+{
+"japanese_sentence": "昼ご飯はサンドイッチだった。",
+"english_translation": "Lunch was a sandwich.",
+"grammar_explanation": "Past tense of the casual copula 'da' is 'datta'."
+}
+]
+},
+{
+"word_kanji": "カレーライス",
+"reading_furigana": "",
+"meaning_english": "curry (and rice)",
+"examples": [
+{
+"japanese_sentence": "{晩|ばん}ご{飯|はん}にカレーライスを{食|た}べました。",
+"english_translation": "I ate curry and rice for dinner.",
+"grammar_explanation": "The particle に (ni) marks the purpose or occasion (dinner)."
+},
+{
+"japanese_sentence": "カレーライス、{辛|から}くない？",
+"english_translation": "Isn't the curry and rice spicy?",
+"grammar_explanation": "Negative form of i-adjective 辛い (karai) used as a casual question."
+}
+]
+},
+{
+"word_kanji": "アイスクリーム",
+"reading_furigana": "",
+"meaning_english": "ice cream",
+"examples": [
+{
+"japanese_sentence": "{食後|しょくご}にアイスクリームを{食|た}べます。",
+"english_translation": "I will eat ice cream after the meal.",
+"grammar_explanation": "食後 (shokugo) is a formal term for 'after meal'."
+},
+{
+"japanese_sentence": "アイスクリーム、{好|す}きでしょ？",
+"english_translation": "You like ice cream, right?",
+"grammar_explanation": "～でしょ (~desho) is used to seek agreement or confirm a guess."
+}
+]
+},
+{
+"word_kanji": "切手",
+"reading_furigana": "きって",
+"meaning_english": "postage stamp",
+"examples": [
+{
+"japanese_sentence": "80{円|えん}の{切手|きって}を2{枚|まい}{貼|は}ってください。",
+"english_translation": "Please put on two 80-yen stamps.",
+"grammar_explanation": "貼ってください (hatte kudasai) is the polite request form of 'to stick/paste'."
+},
+{
+"japanese_sentence": "{切手|きって}、どこに{売|う}ってるかな？",
+"english_translation": "I wonder where stamps are sold?",
+"grammar_explanation": "The continuous form 'utteru' (sold/selling) used in a casual question."
+}
+]
+},
+{
+"word_kanji": "葉書",
+"reading_furigana": "はがき",
+"meaning_english": "post card",
+"examples": [
+{
+"japanese_sentence": "{友達|ともだち}に{葉書|はがき}を{出|だ}しました。",
+"examples": [
+"{葉書|はがき}を{出|だ}す (hagaki o dasu) is a set phrase meaning 'to send a postcard'."
+],
+"english_translation": "I sent a postcard to my friend.",
+"grammar_explanation": "The particle に (ni) marks the recipient."
+},
+{
+"japanese_sentence": "{年賀|ねんが}{葉書|はがき}を{書|か}いたよ。",
+"english_translation": "I wrote a New Year's postcard!",
+"grammar_explanation": "Casual past tense with the emphatic particle 'yo'."
+}
+]
+},
+{
+"word_kanji": "封筒",
+"reading_furigana": "ふうとう",
+"meaning_english": "envelope",
+"examples": [
+{
+"japanese_sentence": "{封筒|ふうとう}にお{金|かね}を{入|い}れました。",
+"english_translation": "I put money in the envelope.",
+"grammar_explanation": "The particle に (ni) marks the destination where the object is placed."
+},
+{
+"japanese_sentence": "{大|おお}きい{封筒|ふうとう}はある？",
+"english_translation": "Do you have a large envelope?",
+"grammar_explanation": "Casual existence question by omitting the 'ga' particle."
+}
+]
+},
+{
+"word_kanji": "速達",
+"reading_furigana": "そくたつ",
+"meaning_english": "special delivery",
+"examples": [
+{
+"japanese_sentence": "これを{速達|そくたつ}で{出|だ}したいです。",
+"english_translation": "I want to send this by special delivery.",
+"grammar_explanation": "The particle で (de) indicates the method or means of transport."
+},
+{
+"japanese_sentence": "{速達|そくたつ}なら{明日|あした}{着|つ}くよ。",
+"english_translation": "If it's special delivery, it will arrive tomorrow.",
+"grammar_explanation": "～なら (~nara) is a conditional used to establish a topic or condition."
+}
+]
+},
+{
+"word_kanji": "書留",
+"reading_furigana": "かきとめ",
+"meaning_english": "registered mail",
+"examples": [
+{
+"japanese_sentence": "{書留|かきとめ}でお{願|ねが}いします。",
+"english_translation": "Registered mail, please.",
+"grammar_explanation": "Standard polite request phrase using お願いします (onegaishimasu)."
+},
+{
+"japanese_sentence": "{書留|かきとめ}で{送|おく}ったほうがいいよ。",
+"english_translation": "It's better to send it by registered mail.",
+"grammar_explanation": "～ほうがいい (~hou ga ii) is used to give advice."
+}
+]
+},
+{
+"word_kanji": "航空便",
+"reading_furigana": "こうくうびん",
+"meaning_english": "airmail",
+"examples": [
+{
+"japanese_sentence": "{航空便|こうくうびん}はいくらですか。",
+"english_translation": "How much is it by airmail?",
+"grammar_explanation": "The word 'ikura' is the interrogative for price."
+},
+{
+"japanese_sentence": "{航空便|こうくうびん}のほうが{早|はや}いよ。",
+"english_translation": "Airmail is faster.",
+"grammar_explanation": "～のほうが (~no hou ga) is used for comparing two things."
+}
+]
+},
+{
+"word_kanji": "船便",
+"reading_furigana": "ふなびん",
+"meaning_english": "sea mail",
+"examples": [
+{
+"japanese_sentence": "{船便|ふなびん}なら1ヶ{月|げつ}かかります。",
+"english_translation": "It takes one month if sent by sea mail.",
+"grammar_explanation": "As noted before, かかります (kakarimasu) is used for time duration."
+},
+{
+"japanese_sentence": "{船便|ふなびん}は{安|やす}いけど{遅|おそ}い。",
+"english_translation": "Sea mail is cheap but slow.",
+"grammar_explanation": "～けど (~kedo) is a casual conjunction meaning 'but'."
+}
+]
+},
+{
+"word_kanji": "両親",
+"reading_furigana": "りょうしん",
+"meaning_english": "parents",
+"examples": [
+{
+"japanese_sentence": "{両親|りょうしん}は{元気|げんき}です。",
+"english_translation": "My parents are well.",
+"grammar_explanation": "Standard polite sentence describing the state of a subject."
+},
+{
+"japanese_sentence": "{両親|りょうしん}に{会|あ}いに{帰|かえ}る。",
+"english_translation": "I will return home to see my parents.",
+"grammar_explanation": "Verb stem + に行く/帰る expresses the purpose of going or returning."
+}
+]
+},
+{
+"word_kanji": "兄弟",
+"reading_furigana": "きょうだい",
+"meaning_english": "brothers and sisters",
+"examples": [
+{
+"japanese_sentence": "{何|なん}{人|にん}ご{兄弟|きょうだい}がいますか。",
+"english_translation": "How many siblings do you have?",
+"grammar_explanation": "Adding 'go' before 'kyoudai' makes the term polite for someone else's family."
+},
+{
+"japanese_sentence": "{兄弟|きょうだい}はみんな{背|せ}が{高|たか}い。",
+"english_translation": "All my siblings are tall.",
+"grammar_explanation": "Noun + は (wa) + Subject + が (ga) + Adjective is the standard pattern for physical attributes."
+}
+]
+},
+{
+"word_kanji": "兄",
+"reading_furigana": "あに",
+"meaning_english": "(my) elder brother",
+"examples": [
+{
+"japanese_sentence": "{兄|あに}は{銀行|ぎんこう}で{働|はたら}いています。",
+"english_translation": "My elder brother works at a bank.",
+"grammar_explanation": "The humble form 'ani' is used when speaking to someone outside the family."
+},
+{
+"japanese_sentence": "{兄|あに}からプレゼントを{貰|もら}った。",
+"english_translation": "I received a present from my brother.",
+"grammar_explanation": "The particle から (kara) marks the source from which something is received."
+}
+]
+},
+{
+"word_kanji": "お兄さん",
+"reading_furigana": "おにいさん",
+"meaning_english": "(someone else’s) elder brother",
+"examples": [
+{
+"japanese_sentence": "{佐藤|さとう}さんのご{主|しゅ}じんはお{兄|にい}さんに{似|に}ていますね。",
+"english_translation": "Mr. Sato's husband looks like your elder brother, doesn't he?",
+"grammar_explanation": "～に似ている (~ni nite iru) means 'resembles/looks like'."
+},
+{
+"japanese_sentence": "お{兄|にい}さんによろしく。",
+"english_translation": "Give my regards to your elder brother.",
+"grammar_explanation": "～によろしく (~ni yoroshiku) is a set phrase for sending regards."
+}
+]
+},
+{
+"word_kanji": "姉",
+"reading_furigana": "あね",
+"meaning_english": "(my) elder sister",
+"examples": [
+{
+"japanese_sentence": "{姉|あね}はロンドンに{住|す}んでいます。",
+"english_translation": "My elder sister lives in London.",
+"grammar_explanation": "Polite continuous state ～ています (~te imasu)."
+},
+{
+"japanese_sentence": "これは{姉|あね}に{借|か}りた{本|ほん}だ。",
+"english_translation": "This is a book I borrowed from my sister.",
+"grammar_explanation": "A noun-modifying clause (borrowed book) where the verb is in the past plain form."
+}
+]
+},
+{
+"word_kanji": "お姉さん",
+"reading_furigana": "おねえさん",
+"meaning_english": "(someone else’s) elder sister",
+"examples": [
+{
+"japanese_sentence": "お{姉|ねえ}さんはおいくつですか。",
+"english_translation": "How old is your elder sister?",
+"grammar_explanation": "おいくつ (oikutsu) is the honorific version of 'ikutsu' for age."
+},
+{
+"japanese_sentence": "あそこにいるのはお{姉|ねえ}さん？",
+"english_translation": "Is that person over there your sister?",
+"grammar_explanation": "Casual question using the topic particle は (wa) omitted."
+}
+]
+},
+{
+"word_kanji": "弟",
+"reading_furigana": "おとうと",
+"meaning_english": "(my) younger brother",
+"examples": [
+{
+"japanese_sentence": "{弟|おとうと}は{大学生|だいがくせい}です。",
+"english_translation": "My younger brother is a university student.",
+"grammar_explanation": "Humble term 'otouto' used for one's own family in polite conversation."
+},
+{
+"japanese_sentence": "{弟|おとうと}に{数学|すうがく}を{教|おそ}えてあげた。",
+"english_translation": "I taught my brother math.",
+"grammar_explanation": "～てあげる (~te ageru) indicates doing something for someone's benefit."
+}
+]
+},
+{
+"word_kanji": "弟さん",
+"reading_furigana": "おとうとさん",
+"meaning_english": "(someone else’s) younger brother",
+"examples": [
+{
+"japanese_sentence": "{弟|おとうと}さんはおいくつですか。",
+"english_translation": "How old is your younger brother?",
+"grammar_explanation": "Adding 'san' makes the term polite for others' family members."
+},
+{
+"japanese_sentence": "{弟|おとうと}さんも{来|く}るかな？",
+"english_translation": "I wonder if your brother is coming too?",
+"grammar_explanation": "The particle も (mo) means 'also/too'."
+}
+]
+},
+{
+"word_kanji": "妹",
+"reading_furigana": "いもうと",
+"meaning_english": "(my) younger sister",
+"examples": [
+{
+"japanese_sentence": "{妹|いもうと}はピアノが{上手|じょうず}です。",
+"english_translation": "My younger sister is good at piano.",
+"grammar_explanation": "Standard 'wa' and 'ga' pattern for skill (jouzu)."
+},
+{
+"japanese_sentence": "{妹|いもうと}、まだ{寝|ね}てるよ。",
+"english_translation": "My sister is still sleeping.",
+"grammar_explanation": "'Neteru' is the casual contraction of 'nete iru'."
+}
+]
+},
+{
+"word_kanji": "妹さん",
+"reading_furigana": "いもうとさん",
+"meaning_english": "(someone else’s) younger sister",
+"examples": [
+{
+"japanese_sentence": "{妹|いもうと}さんに{会|あ}いたいです。",
+"english_translation": "I want to meet your younger sister.",
+"grammar_explanation": "Meeting someone uses the particle に (ni)."
+},
+{
+"japanese_sentence": "{妹|いもうと}さんは{元気|げんき}？",
+"english_translation": "Is your sister well?",
+"grammar_explanation": "Casual inquiry using the 'san' suffix for respect."
+}
+]
+},
+{
+"word_kanji": "外国",
+"reading_furigana": "がいこく",
+"meaning_english": "foreign country",
+"examples": [
+{
+"japanese_sentence": "{将来|しょうらい}、{外国|がいこく}で{働|はたら}きたいです。",
+"english_translation": "I want to work in a foreign country in the future.",
+"grammar_explanation": "The particle で (de) marks the location of action (working)."
+},
+{
+"japanese_sentence": "{外国|がいこく}へ{行|い}ったことがある？",
+"english_translation": "Have you ever been to a foreign country?",
+"grammar_explanation": "Casual version of the 'experience' grammar point."
+}
+]
+},
+{
+"word_kanji": "〜時間",
+"reading_furigana": "〜じかん",
+"meaning_english": "~hours",
+"examples": [
+{
+"japanese_sentence": "1{日|にち}に8{時間|じかん}{寝|ね}ます。",
+"english_translation": "I sleep for eight hours a day.",
+"grammar_explanation": "～時間 (~jikan) specifies duration of time."
+},
+{
+"japanese_sentence": "3{時間|じかん}も{待|ま}ったよ。",
+"english_translation": "I waited as long as three hours!",
+"grammar_explanation": "The particle も (mo) emphasizes that the duration was unexpectedly long."
+}
+]
+},
+{
+"word_kanji": "〜週間",
+"reading_furigana": "〜しゅうかん",
+"meaning_english": "~weeks",
+"examples": [
+{
+"japanese_sentence": "2{週間|しゅうかん}{旅行|りょこう}しました。",
+"english_translation": "I traveled for two weeks.",
+"grammar_explanation": "Duration is placed before the verb with no particle."
+},
+{
+"japanese_sentence": "{一|いっ}{週間|しゅうかん}に{一|いっ}{回|かい}、プールへ{行|い}く。",
+"english_translation": "I go to the pool once a week.",
+"grammar_explanation": "Frequency pattern: Duration + に + Frequency."
+}
+]
+},
+{
+"word_kanji": "〜か月",
+"reading_furigana": "〜かげつ",
+"meaning_english": "~months",
+"examples": [
+{
+"japanese_sentence": "3か{月|げつ}{日本語|にほんご}を{勉強|べんきょう}しました。",
+"english_translation": "I studied Japanese for three months.",
+"grammar_explanation": "Standard duration counter for months."
+},
+{
+"japanese_sentence": "1か{月|げつ}でできるかな？",
+"english_translation": "I wonder if I can do it in one month?",
+"grammar_explanation": "The particle で (de) can indicate a time limit or scope."
+}
+]
+},
+{
+"word_kanji": "〜年",
+"reading_furigana": "〜ねん",
+"meaning_english": "~years",
+"examples": [
+{
+"japanese_sentence": "{日本|にほん}に10{年|ねん}{住|す}んでいます。",
+"english_translation": "I have been living in Japan for ten years.",
+"grammar_explanation": "Duration followed by the continuous form for an ongoing state."
+},
+{
+"japanese_sentence": "あと2{年|ねん}で{卒業|そつぎょう}だ。",
+"english_translation": "I'll graduate in two more years.",
+"grammar_explanation": "あと (ato) plus duration means 'remaining' or 'more'."
+}
+]
+},
+{
+"word_kanji": "〜ぐらい",
+"reading_furigana": "",
+"meaning_english": "about ~",
+"examples": [
+{
+"japanese_sentence": "15{分|ふん}ぐらい{待|ま}ってください。",
+"english_translation": "Please wait for about 15 minutes.",
+"grammar_explanation": "～ぐらい (~gurai) following a counter indicates an approximate amount."
+},
+{
+"japanese_sentence": "1000{円|えん}ぐらいある？",
+"english_translation": "Do you have about 1000 yen?",
+"grammar_explanation": "Casual existence question for an approximate amount of money."
+}
+]
+},
+{
+"word_kanji": "どのくらい",
+"reading_furigana": "",
+"meaning_english": "how long",
+"examples": [
+{
+"japanese_sentence": "どのくらい{日本語|にほんご}を{勉強|べんきょう}しましたか。",
+"english_translation": "How long did you study Japanese?",
+"grammar_explanation": "Interrogative used to ask about duration or quantity."
+},
+{
+"japanese_sentence": "{家|いえ}から{会社|かいしゃ}までどのくらい？",
+"english_translation": "How long from your house to the office?",
+"grammar_explanation": "Casual shorthand by omitting the verb 'kakarimasu'."
+}
+]
+},
+{
+"word_kanji": "全部で",
+"reading_furigana": "ぜんぶで",
+"meaning_english": "in total",
+"examples": [
+{
+"japanese_sentence": "{全部|ぜんぶ}でいくらですか。",
+"english_translation": "How much is it in total?",
+"grammar_explanation": "全部で (zenbu de) is used to specify a sum or total grouping."
+},
+{
+"japanese_sentence": "{全部|ぜんぶ}で10{人|にん}{来|く}るよ。",
+"english_translation": "Ten people are coming in total.",
+"grammar_explanation": "Casual informative sentence about a total count."
+}
+]
+},
+{
+"word_kanji": "みんな",
+"reading_furigana": "",
+"meaning_english": "everybody, everything",
+"examples": [
+{
+"japanese_sentence": "みんなで{写真|しゃしん}を{撮|と}りましょう。",
+"english_translation": "Let's all take a photo together.",
+"grammar_explanation": "みんなで (minna de) means 'all together' or 'as a group'."
+},
+{
+"japanese_sentence": "みんな、{分|わ}かった？",
+"english_translation": "Everybody, did you understand?",
+"grammar_explanation": "Casual past tense question addressed to a group."
+}
+]
+},
+{
+"word_kanji": "〜だけ",
+"reading_furigana": "",
+"meaning_english": "only~",
+"examples": [
+{
+"japanese_sentence": "10{分|ふん}だけ{休|やす}みます。",
+"english_translation": "I will rest for only 10 minutes.",
+"grammar_explanation": "～だけ (~dake) limits the quantity or action to 'only'."
+},
+{
+"japanese_sentence": "これだけは{忘|わす}れないで。",
+"english_translation": "Don't forget just this one thing.",
+"grammar_explanation": "Casual negative request 'nai de' combined with 'dake'."
+}
+]
+},
+{
+"word_kanji": "いらっしゃいませ",
+"reading_furigana": "",
+"meaning_english": "Welcome. /May I help you?",
+"examples": [
+{
+"japanese_sentence": "いらっしゃいませ。{何|なん}{名|めい}さまですか。",
+"english_translation": "Welcome. How many people in your party?",
+"grammar_explanation": "Standard polite greeting used by shop and restaurant staff."
+},
+{
+"japanese_sentence": "「いらっしゃいませ」と{言|い}われました。",
+"english_translation": "I was told 'Welcome'.",
+"grammar_explanation": "Passive form 言われました (iwaremashita) used for reporting what someone said."
+}
+]
+},
+{
+"word_kanji": "いい天気ですね",
+"reading_furigana": "いいてんきですね",
+"meaning_english": "Nice weather, isn’t it?",
+"examples": [
+{
+"japanese_sentence": "{今日|きょう}はいい{天気|てんき}ですね。{散歩|さんぽ}しましょうか。",
+"english_translation": "It's nice weather today, isn't it? Shall we go for a walk?",
+"grammar_explanation": "～ましょうか (~mashou ka) is used for making a suggestion or offer."
+},
+{
+"japanese_sentence": "あ、いい{天気|てんき}だね。",
+"english_translation": "Oh, nice weather, huh?",
+"grammar_explanation": "Casual copula だ (da) plus agreement particle ね (ne)."
+}
+]
+},
+{
+"word_kanji": "お出かけですか",
+"reading_furigana": "おでかけですか",
+"meaning_english": "Are you going out?",
+"examples": [
+{
+"japanese_sentence": "お{出|で}かけですか。ええ、ちょっとそこまで。",
+"english_translation": "Are you going out? Yes, just over there.",
+"grammar_explanation": "A common greeting used between neighbors when seeing someone leaving home."
+},
+{
+"japanese_sentence": "お{出|で}かけですか。お{気|き}をつけて。",
+"english_translation": "Are you going out? Take care.",
+"grammar_explanation": "お気をつけて (o-ki o tsukete) is a polite parting phrase meaning 'be careful'."
+}
+]
+},
+{
+"word_kanji": "ちょっと〜まで",
+"reading_furigana": "",
+"meaning_english": "I’m just going to~ for a short while.",
+"examples": [
+{
+"japanese_sentence": "ちょっと{郵便局|ゆうびんきょく}まで。",
+"english_translation": "I'm just going to the post office.",
+"grammar_explanation": "An elliptical expression used to answer 'Are you going out?' politely."
+},
+{
+"japanese_sentence": "ちょっと{散歩|さんぽ}まで{行|い}ってくるね。",
+"english_translation": "I'm just going for a walk (and coming back).",
+"grammar_explanation": "～てくる (~te kuru) indicates doing an action and returning."
+}
+]
+},
+{
+"word_kanji": "行ってらっしゃい",
+"reading_furigana": "いってらっしゃい",
+"meaning_english": "Have a good day, see you later.(lit. Go and come back)",
+"examples": [
+{
+"japanese_sentence": "{学校|がっこう}、{行|い}ってらっしゃい！",
+"english_translation": "Have a good day at school!",
+"grammar_explanation": "Set phrase used by the person staying at home to the person leaving."
+},
+{
+"japanese_sentence": "{道|みち}、{気|き}をつけて{行|い}ってらっしゃい。",
+"english_translation": "Watch the road and have a good day.",
+"grammar_explanation": "Adding a specific instruction before the set greeting."
+}
+]
+},
+{
+"word_kanji": "行って参ります",
+"reading_furigana": "いってまいります",
+"meaning_english": "I’m off, see you later (lit. I’m going and come back)",
+"examples": [
+{
+"japanese_sentence": "では、{行|い}って{参|まい}ります。",
+"english_translation": "Well then, I'm off.",
+"grammar_explanation": "A very humble and polite version of 'itte kimasu', often used in formal settings."
+},
+{
+"japanese_sentence": "{仕事|しごと}に{行|い}って{参|まい}ります。",
+"english_translation": "I'm going to work, see you later.",
+"grammar_explanation": "Specifying the destination before the set greeting."
+}
+]
+},
+{
+"word_kanji": "それから",
+"reading_furigana": "",
+"meaning_english": "and then, after that",
+"examples": [
+{
+"japanese_sentence": "{本屋|ほんや}へ{行|い}きました。それから{映画|えいが}を{見|み}ました。",
+"english_translation": "I went to the bookstore. And then I watched a movie.",
+"grammar_explanation": "A conjunction used to connect two sentences in chronological order."
+},
+{
+"japanese_sentence": "{勉強|べんきょう}して、それから{遊|あそ}ぼう。",
+"english_translation": "Let's study, and after that, let's play.",
+"grammar_explanation": "Used here with a te-form and volitional 'asobou'."
+}
+]
+},
+{
+"word_kanji": "オーストラリア",
+"reading_furigana": "",
+"meaning_english": "Australia",
+"examples": [
+{
+"japanese_sentence": "オーストラリアは{広|ひろ}いですね。",
+"english_translation": "Australia is spacious/large, isn't it?",
+"grammar_explanation": "Standard i-adjective sentence with the particle 'ne'."
+},
+{
+"japanese_sentence": "オーストラリアに{行|い}きたいな。",
+"english_translation": "I want to go to Australia.",
+"grammar_explanation": "The particle 'na' at the end adds a nuance of wonder or a personal wish."
+}
+]
+}
+]
+}

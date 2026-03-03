@@ -1,0 +1,907 @@
+
+{
+"deck_title": "Vocabulary Deck 1",
+"vocabulary": [
+{
+"word_kanji": "行く",
+"reading_furigana": "いく",
+"meaning_english": "go",
+"examples": [
+{
+"japanese_sentence": "{明日|あした}、{東京|とうきょう}へ{行|い}きます。",
+"english_translation": "I will go to Tokyo tomorrow.",
+"grammar_explanation": "The particle へ (e) indicates the direction or destination of the movement."
+},
+{
+"japanese_sentence": "どこかへ{行|い}きたい。",
+"english_translation": "I want to go somewhere.",
+"grammar_explanation": "The tai-form (~たい) expresses the speaker's desire to perform an action."
+}
+]
+},
+{
+"word_kanji": "来る",
+"reading_furigana": "くる",
+"meaning_english": "come",
+"examples": [
+{
+"japanese_sentence": "いつ{日本|にほん}に{来|き}ましたか。",
+"english_translation": "When did you come to Japan?",
+"grammar_explanation": "The particle に (ni) marks the destination, and 'mashita' is the polite past tense."
+},
+{
+"japanese_sentence": "パーティーに{来|こ}ない？",
+"english_translation": "Won't you come to the party?",
+"grammar_explanation": "The negative plain form (nai-form) acts as a casual invitation."
+}
+]
+},
+{
+"word_kanji": "帰る",
+"reading_furigana": "かえる",
+"meaning_english": "go home",
+"examples": [
+{
+"japanese_sentence": "もう{家|うち}へ{帰|かえ}りますか。",
+"english_translation": "Are you going home already?",
+"grammar_explanation": "The adverb 'mou' means 'already', and 'kaerimasu' is the polite form of the verb."
+},
+{
+"japanese_sentence": "8{時|じ}に{帰|かえ}った。",
+"english_translation": "I went home at 8 o'clock.",
+"grammar_explanation": "The plain past tense (ta-form) is used here for a casual statement."
+}
+]
+},
+{
+"word_kanji": "学校",
+"reading_furigana": "がっこう",
+"meaning_english": "school",
+"examples": [
+{
+"japanese_sentence": "{学校|がっこう}まで{歩|ある}いて{行|い}きます。",
+"english_translation": "I go to school on foot.",
+"grammar_explanation": "The particle 'made' indicates the limit or destination 'as far as school'."
+},
+{
+"japanese_sentence": "{今日|きょう}は{学校|がっこう}を{休|やす}んだ。",
+"english_translation": "I was absent from school today.",
+"grammar_explanation": "The particle を (o) indicates the place being skipped or rested from."
+}
+]
+},
+{
+"word_kanji": "駅",
+"reading_furigana": "えき",
+"meaning_english": "station",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}の{前|まえ}で{友達|ともだち}に{会|あ}います。",
+"english_translation": "I will meet a friend in front of the station.",
+"grammar_explanation": "The particle で (de) marks the location where the action takes place."
+},
+{
+"japanese_sentence": "{一番|いちばん}{近|ちか}い{駅|えき}はどこ？",
+"english_translation": "Where is the nearest station?",
+"grammar_explanation": "A casual question using 'doko' without the polite copula."
+}
+]
+},
+{
+"word_kanji": "飛行機",
+"reading_furigana": "ひこうき",
+"meaning_english": "airplane",
+"examples": [
+{
+"japanese_sentence": "{飛行機|ひこうき}で{国|くに}へ{帰|かえ}ります。",
+"english_translation": "I will return to my country by airplane.",
+"grammar_explanation": "The particle で (de) indicates the means of transportation."
+},
+{
+"japanese_sentence": "{飛行機|ひこうき}が{見|み}えるよ。",
+"english_translation": "I can see an airplane.",
+"grammar_explanation": "The potential verb 'mieru' indicates that an object is visible to the speaker."
+}
+]
+},
+{
+"word_kanji": "船",
+"reading_furigana": "ふね",
+"meaning_english": "ship",
+"examples": [
+{
+"japanese_sentence": "{船|ふね}で{北海道|ほっかいどう}へ{行|い}きました。",
+"english_translation": "I went to Hokkaido by ship.",
+"grammar_explanation": "The particle で (de) specifies the method of travel."
+},
+{
+"japanese_sentence": "{大|おお}きな{船|ふね}だね。",
+"english_translation": "It's a big ship, isn't it?",
+"grammar_explanation": "The sentence-final particle ね (ne) is used for seeking agreement."
+}
+]
+},
+{
+"word_kanji": "電車",
+"reading_furigana": "でんしゃ",
+"meaning_english": "train",
+"examples": [
+{
+"japanese_sentence": "{電車|でんしゃ}に{乗|の}りましょう。",
+"english_translation": "Let's get on the train.",
+"grammar_explanation": "The particle に (ni) marks the object being boarded with the verb 'noru'."
+},
+{
+"japanese_sentence": "{電車|でんしゃ}が{遅|おく}れている。",
+"english_translation": "The train is running late.",
+"grammar_explanation": "The te-iru form (~ている) describes a current continuous state."
+}
+]
+},
+{
+"word_kanji": "地下鉄",
+"reading_furigana": "ちかてつ",
+"meaning_english": "subway",
+"examples": [
+{
+"japanese_sentence": "{地下鉄|ちかてつ}はとても{便利|べんり}です。",
+"english_translation": "The subway is very convenient.",
+"grammar_explanation": "A standard adjective sentence using the polite copula 'desu'."
+},
+{
+"japanese_sentence": "{地下鉄|ちかてつ}に{乗|の}ったことがない。",
+"english_translation": "I have never ridden the subway.",
+"grammar_explanation": "The structure 'ta-form + koto ga nai' expresses lack of experience."
+}
+]
+},
+{
+"word_kanji": "新幹線",
+"reading_furigana": "しんかんせん",
+"meaning_english": "bullet train",
+"examples": [
+{
+"japanese_sentence": "{新幹線|しんかんせん}の{切符|きっぷ}を{買|か}いたい。",
+"english_translation": "I want to buy a bullet train ticket.",
+"grammar_explanation": "The particle の (no) connects the two nouns; 'shinkansen ticket'."
+},
+{
+"japanese_sentence": "{新幹線|しんかんせん}はとても{速|はや}いですね。",
+"english_translation": "The bullet train is very fast, isn't it?",
+"grammar_explanation": "The adjective 'hayai' is used to describe the speed of the topic."
+}
+]
+},
+{
+"word_kanji": "バス",
+"reading_furigana": "",
+"meaning_english": "bus",
+"examples": [
+{
+"japanese_sentence": "バスを{降|お}ります。",
+"english_translation": "I am getting off the bus.",
+"grammar_explanation": "The particle を (o) indicates the place or vehicle being departed from."
+},
+{
+"japanese_sentence": "バスがなかなか{来|こ}ない。",
+"english_translation": "The bus just won't come.",
+"grammar_explanation": "The adverb 'nakanaka' followed by a negative verb emphasizes the delay."
+}
+]
+},
+{
+"word_kanji": "タクシー",
+"reading_furigana": "",
+"meaning_english": "taxi",
+"examples": [
+{
+"japanese_sentence": "タクシーを{呼|よ}んでください。",
+"english_translation": "Please call a taxi.",
+"grammar_explanation": "Te-form + 'kudasai' is used to make a polite request."
+},
+{
+"japanese_sentence": "タクシーで{帰|かえ}ろう。",
+"english_translation": "Let's go home by taxi.",
+"grammar_explanation": "The volitional form (~ou) is used for a casual suggestion."
+}
+]
+},
+{
+"word_kanji": "自転車",
+"reading_furigana": "じてんしゃ",
+"meaning_english": "bicycle",
+"examples": [
+{
+"japanese_sentence": "{毎日|まいにち}{自転車|じてんしゃ}で{通勤|つうきん}しています。",
+"english_translation": "I commute by bicycle every day.",
+"grammar_explanation": "The te-iru form describes a habitual, ongoing action."
+},
+{
+"japanese_sentence": "その{自転車|じてんしゃ}、だれの？",
+"english_translation": "Whose bicycle is that?",
+"grammar_explanation": "A casual possessive question where 'desu ka' is omitted."
+}
+]
+},
+{
+"word_kanji": "歩いて",
+"reading_furigana": "あるいて",
+"meaning_english": "on foot",
+"examples": [
+{
+"japanese_sentence": "{駅|えき}から{歩|ある}いて10{分|ふん}です。",
+"english_translation": "It is 10 minutes on foot from the station.",
+"grammar_explanation": "The te-form of 'aruku' (aruiten) acts as an adverbial phrase meaning 'by walking'."
+},
+{
+"japanese_sentence": "{歩|ある}いて{帰|かえ}れる？",
+"english_translation": "Can you walk home?",
+"grammar_explanation": "The potential form of 'kaeru' asks about the ability to return."
+}
+]
+},
+{
+"word_kanji": "人",
+"reading_furigana": "ひと",
+"meaning_english": "person, people",
+"examples": [
+{
+"japanese_sentence": "あの{人|ひと}は{誰|だれ}ですか。",
+"english_translation": "Who is that person?",
+"grammar_explanation": "The demonstrative 'ano' (that over there) modifies the noun 'hito'."
+},
+{
+"japanese_sentence": "{公園|こうえん}に{人|ひと}がいっぱいいる。",
+"english_translation": "There are lots of people in the park.",
+"grammar_explanation": "The verb 'iru' is used for the existence of living beings like people."
+}
+]
+},
+{
+"word_kanji": "友達",
+"reading_furigana": "ともだち",
+"meaning_english": "friend",
+"examples": [
+{
+"japanese_sentence": "{友達|ともだち}と{映画|えいが}を{見|み}ました。",
+"english_translation": "I watched a movie with my friend.",
+"grammar_explanation": "The particle と (to) indicates the person with whom the action is performed."
+},
+{
+"japanese_sentence": "わたしたち、{友達|ともだち}だよね。",
+"english_translation": "We are friends, right?",
+"grammar_explanation": "The particle 'yo' plus 'ne' creates a friendly confirmation."
+}
+]
+},
+{
+"word_kanji": "彼",
+"reading_furigana": "かれ",
+"meaning_english": "he, boyfriend, lover",
+"examples": [
+{
+"japanese_sentence": "{彼|かれ}は{学生|がくせい}です。",
+"english_translation": "He is a student.",
+"grammar_explanation": "The pronoun 'kare' is used here as the subject/topic."
+},
+{
+"japanese_sentence": "{彼|かれ}に{手紙|てがみ}を{書|か}いた。",
+"english_translation": "I wrote a letter to my boyfriend.",
+"grammar_explanation": "The particle に (ni) marks the recipient of the action."
+}
+]
+},
+{
+"word_kanji": "彼女",
+"reading_furigana": "かのじょ",
+"meaning_english": "she, girlfriend, lover",
+"examples": [
+{
+"japanese_sentence": "{彼女|かのじょ}はとても{親切|しんせつ}です。",
+"english_translation": "She is very kind.",
+"grammar_explanation": "Adverb 'totemo' (very) modifying the na-adjective 'shinsetsu'."
+},
+{
+"japanese_sentence": "{彼女|かのじょ}ができたんだ。",
+"english_translation": "I got a girlfriend.",
+"grammar_explanation": "The phrase 'kanojo ga dekiru' means 'to come to have a girlfriend'."
+}
+]
+},
+{
+"word_kanji": "家族",
+"reading_furigana": "かぞく",
+"meaning_english": "family",
+"examples": [
+{
+"japanese_sentence": "{家族|かぞく}に{電話|でんわ}をかけます。",
+"english_translation": "I will make a phone call to my family.",
+"grammar_explanation": "The verb phrase 'denwa o kakeru' means to make a call."
+},
+{
+"japanese_sentence": "5{人|にん}{家族|かぞく}です。",
+"english_translation": "There are five people in my family.",
+"grammar_explanation": "Number + 'nin' (counter for people) combined with 'kazoku'."
+}
+]
+},
+{
+"word_kanji": "一人で",
+"reading_furigana": "ひとりで",
+"meaning_english": "alone, by oneself",
+"examples": [
+{
+"japanese_sentence": "{一人|ひとり}で{旅行|りょこう}しました。",
+"english_translation": "I traveled alone.",
+"grammar_explanation": "The particle で (de) marks the condition or manner 'by oneself'."
+},
+{
+"japanese_sentence": "{一人|ひとり}でできるよ。",
+"english_translation": "I can do it by myself.",
+"grammar_explanation": "The potential verb 'dekiru' expresses ability."
+}
+]
+},
+{
+"word_kanji": "先週",
+"reading_furigana": "せんしゅう",
+"meaning_english": "last week",
+"examples": [
+{
+"japanese_sentence": "{先週|せんしゅう}、{京都|きょうと}へ{行|い}きました。",
+"english_translation": "I went to Kyoto last week.",
+"grammar_explanation": "Temporal nouns like 'senshuu' usually don't take the particle 'ni' when used as adverbs."
+},
+{
+"japanese_sentence": "{先週|せんしゅう}のテストはどうだった？",
+"english_translation": "How was last week's test?",
+"grammar_explanation": "The past tense 'dou datta' asks about the state or quality of a past event."
+}
+]
+},
+{
+"word_kanji": "今週",
+"reading_furigana": "こんしゅう",
+"meaning_english": "this week",
+"examples": [
+{
+"japanese_sentence": "{今週|こんしゅう}はとても{暑|あつ}いです。",
+"english_translation": "It is very hot this week.",
+"grammar_explanation": "Using 'konshuu' with the topic marker to describe the current week's state."
+},
+{
+"japanese_sentence": "{今週|こんしゅう}、{会|あ}える？",
+"english_translation": "Can we meet this week?",
+"grammar_explanation": "The potential form 'aeru' expresses the possibility of meeting."
+}
+]
+},
+{
+"word_kanji": "来週",
+"reading_furigana": "らいしゅう",
+"meaning_english": "next week",
+"examples": [
+{
+"japanese_sentence": "{来週|らいしゅう}から{夏休|なつやす}みです。",
+"english_translation": "Summer vacation starts from next week.",
+"grammar_explanation": "The particle 'kara' indicates the starting point in time."
+},
+{
+"japanese_sentence": "{来週|らいしゅう}の{月曜日|げつようび}に{会|あ}おう。",
+"english_translation": "Let's meet next Monday.",
+"grammar_explanation": "The particle の (no) specifies the specific day within the week."
+}
+]
+},
+{
+"word_kanji": "今月",
+"reading_furigana": "こんげつ",
+"meaning_english": "this month",
+"examples": [
+{
+"japanese_sentence": "{今月|こんげつ}、{誕生日|たんじょうび}なんです。",
+"english_translation": "It's my birthday this month.",
+"grammar_explanation": "The '~nan desu' structure adds an explanatory tone to the statement."
+},
+{
+"japanese_sentence": "{今月|こんげつ}も{忙|いそが}しくなりそう。",
+"english_translation": "It looks like this month will be busy too.",
+"grammar_explanation": "The particle も (mo) means 'also' or 'too'."
+}
+]
+},
+{
+"word_kanji": "来月",
+"reading_furigana": "らいげつ",
+"meaning_english": "next month",
+"examples": [
+{
+"japanese_sentence": "{来月|らいげつ}、{結婚|けっこん}します。",
+"english_translation": "I will get married next month.",
+"grammar_explanation": "The verb 'kekkon shimasu' indicates a future planned action."
+},
+{
+"japanese_sentence": "{来月|らいげつ}まで{待|ま}って。",
+"english_translation": "Wait until next month.",
+"grammar_explanation": "The particle 'made' indicates a time limit."
+}
+]
+},
+{
+"word_kanji": "去年",
+"reading_furigana": "きょねん",
+"meaning_english": "last year",
+"examples": [
+{
+"japanese_sentence": "{去年|きょねん}{日本|にほん}へ{来|き}ました。",
+"english_translation": "I came to Japan last year.",
+"grammar_explanation": "Standard polite past tense used with a past time noun."
+},
+{
+"japanese_sentence": "{去年|きょねん}のほうが{寒|さむ}かった。",
+"english_translation": "It was colder last year.",
+"grammar_explanation": "The structure '~no hou ga' is used for making comparisons."
+}
+]
+},
+{
+"word_kanji": "今年",
+"reading_furigana": "ことし",
+"meaning_english": "this year",
+"examples": [
+{
+"japanese_sentence": "{今年|ことし}は20{歳|さい}になります。",
+"english_translation": "I will turn 20 this year.",
+"grammar_explanation": "The verb 'naru' (to become) indicates a change or transition."
+},
+{
+"japanese_sentence": "{今年|ことし}、どこか{行|い}く？",
+"english_translation": "Are you going anywhere this year?",
+"grammar_explanation": "A casual question using the dictionary form verb."
+}
+]
+},
+{
+"word_kanji": "来年",
+"reading_furigana": "らいねん",
+"meaning_english": "next year",
+"examples": [
+{
+"japanese_sentence": "{来年|らいねん}、{大学|だいがく}を{卒業|そつぎょう}します。",
+"english_translation": "I will graduate from university next year.",
+"grammar_explanation": "Future-oriented polite statement."
+},
+{
+"japanese_sentence": "{来年|らいねん}こそ{頑張|がんば}ろう。",
+"english_translation": "I will definitely do my best next year.",
+"grammar_explanation": "The particle 'koso' adds strong emphasis to the preceding word."
+}
+]
+},
+{
+"word_kanji": "～月",
+"reading_furigana": "～がつ",
+"meaning_english": "~th month of the year",
+"examples": [
+{
+"japanese_sentence": "{今|いま}は10{月|がつ}です。",
+"english_translation": "It is now October.",
+"grammar_explanation": "Number + 'gatsu' names the specific month of the year."
+},
+{
+"japanese_sentence": "4{月|がつ}に{入学|にゅうがく}した。",
+"english_translation": "I entered school in April.",
+"grammar_explanation": "The particle に (ni) marks the specific time in the past."
+}
+]
+},
+{
+"word_kanji": "何月",
+"reading_furigana": "なんがつ",
+"meaning_english": "what month",
+"examples": [
+{
+"japanese_sentence": "{何月|なんがつ}に{日本|にほん}へ{行|い}きますか。",
+"english_translation": "In what month will you go to Japan?",
+"grammar_explanation": "Interrogative used to ask for a specific month."
+},
+{
+"japanese_sentence": "{次|つぎ}のテスト、{何月|なんがつ}？",
+"english_translation": "What month is the next test?",
+"grammar_explanation": "A very short, casual query."
+}
+]
+},
+{
+"word_kanji": "一日",
+"reading_furigana": "ついたち",
+"meaning_english": "first day of the month",
+"examples": [
+{
+"japanese_sentence": "1{月|がつ}{一日|ついたち}は{休|やす}みです。",
+"english_translation": "January 1st is a holiday.",
+"grammar_explanation": "Note the irregular reading 'tsuitachi' for the first day of the month."
+},
+{
+"japanese_sentence": "{毎月|まいつき}{一日|ついたち}に{会|あ}いましょう。",
+"english_translation": "Let's meet on the first of every month.",
+"grammar_explanation": "Mashou form used for a recurring suggestion."
+}
+]
+},
+{
+"word_kanji": "二日",
+"reading_furigana": "ふつか",
+"meaning_english": "second day, 2 days",
+"examples": [
+{
+"japanese_sentence": "{二日|ふつか}から{仕事|しごと}が{始|はじ}まります。",
+"english_translation": "Work starts from the 2nd.",
+"grammar_explanation": "Irregular reading 'futsuka' refers to the date or duration."
+},
+{
+"japanese_sentence": "{二日|ふつか}{休|やす}んだ。",
+"english_translation": "I rested for two days.",
+"grammar_explanation": "Used here as a counter for duration without the particle 'ni'."
+}
+]
+},
+{
+"word_kanji": "三日",
+"reading_furigana": "みっか",
+"meaning_english": "third day of the month, 3 days",
+"examples": [
+{
+"japanese_sentence": "3{月|がつ}{三日|みっか}はひな{祭|まつ}りです。",
+"english_translation": "March 3rd is the Doll Festival.",
+"grammar_explanation": "The irregular reading 'mikka' is used for the 3rd day."
+},
+{
+"japanese_sentence": "あと{三日|みっか}しかない。",
+"english_translation": "There are only three days left.",
+"grammar_explanation": "The structure '~shika + negative verb' means 'only'."
+}
+]
+},
+{
+"word_kanji": "四日",
+"reading_furigana": "よっか",
+"meaning_english": "fourth day of the month, 4 days",
+"examples": [
+{
+"japanese_sentence": "{四日|よっか}に{荷物|にもつ}が{届|とど}きます。",
+"english_translation": "The package will arrive on the 4th.",
+"grammar_explanation": "Irregular reading 'yokka' (not yon-nichi) for the 4th."
+},
+{
+"japanese_sentence": "{四日|よっか}{待|ま}ったけど、{来|こ}なかった。",
+"english_translation": "I waited four days, but they didn't come.",
+"grammar_explanation": "The particle 'kedo' acts as 'but' or 'although'."
+}
+]
+},
+{
+"word_kanji": "五日",
+"reading_furigana": "いつか",
+"meaning_english": "fifth day of the month, 5 days",
+"examples": [
+{
+"japanese_sentence": "5{月|がつ}{五日|いつか}はこどもの{日|ひ}です。",
+"english_translation": "May 5th is Children's Day.",
+"grammar_explanation": "Irregular reading 'itsuka' for the 5th."
+},
+{
+"japanese_sentence": "{五日|いつか}でできる？",
+"english_translation": "Can you do it in five days?",
+"grammar_explanation": "The particle で (de) specifies the time frame for completion."
+}
+]
+},
+{
+"word_kanji": "六日",
+"reading_furigana": "むいか",
+"meaning_english": "sixth day of the month, 6 days",
+"examples": [
+{
+"japanese_sentence": "{来月|らいげつ}の{六日|むいか}に{会|あ}いましょう。",
+"english_translation": "Let's meet on the 6th of next month.",
+"grammar_explanation": "Irregular reading 'muika' for the 6th day."
+},
+{
+"japanese_sentence": "{六日|むいか}{前|まえ}に{聞|き}いた。",
+"english_translation": "I heard it six days ago.",
+"grammar_explanation": "Duration noun + 'mae' means 'ago'."
+}
+]
+},
+{
+"word_kanji": "七日",
+"reading_furigana": "なのか",
+"meaning_english": "seventh day of the month, 7 days",
+"examples": [
+{
+"japanese_sentence": "{七日|なのか}に{旅行|りょこう}に{行|い}きます。",
+"english_translation": "I will go on a trip on the 7th.",
+"grammar_explanation": "Irregular reading 'nanoka' for the 7th day."
+},
+{
+"japanese_sentence": "{七日|なのか}は{足|た}りないよ。",
+"english_translation": "Seven days isn't enough.",
+"grammar_explanation": "The verb 'tariru' (to be enough/sufficient) in negative form."
+}
+]
+},
+{
+"word_kanji": "八日",
+"reading_furigana": "ようか",
+"meaning_english": "eighth day of the month, 8 days",
+"examples": [
+{
+"japanese_sentence": "12{月|がつ}{八日|ようか}にパーティーをします。",
+"english_translation": "We will have a party on December 8th.",
+"grammar_explanation": "Irregular reading 'youka' for the 8th day."
+},
+{
+"japanese_sentence": "{八日|ようか}もかかった。",
+"english_translation": "It took as many as eight days.",
+"grammar_explanation": "The particle も (mo) emphasizing the large quantity/duration."
+}
+]
+},
+{
+"word_kanji": "九日",
+"reading_furigana": "ここのか",
+"meaning_english": "ninth day of the month, 9 days",
+"examples": [
+{
+"japanese_sentence": "{九日|ここのか}は{暇|ひま}ですか。",
+"english_translation": "Are you free on the 9th?",
+"grammar_explanation": "Irregular reading 'kokonoka' for the 9th day."
+},
+{
+"japanese_sentence": "{九日|ここのか}かかるよ。",
+"english_translation": "It takes nine days.",
+"grammar_explanation": "The verb 'kakaru' refers to the amount of time required."
+}
+]
+},
+{
+"word_kanji": "十日",
+"reading_furigana": "とおか",
+"meaning_english": "tenth day of the month, 10 days",
+"examples": [
+{
+"japanese_sentence": "{毎月|まいつき}{十日|とおか}までに{払|はら}ってください。",
+"english_translation": "Please pay by the 10th of every month.",
+"grammar_explanation": "The structure 'made ni' indicates a deadline."
+},
+{
+"japanese_sentence": "{十日|とおか}も{休|やす}んだ。",
+"english_translation": "I took ten days off.",
+"grammar_explanation": "A statement about a past duration of rest."
+}
+]
+},
+{
+"word_kanji": "十四日",
+"reading_furigana": "じゅうよっか",
+"meaning_english": "fourteenth day of the month, 14 days",
+"examples": [
+{
+"japanese_sentence": "2{月|がつ}{十四日|じゅうよっか}はバレンタインデーです。",
+"english_translation": "February 14th is Valentine's Day.",
+"grammar_explanation": "Note the irregular suffix 'yokka' in 'juu-yokka'."
+},
+{
+"japanese_sentence": "{十四日|じゅうよっか}{後|ご}にまた{会|あ}おう。",
+"english_translation": "Let's meet again in 14 days.",
+"grammar_explanation": "The noun 'go' means 'after' or 'later' in terms of time."
+}
+]
+},
+{
+"word_kanji": "二十日",
+"reading_furigana": "はつか",
+"meaning_english": "twentieth day of the month, 20 days",
+"examples": [
+{
+"japanese_sentence": "{二十日|はつか}に{給料|きゅうりょう}をもらいます。",
+"english_translation": "I receive my salary on the 20th.",
+"grammar_explanation": "Highly irregular reading 'hatsuka' for the 20th."
+},
+{
+"japanese_sentence": "{二十日|はつか}はひま？",
+"english_translation": "Are you free on the 20th?",
+"grammar_explanation": "Casual question about availability on a specific date."
+}
+]
+},
+{
+"word_kanji": "二十四日",
+"reading_furigana": "にじゅうよっか",
+"meaning_english": "twenty fourth day of the month, 24 days",
+"examples": [
+{
+"japanese_sentence": "12{月|がつ}{二十四日|にじゅうよっか}はクリスマス・イブです。",
+"english_translation": "December 24th is Christmas Eve.",
+"grammar_explanation": "The suffix 'yokka' is maintained here as well."
+},
+{
+"japanese_sentence": "あと{二十四日|にじゅうよっか}だ。",
+"english_translation": "It's 24 more days.",
+"grammar_explanation": "Using 'ato' to indicate remaining time."
+}
+]
+},
+{
+"word_kanji": "～日",
+"reading_furigana": "～にち",
+"meaning_english": "~th day of the month, (number of) days",
+"examples": [
+{
+"japanese_sentence": "11{日|にち}に{会議|かいぎ}があります。",
+"english_translation": "There is a meeting on the 11th.",
+"grammar_explanation": "The standard suffix 'nichi' is used for most numbers above 10 (except 14, 20, 24)."
+},
+{
+"japanese_sentence": "20{日|にち}かん{練習|れんしゅう}した。",
+"english_translation": "I practiced for 20 days.",
+"grammar_explanation": "The suffix 'kan' specifically emphasizes a duration/period."
+}
+]
+},
+{
+"word_kanji": "何日",
+"reading_furigana": "なんにち",
+"meaning_english": "which day of the month, how many days",
+"examples": [
+{
+"japanese_sentence": "{今日|きょう}は{何日|なんにち}ですか。",
+"english_translation": "What day of the month is it today?",
+"grammar_explanation": "Interrogative used to ask for the date."
+},
+{
+"japanese_sentence": "{何日|なんにち}かかるかわからない。",
+"english_translation": "I don't know how many days it will take.",
+"grammar_explanation": "The question particle 'ka' is used inside a sub-clause."
+}
+]
+},
+{
+"word_kanji": "いつ",
+"reading_furigana": "",
+"meaning_english": "when",
+"examples": [
+{
+"japanese_sentence": "いつ{日本|にほん}へ{行|い}きますか。",
+"english_translation": "When will you go to Japan?",
+"grammar_explanation": "Interrogative 'itsu' (when) doesn't usually take the particle 'ni'."
+},
+{
+"japanese_sentence": "いつが{暇|ひま}？",
+"english_translation": "When are you free?",
+"grammar_explanation": "Casual question using 'ga' to focus on a specific time."
+}
+]
+},
+{
+"word_kanji": "誕生日",
+"reading_furigana": "たんじょうび",
+"meaning_english": "birthday",
+"examples": [
+{
+"japanese_sentence": "{誕生日|たんじょうび}おめでとうございます。",
+"english_translation": "Happy birthday (formal).",
+"grammar_explanation": "A fixed polite expression for congratulations."
+},
+{
+"japanese_sentence": "{誕生日|たんじょうび}、なにがほしい？",
+"english_translation": "What do you want for your birthday?",
+"grammar_explanation": "The interrogative 'nani' (what) used with 'hoshii' (want)."
+}
+]
+},
+{
+"word_kanji": "普通",
+"reading_furigana": "ふつう",
+"meaning_english": "local train",
+"examples": [
+{
+"japanese_sentence": "{普通|ふつう}{電車|でんしゃ}に{乗|の}ります。",
+"english_translation": "I will take the local train.",
+"grammar_explanation": "In this context, 'futsuu' (standard) refers to the local train service."
+},
+{
+"japanese_sentence": "{普通|ふつう}でいい？",
+"english_translation": "Is the local train okay (for you)?",
+"grammar_explanation": "Casual way of asking if a choice is acceptable."
+}
+]
+},
+{
+"word_kanji": "急行",
+"reading_furigana": "きゅうこう",
+"meaning_english": "rapid train",
+"examples": [
+{
+"japanese_sentence": "{急行|きゅうこう}はあそこに{止|と}まりますか。",
+"english_translation": "Does the rapid train stop there?",
+"grammar_explanation": "The verb 'tomaru' (to stop) used to ask about station stops."
+},
+{
+"japanese_sentence": "{急行|きゅうこう}、すごく{速|はや}いよ。",
+"english_translation": "The rapid train is really fast.",
+"grammar_explanation": "Adverb 'sugoku' (extremely/really) used for emphasis."
+}
+]
+},
+{
+"word_kanji": "特急",
+"reading_furigana": "とっきゅう",
+"meaning_english": "express",
+"examples": [
+{
+"japanese_sentence": "{特急|とっきゅう}の{切符|きっぷ}を{買|か}わなければなりません。",
+"english_translation": "I must buy an express ticket.",
+"grammar_explanation": "The structure '~nakereba narimasen' expresses obligation."
+},
+{
+"japanese_sentence": "{特急|とっきゅう}、かっこいいね！",
+"english_translation": "The express train is cool, isn't it!",
+"grammar_explanation": "Casual exclamation using 'kakkoii'."
+}
+]
+},
+{
+"word_kanji": "次",
+"reading_furigana": "つぎ",
+"meaning_english": "next",
+"examples": [
+{
+"japanese_sentence": "{次|つぎ}の{電車|でんしゃ}は10{時|じ}です。",
+"english_translation": "The next train is at 10 o'clock.",
+"grammar_explanation": "The particle 'no' links 'tsugi' (next) to the noun 'densha' (train)."
+},
+{
+"japanese_sentence": "{次|つぎ}、だれ？",
+"english_translation": "Who's next?",
+"grammar_explanation": "Short casual query used in turn-taking."
+}
+]
+},
+{
+"word_kanji": "どういたしまして",
+"reading_furigana": "",
+"meaning_english": "You’re welcome./ Don’t mention it.",
+"examples": [
+{
+"japanese_sentence": "いいえ、どういたしまして。",
+"english_translation": "No problem, you're welcome.",
+"grammar_explanation": "Standard polite response to 'arigatou'."
+},
+{
+"japanese_sentence": "どういたしまして。またどうぞ。",
+"english_translation": "You're welcome. Please (come/ask) again.",
+"grammar_explanation": "A polite phrase often used in customer service."
+}
+]
+},
+{
+"word_kanji": "～番線",
+"reading_furigana": "～ばんせん",
+"meaning_english": "platform (number), ~th platform",
+"examples": [
+{
+"japanese_sentence": "{新幹線|しんかんせん}は3{番線|ばんせん}です。",
+"english_translation": "The bullet train is on platform 3.",
+"grammar_explanation": "Counter 'bansen' specifically indicates a track or platform number."
+},
+{
+"japanese_sentence": "{何|なん}{番線|ばんせん}に{行|い}けばいい？",
+"english_translation": "Which platform should I go to?",
+"grammar_explanation": "The structure '~eba ii' is used for asking for advice or instructions."
+}
+]
+}
+]
+}

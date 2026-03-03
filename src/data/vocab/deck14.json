@@ -1,0 +1,686 @@
+
+{
+"deck_title": "Vocabulary Deck 14",
+"vocabulary": [
+{
+"word_kanji": "付けます",
+"reading_furigana": "つけます",
+"meaning_english": "turn on",
+"examples": [
+{
+"japanese_sentence": "エアコンを{付|つ}けてください。",
+"english_translation": "Please turn on the air conditioner.",
+"grammar_explanation": "～てください is used to make a polite request."
+},
+{
+"japanese_sentence": "{暗|くら}いから{電気|でんき}を{付|つ}けよう。",
+"english_translation": "It's dark, so let's turn on the lights.",
+"grammar_explanation": "～よう is the casual volitional form used to suggest an action."
+}
+]
+},
+{
+"word_kanji": "消します",
+"reading_furigana": "けします",
+"meaning_english": "turn off",
+"examples": [
+{
+"japanese_sentence": "{寝|ね}る{前|まえ}にテレビを{消|け}しました。",
+"english_translation": "I turned off the TV before sleeping.",
+"grammar_explanation": "The past polite form ～ました indicates a completed action."
+},
+{
+"japanese_sentence": "{電気|でんき}を{消|け}してもいいですか。",
+"english_translation": "May I turn off the lights?",
+"grammar_explanation": "～てもいいですか is used to ask for permission."
+}
+]
+},
+{
+"word_kanji": "開けます",
+"reading_furigana": "あけます",
+"meaning_english": "open",
+"examples": [
+{
+"japanese_sentence": "{窓|まど}を{開|あ}けましょうか。",
+"english_translation": "Shall I open the window?",
+"grammar_explanation": "～ましょうか is used when offering to do something for the listener."
+},
+{
+"japanese_sentence": "ドアを{開|あ}けて。",
+"english_translation": "Open the door.",
+"grammar_explanation": "The te-form used by itself acts as a casual command or request."
+}
+]
+},
+{
+"word_kanji": "閉めます",
+"reading_furigana": "しめます",
+"meaning_english": "close, shut",
+"examples": [
+{
+"japanese_sentence": "{暑|あつ}いので{窓|まど}を{閉|し}めました。",
+"english_translation": "Since it was hot, I closed the window.",
+"grammar_explanation": "～ので indicates a reason or cause in a polite manner."
+},
+{
+"japanese_sentence": "{冷蔵庫|れいぞうこ}を{閉|し}めてください。",
+"english_translation": "Please close the refrigerator.",
+"grammar_explanation": "Te-form + ください forms a polite request."
+}
+]
+},
+{
+"word_kanji": "急ぎます",
+"reading_furigana": "いそぎます",
+"meaning_english": "hurry",
+"examples": [
+{
+"japanese_sentence": "{時間|じかん}がないから{急|いそ}ぎましょう。",
+"english_translation": "There is no time, so let's hurry.",
+"grammar_explanation": "～ましょう expresses a polite invitation or suggestion to do something together."
+},
+{
+"japanese_sentence": "{急|いそ}いで！{遅|おく}れるよ。",
+"english_translation": "Hurry up! We'll be late.",
+"grammar_explanation": "The te-form (isogide) is used here as a casual imperative."
+}
+]
+},
+{
+"word_kanji": "待ちます",
+"reading_furigana": "まちます",
+"meaning_english": "wait",
+"examples": [
+{
+"japanese_sentence": "ここで{友達|ともだち}を{待|ま}っています。",
+"english_translation": "I am waiting for my friend here.",
+"grammar_explanation": "～ています expresses an action currently in progress."
+},
+{
+"japanese_sentence": "ちょっと{待|ま}って。",
+"english_translation": "Wait a moment.",
+"grammar_explanation": "The te-form of a verb is used for casual requests."
+}
+]
+},
+{
+"word_kanji": "止めます",
+"reading_furigana": "とめます",
+"meaning_english": "stop, park",
+"examples": [
+{
+"japanese_sentence": "そこに{車|くるま}を{止|と}めてください。",
+"english_translation": "Please park the car there.",
+"grammar_explanation": "The particle を marks the object being stopped/parked."
+},
+{
+"japanese_sentence": "{危|あぶ}ないから{止|と}めて！",
+"english_translation": "Stop it because it's dangerous!",
+"grammar_explanation": "The verb tomemasu can mean 'stop (an action)' as well as 'park'."
+}
+]
+},
+{
+"word_kanji": "曲がります",
+"reading_furigana": "まがります",
+"meaning_english": "turn (to the right)",
+"examples": [
+{
+"japanese_sentence": "{次|つぎ}の{角|かど}を{右|みぎ}へ{曲|ま}がります。",
+"english_translation": "I will turn right at the next corner.",
+"grammar_explanation": "The particle を marks the space/corner through which one moves/turns."
+},
+{
+"japanese_sentence": "あそこを{右|みぎ}に{曲|ま}がって。",
+"english_translation": "Turn right over there.",
+"grammar_explanation": "Casual request using the te-form."
+}
+]
+},
+{
+"word_kanji": "持ちます",
+"reading_furigana": "もちます",
+"meaning_english": "hold",
+"examples": [
+{
+"japanese_sentence": "{荷物|にもつ}を{持|も}ちましょうか。",
+"english_translation": "Shall I carry (hold) your luggage?",
+"grammar_explanation": "Offering assistance using the polite ～ましょうか."
+},
+{
+"japanese_sentence": "このカバンを{持|も}っていて。",
+"english_translation": "Hold this bag for a bit.",
+"grammar_explanation": "～ていて is the te-form of ～ている, requesting the state of holding be maintained."
+}
+]
+},
+{
+"word_kanji": "取ります",
+"reading_furigana": "とります",
+"meaning_english": "take, pass",
+"examples": [
+{
+"japanese_sentence": "すみませんが、{塩|しお}を{取|と}ってください。",
+"english_translation": "Excuse me, but please pass the salt.",
+"grammar_explanation": "A polite request for an object using the te-form + ください."
+},
+{
+"japanese_sentence": "そのペン{取|と}ってくれる？",
+"english_translation": "Can you pass me that pen?",
+"grammar_explanation": "～てくれる asks for a favor in a casual, friendly way."
+}
+]
+},
+{
+"word_kanji": "手伝います",
+"reading_furigana": "てつだいます",
+"meaning_english": "help (with a task)",
+"examples": [
+{
+"japanese_sentence": "{明日|あした}、{引|ひ}っ{越|こ}しを{手伝|てつだ}います。",
+"english_translation": "I will help with the move tomorrow.",
+"grammar_explanation": "The object of help can be marked with the particle を."
+},
+{
+"japanese_sentence": "{宿題|しゅくだい}、{手伝|てつだ}おうか？",
+"english_translation": "Shall I help with your homework?",
+"grammar_explanation": "The casual volitional form + か is used to offer help."
+}
+]
+},
+{
+"word_kanji": "呼びます",
+"reading_furigana": "よびます",
+"meaning_english": "call",
+"examples": [
+{
+"japanese_sentence": "タクシーを{呼|よ}びました。",
+"english_translation": "I called a taxi.",
+"grammar_explanation": "Basic polite past tense."
+},
+{
+"japanese_sentence": "{田中|たなか}さんを{呼|よ}んできてください。",
+"english_translation": "Please go and call Mr. Tanaka.",
+"grammar_explanation": "～てきて indicates going to do something and then coming back."
+}
+]
+},
+{
+"word_kanji": "話します",
+"reading_furigana": "はなします",
+"meaning_english": "speak, talk",
+"examples": [
+{
+"japanese_sentence": "{英語|えいご}を{話|はな}すことができますか。",
+"english_translation": "Can you speak English?",
+"grammar_explanation": "～ことができます expresses potential or ability."
+},
+{
+"japanese_sentence": "{友達|ともだち}と{話|はな}している。",
+"english_translation": "I'm talking with a friend.",
+"grammar_explanation": "Casual progressive form ～ている."
+}
+]
+},
+{
+"word_kanji": "見せます",
+"reading_furigana": "みせます",
+"meaning_english": "show",
+"examples": [
+{
+"japanese_sentence": "パスポートを{見|み}せてください。",
+"english_translation": "Please show your passport.",
+"grammar_explanation": "Polite request using the te-form."
+},
+{
+"japanese_sentence": "{写真|しゃしん}を{見|み}せようか。",
+"english_translation": "Shall I show you the photos?",
+"grammar_explanation": "Casual volitional offer."
+}
+]
+},
+{
+"word_kanji": "教えます",
+"reading_furigana": "おしえます",
+"meaning_english": "tell (an address)",
+"examples": [
+{
+"japanese_sentence": "{住所|じゅうしょ}を{教|おし}えてください。",
+"english_translation": "Please tell me your address.",
+"grammar_explanation": "The verb oshieta is used both for 'teach' and 'tell/inform'."
+},
+{
+"japanese_sentence": "{電話|でんわ}{番号|ばんごう}、{教|おし}えてくれる？",
+"english_translation": "Can you tell me your phone number?",
+"grammar_explanation": "Casual request for information."
+}
+]
+},
+{
+"word_kanji": "始めます",
+"reading_furigana": "はじめます",
+"meaning_english": "start, begin",
+"examples": [
+{
+"japanese_sentence": "{会議|かいぎ}を{始|はじ}めましょう。",
+"english_translation": "Let's begin the meeting.",
+"grammar_explanation": "Polite suggestion using ～ましょう."
+},
+{
+"japanese_sentence": "10{時|じ}に{始|はじ}めるよ。",
+"english_translation": "I'll start at 10:00.",
+"grammar_explanation": "Plain form with the particle よ for assertion."
+}
+]
+},
+{
+"word_kanji": "降ります",
+"reading_furigana": "ふります",
+"meaning_english": "rain",
+"examples": [
+{
+"japanese_sentence": "{雨|あめ}が{降|ふ}っています。",
+"english_translation": "It is raining.",
+"grammar_explanation": "The progressive form indicates it is currently raining."
+},
+{
+"japanese_sentence": "{雨|あめ}が{降|ふ}ったら{行|い}きません。",
+"english_translation": "If it rains, I won't go.",
+"grammar_explanation": "～たら is the conditional form meaning 'if/when'."
+}
+]
+},
+{
+"word_kanji": "コピーします",
+"reading_furigana": "",
+"meaning_english": "copy",
+"examples": [
+{
+"japanese_sentence": "この{資料|しりょう}を5{枚|まい}コピーしてください。",
+"english_translation": "Please copy this document five times.",
+"grammar_explanation": "Suru-verb in the te-form for a request."
+},
+{
+"japanese_sentence": "{後|あと}でコピーしておくよ。",
+"english_translation": "I'll copy it later (in preparation).",
+"grammar_explanation": "～ておく indicates doing something in advance or for future use."
+}
+]
+},
+{
+"word_kanji": "エアコン",
+"reading_furigana": "",
+"meaning_english": "air conditioner",
+"examples": [
+{
+"japanese_sentence": "エアコンを{消|け}してもいいですか。",
+"english_translation": "May I turn off the air conditioner?",
+"grammar_explanation": "Asking for permission with ～てもいいですか。"
+},
+{
+"japanese_sentence": "エアコンが{壊|こわ}れている。",
+"english_translation": "The air conditioner is broken.",
+"grammar_explanation": "～ている describes the current state of an object."
+}
+]
+},
+{
+"word_kanji": "パスポート",
+"reading_furigana": "",
+"meaning_english": "passport",
+"examples": [
+{
+"japanese_sentence": "パスポートを{忘|わす}れないでください。",
+"english_translation": "Please don't forget your passport.",
+"grammar_explanation": "～ないでください is a polite negative request."
+},
+{
+"japanese_sentence": "パスポート、{持|も}った？",
+"english_translation": "Do you have your passport?",
+"grammar_explanation": "Casual past tense used to check current status."
+}
+]
+},
+{
+"word_kanji": "名前",
+"reading_furigana": "なまえ",
+"meaning_english": "name",
+"examples": [
+{
+"japanese_sentence": "お{名前|なまえ}を{書|か}いてください。",
+"english_translation": "Please write your name.",
+"grammar_explanation": "The prefix 'o' is used to make the word more polite."
+},
+{
+"japanese_sentence": "彼の{名前|なまえ}、{知|し}ってる？",
+"english_translation": "Do you know his name?",
+"grammar_explanation": "Casual progressive form of 'to know'."
+}
+]
+},
+{
+"word_kanji": "住所",
+"reading_furigana": "じゅうしょ",
+"meaning_english": "address",
+"examples": [
+{
+"japanese_sentence": "{住所|じゅうしょ}を{変更|へんこう}しました。",
+"english_translation": "I changed my address.",
+"grammar_explanation": "Standard polite past tense."
+},
+{
+"japanese_sentence": "ここに{住所|じゅうしょ}を{書|か}けばいいの？",
+"english_translation": "Should I write my address here?",
+"grammar_explanation": "～ばいい is used to ask for advice or instructions."
+}
+]
+},
+{
+"word_kanji": "地図",
+"reading_furigana": "ちず",
+"meaning_english": "map",
+"examples": [
+{
+"japanese_sentence": "{地図|ちず}を{見|み}ながら{行|い}きましょう。",
+"english_translation": "Let's go while looking at the map.",
+"grammar_explanation": "～ながら indicates performing two actions simultaneously."
+},
+{
+"japanese_sentence": "{地図|ちず}、{持|も}ってる？",
+"english_translation": "Do you have a map?",
+"grammar_explanation": "Casual question."
+}
+]
+},
+{
+"word_kanji": "塩",
+"reading_furigana": "しお",
+"meaning_english": "salt",
+"examples": [
+{
+"japanese_sentence": "{塩|しお}を{入|い}れすぎました。",
+"english_translation": "I put in too much salt.",
+"grammar_explanation": "Verb stem + すぎる means to do something excessively."
+},
+{
+"japanese_sentence": "{塩|しお}を{少々|しょうしょう}{入|い}れて。",
+"english_translation": "Add a little salt.",
+"grammar_explanation": "Casual request using the te-form."
+}
+]
+},
+{
+"word_kanji": "砂糖",
+"reading_furigana": "さとう",
+"meaning_english": "sugar",
+"examples": [
+{
+"japanese_sentence": "コーヒーに{砂糖|さとう}を{入|い}れますか。",
+"english_translation": "Do you put sugar in your coffee?",
+"grammar_explanation": "Standard polite present tense question."
+},
+{
+"japanese_sentence": "{砂糖|さとう}は{使|つか}わないで。",
+"english_translation": "Don't use sugar.",
+"grammar_explanation": "Casual negative request."
+}
+]
+},
+{
+"word_kanji": "読み方",
+"reading_furigana": "よみかた",
+"meaning_english": "how to read, way of reading",
+"examples": [
+{
+"japanese_sentence": "この{漢字|かんじ}の{読|よ}み{方|かた}を{教|おし}えてください。",
+"english_translation": "Please tell me how to read this Kanji.",
+"grammar_explanation": "Verb stem + kata creates a noun meaning 'the way of doing'."
+},
+{
+"japanese_sentence": "{名前|なまえ}の{読|よ}み{方|かた}がわからない。",
+"english_translation": "I don't know how to read the name.",
+"grammar_explanation": "Plain negative form of 'wakaru'."
+}
+]
+},
+{
+"word_kanji": "〜方",
+"reading_furigana": "〜かた",
+"meaning_english": "how to~, way of~ing",
+"examples": [
+{
+"japanese_sentence": "{使|つか}い{方|かた}がわかりません。",
+"english_translation": "I don't know how to use it.",
+"grammar_explanation": "The suffix ~kata is attached to the Masu-stem of a verb."
+},
+{
+"japanese_sentence": "{作|つく}り{方|かた}、{知|し}ってる？",
+"english_translation": "Do you know how to make it?",
+"grammar_explanation": "Casual question about a method."
+}
+]
+},
+{
+"word_kanji": "ゆっくり",
+"reading_furigana": "",
+"meaning_english": "slowly, leisurely",
+"examples": [
+{
+"japanese_sentence": "もっとゆっくり{話|はな}してください。",
+"english_translation": "Please speak more slowly.",
+"grammar_explanation": "Yukkuri is an adverb used to describe the manner of an action."
+},
+{
+"japanese_sentence": "{週末|しゅうまつ}はゆっくりしたい。",
+"english_translation": "I want to relax leisurely this weekend.",
+"grammar_explanation": "Desiderative form ～たい."
+}
+]
+},
+{
+"word_kanji": "すぐ",
+"reading_furigana": "",
+"meaning_english": "immediately",
+"examples": [
+{
+"japanese_sentence": "すぐ{行|い}きます。",
+"english_translation": "I'm coming immediately.",
+"grammar_explanation": "Sugu is an adverb indicating no time is wasted."
+},
+{
+"japanese_sentence": "すぐ{終|お}わるから、ちょっと{待|ま}って。",
+"english_translation": "It will end immediately, so wait a bit.",
+"grammar_explanation": "Using ～から to provide a reason for a request."
+}
+]
+},
+{
+"word_kanji": "また",
+"reading_furigana": "",
+"meaning_english": "again",
+"examples": [
+{
+"japanese_sentence": "また{明日|あした}お{会|あ}いしましょう。",
+"english_translation": "Let's meet again tomorrow.",
+"grammar_explanation": "Mata is used to signify repetition or a next time."
+},
+{
+"japanese_sentence": "また{間違|まちが}えた！",
+"english_translation": "I made a mistake again!",
+"grammar_explanation": "Casual past tense for exclamation."
+}
+]
+},
+{
+"word_kanji": "後で",
+"reading_furigana": "あとで",
+"meaning_english": "later",
+"examples": [
+{
+"japanese_sentence": "{後|あと}で{電話|でんわ}します。",
+"english_translation": "I will call you later.",
+"grammar_explanation": "Atode is used for a time after the current moment."
+},
+{
+"japanese_sentence": "{後|あと}で{食|た}べるよ。",
+"english_translation": "I'll eat it later.",
+"grammar_explanation": "Plain form with the particle よ."
+}
+]
+},
+{
+"word_kanji": "もう少し",
+"reading_furigana": "もうすこし",
+"meaning_english": "a little more",
+"examples": [
+{
+"japanese_sentence": "もう{少|すこ}しゆっくり{話|はな}してください。",
+"english_translation": "Please speak a little more slowly.",
+"grammar_explanation": "Mou sukoshi is used to modify adverbs or adjectives to indicate degree."
+},
+{
+"japanese_sentence": "もう{少|すこ}しで{着|つ}くよ。",
+"english_translation": "We'll arrive in just a little bit more (time).",
+"grammar_explanation": "Idiomatic use of mou sukoshi de to mean 'nearly'."
+}
+]
+},
+{
+"word_kanji": "もう〜",
+"reading_furigana": "",
+"meaning_english": "~more, another~",
+"examples": [
+{
+"japanese_sentence": "もう{一杯|いっぱい}いかがですか。",
+"english_translation": "Would you like another cup?",
+"grammar_explanation": "Mou used before a counter indicates an additional amount."
+},
+{
+"japanese_sentence": "もう{一人|ひとり}{来|く}るよ。",
+"english_translation": "Another person is coming.",
+"grammar_explanation": "Mou + counter in a casual statement."
+}
+]
+},
+{
+"word_kanji": "いいですよ",
+"reading_furigana": "",
+"meaning_english": "Sure. Certainly.",
+"examples": [
+{
+"japanese_sentence": "「{荷物|にもつ}を{持|も}ちましょうか」「いいですよ」",
+"english_translation": "'Shall I carry your luggage?' 'Sure, thank you.'",
+"grammar_explanation": "A polite phrase used to accept an offer or give permission."
+},
+{
+"japanese_sentence": "いいですよ、やってあげる。",
+"english_translation": "Sure, I'll do it for you.",
+"grammar_explanation": "～てあげる indicates doing something for the benefit of another (casual)."
+}
+]
+},
+{
+"word_kanji": "さあ",
+"reading_furigana": "",
+"meaning_english": "all right, well now",
+"examples": [
+{
+"japanese_sentence": "さあ、{帰|かえ}りましょう。",
+"english_translation": "Well now, let's go home.",
+"grammar_explanation": "An interjection used to encourage or start an action."
+},
+{
+"japanese_sentence": "さあ、{行|い}こう！",
+"english_translation": "All right, let's go!",
+"grammar_explanation": "Casual volitional with 'saa' for emphasis."
+}
+]
+},
+{
+"word_kanji": "あれ",
+"reading_furigana": "",
+"meaning_english": "Oh!",
+"examples": [
+{
+"japanese_sentence": "あれ、カギがありません。",
+"english_translation": "Oh! My keys are missing.",
+"grammar_explanation": "An exclamation of surprise used when something is unexpected."
+},
+{
+"japanese_sentence": "あれ？どこ{行|い}ったの？",
+"english_translation": "Huh? Where did you go?",
+"grammar_explanation": "Casual expression of confusion."
+}
+]
+},
+{
+"word_kanji": "信号を右へ曲がってください",
+"reading_furigana": "しんごうをみぎへまがってください",
+"meaning_english": "Turn to the right at the signal.",
+"examples": [
+{
+"japanese_sentence": "{次|つぎ}の{信号|しんごう}を{右|みぎ}へ{曲|ま}がってください。",
+"english_translation": "Please turn to the right at the next signal.",
+"grammar_explanation": "Specific instructional sentence using the te-form + kudasai."
+},
+{
+"japanese_sentence": "その{信号|しんごう}を{右|みぎ}へ{曲|ま}がれば{近|ちか}いですよ。",
+"english_translation": "If you turn right at that signal, it's close.",
+"grammar_explanation": "The conditional ～ば expresses a result of a specific action."
+}
+]
+},
+{
+"word_kanji": "まっすぐ",
+"reading_furigana": "",
+"meaning_english": "straight",
+"examples": [
+{
+"japanese_sentence": "この{道|みち}をまっすぐ{行|い}ってください。",
+"english_translation": "Please go straight down this road.",
+"grammar_explanation": "Massugu acts as an adverb modifying the verb ikimasu."
+},
+{
+"japanese_sentence": "まっすぐ{帰|かえ}ってね。",
+"english_translation": "Go straight home, okay?",
+"grammar_explanation": "Casual instruction using the te-form and particle 'ne'."
+}
+]
+},
+{
+"word_kanji": "これでお願いします",
+"reading_furigana": "これでおねがいします",
+"meaning_english": "I’d like to pay with this.",
+"examples": [
+{
+"japanese_sentence": "「1500{円|えん}です」「これで{お|お}{願|ねが}いします」",
+"english_translation": "'That's 1500 yen.' 'I'd like to pay with this (giving money).'",
+"grammar_explanation": "The particle で indicates the means (the money/card being used)."
+},
+{
+"japanese_sentence": "カードしかないけど、これでお{願|ねが}いします。",
+"english_translation": "I only have a card, but please take this.",
+"grammar_explanation": "～けど is a casual way to link sentences with 'but'."
+}
+]
+},
+{
+"word_kanji": "お釣り",
+"reading_furigana": "おつり",
+"meaning_english": "change",
+"examples": [
+{
+"japanese_sentence": "お{釣|つ}りを{忘|わす}れていますよ。",
+"english_translation": "You are forgetting your change.",
+"grammar_explanation": "The particle よ is used to provide information the listener might not know."
+},
+{
+"japanese_sentence": "お{釣|つ}り、いらないよ。",
+"english_translation": "I don't need the change.",
+"grammar_explanation": "Casual expression of refusal using 'iranai'."
+}
+]
+}
+]
+}
