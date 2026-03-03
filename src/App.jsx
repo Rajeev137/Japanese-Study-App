@@ -1,5 +1,6 @@
 // src/App.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import StudyModule from './components/StudyModule';
 import VocabDeck from './components/VocabDeck';
 import { lessonLibrary, vocabLibrary } from './data/index.js';
@@ -11,12 +12,22 @@ export default function App() {
 
   // ROUTER: If a Lesson is active, show StudyModule
   if (activeLesson) {
-    return <StudyModule lessonData={activeLesson} onBack={() => setActiveLesson(null)} />;
+    return (
+      <>
+        <StudyModule lessonData={activeLesson} onBack={() => setActiveLesson(null)} />
+        <SpeedInsights />
+      </>
+    );
   }
 
   // ROUTER: If a Deck is active, show VocabDeck
   if (activeDeck) {
-    return <VocabDeck deckData={activeDeck} onBack={() => setActiveDeck(null)} />;
+    return (
+      <>
+        <VocabDeck deckData={activeDeck} onBack={() => setActiveDeck(null)} />
+        <SpeedInsights />
+      </>
+    );
   }
 
   // DASHBOARD UI
@@ -94,6 +105,7 @@ export default function App() {
         )}
 
       </div>
+      <SpeedInsights />
     </div>
   );
 }
