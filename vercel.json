@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/dict/:path*",
+      "destination": "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/:path*"
+    }
+  ]
+}
