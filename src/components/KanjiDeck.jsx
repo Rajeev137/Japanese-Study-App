@@ -1,5 +1,5 @@
-// src/components/VocabDeck.jsx
-import React, { useState, useEffect } from "react";
+// src/components/KanjiDeck.jsx
+import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 
 const parseFuriganaString = (text) => {
@@ -25,7 +25,7 @@ const parseFuriganaString = (text) => {
   return elements;
 };
 
-export default function VocabDeck({ deckId, onBack }) {
+export default function KanjiDeck({ deckId, onBack }) {
   const [deckData, setDeckData] = useState(null);
   const [srsData, setSrsData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -35,28 +35,25 @@ export default function VocabDeck({ deckId, onBack }) {
       if (!deckId) return;
       setLoading(true);
       
-      // 1. Fetch Deck and Cards
       const { data: deck } = await supabase
         .from('decks')
-        .select(`*, vocab_cards (*)`)
+        .select(`*, kanji_cards (*)`)
         .eq('id', deckId)
         .single();
 
       if (deck) {
         setDeckData(deck);
-        // 2. Fetch SRS status for these cards
-        const cardIds = deck.vocab_cards.map(c => c.id);
+        const cardIds = deck.kanji_cards.map(c => c.id);
         if (cardIds.length > 0) {
           const { data: srs } = await supabase
             .from('srs_progress')
             .select('*')
-            .in('vocab_card_id', cardIds);
+            .in('kanji_card_id', cardIds);
             
           const srsMap = {};
           srs?.forEach(record => {
-            // Check if review date is in the future
             if (new Date(record.next_review) > new Date()) {
-              srsMap[record.vocab_card_id] = true; // It is "Done"
+              srsMap[record.kanji_card_id] = true;
             }
           });
           setSrsData(srsMap);
@@ -69,29 +66,24 @@ export default function VocabDeck({ deckId, onBack }) {
 
   const toggleDone = async (cardId) => {
     const isCurrentlyDone = srsData[cardId];
-    
-    // Optimistic UI Update
     setSrsData(prev => ({ ...prev, [cardId]: !isCurrentlyDone }));
 
     if (isCurrentlyDone) {
-      // If un-checking, set review date to the past to reset it
       await supabase.from('srs_progress')
         .update({ next_review: new Date().toISOString() })
-        .eq('vocab_card_id', cardId);
+        .eq('kanji_card_id', cardId);
     } else {
-      // If checking done, set to 48 hours in the future
       const futureDate = new Date();
       futureDate.setHours(futureDate.getHours() + 24);
       
-      // Upsert: Create if missing, update if exists
       await supabase.from('srs_progress').upsert({
-        vocab_card_id: cardId,
+        kanji_card_id: cardId,
         next_review: futureDate.toISOString()
-      }, { onConflict: 'vocab_card_id' }); // Note: Ensure unique constraint exists
+      }, { onConflict: 'kanji_card_id' });
     }
   };
 
-  if (loading) return <div className="min-h-screen flex items-center justify-center bg-slate-50 font-bold text-indigo-600 animate-pulse text-2xl">Loading Deck Content...</div>;
+  if (loading) return <div className="min-h-screen flex items-center justify-center bg-slate-50 font-bold text-indigo-600 animate-pulse text-2xl">Loading Kanji Deck...</div>;
   if (!deckData) return <div className="p-10 text-center">Deck not found.</div>;
 
   return (
@@ -104,17 +96,16 @@ export default function VocabDeck({ deckId, onBack }) {
       <header className="mb-10">
         <h1 className="text-4xl font-black text-slate-800 tracking-tight">{deckData.title}</h1>
         <div className="mt-4 inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold">
-          {deckData.vocab_cards?.length || 0} Words
+          {deckData.kanji_cards?.length || 0} Kanji
         </div>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        {deckData.vocab_cards?.map((item) => {
+        {deckData.kanji_cards?.map((item) => {
           const isDone = srsData[item.id];
           return (
             <div key={item.id} className={`relative rounded-3xl border transition-all duration-300 flex flex-col ${isDone ? 'bg-slate-50/50 border-green-200 shadow-none opacity-75' : 'bg-white border-slate-200 shadow-sm hover:shadow-md'}`}>
               
-              {/* Minimalist 48-Hour Done Toggle */}
               <button 
                 onClick={() => toggleDone(item.id)}
                 className={`absolute top-4 right-4 z-20 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${isDone ? 'bg-green-500 text-white' : 'bg-slate-700/30 hover:bg-slate-700/50 text-white'}`}
@@ -124,24 +115,36 @@ export default function VocabDeck({ deckId, onBack }) {
               </button>
 
               <div className={`p-6 text-white flex justify-between items-center rounded-t-3xl transition-colors ${isDone ? 'bg-slate-500' : 'bg-slate-800'}`}>
-                <ruby className="text-3xl font-japanese font-bold tracking-widest pr-8">
-                  {item.word_kanji}
-                  <rt className="text-[11px] text-slate-300 font-normal tracking-normal pb-1">{item.reading_hiragana}</rt>
-                </ruby>
+                <div className="flex flex-col pr-8">
+                  <span className="text-5xl font-black font-japanese mb-2 leading-none">{item.kanji_character}</span>
+                  <div className="flex gap-3 text-[10px] tracking-widest uppercase font-bold text-slate-300">
+                    <span>{item.onyomi}</span>
+                    <span>•</span>
+                    <span>{item.kunyomi}</span>
+                  </div>
+                </div>
                 <span className="text-xl font-black text-indigo-200 capitalize text-right leading-tight">{item.meaning_hinglish}</span>
               </div>
 
               <div className="p-6 grow space-y-6">
-                {item.usage_details?.examples?.map((ex, exIdx) => (
+                <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest border-b pb-2 mb-4">Vocabulary Context</h3>
+                {item.usage_examples?.map((ex, exIdx) => (
                   <div key={exIdx} className={`relative pl-4 border-l-2 ${isDone ? 'border-slate-200' : 'border-indigo-100'}`}>
                     <span className={`absolute -left-2.25 top-1 w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-black ${isDone ? 'bg-slate-200 text-slate-500' : 'bg-indigo-100 text-indigo-600'}`}>{exIdx + 1}</span>
-                    <p className="text-xl font-japanese text-slate-800 mb-2 leading-[2.5]">
-                      {parseFuriganaString(ex.japanese_sentence)}
-                    </p>
-                    <p className="text-sm text-slate-500 italic mb-3">{ex.english_translation}</p>
-                    <div className={`p-3 rounded-xl border ${isDone ? 'bg-slate-100 border-slate-100' : 'bg-indigo-50/50 border-indigo-50/80'}`}>
-                      <p className="text-xs text-slate-600 leading-relaxed">{ex.grammar_explanation}</p>
+                    <div className="flex justify-between items-end mb-2">
+                      <span className="text-lg font-bold font-japanese">
+                        {ex.compound_word} <span className="text-xs font-normal text-slate-400 ml-1">({ex.reading_hiragana})</span>
+                      </span>
+                      <span className="text-sm font-semibold text-slate-600">{ex.meaning_hinglish}</span>
                     </div>
+                    {ex.example_sentence && (
+                      <div className={`p-3 rounded-xl border ${isDone ? 'bg-slate-100 border-slate-100' : 'bg-indigo-50/50 border-indigo-50/80'}`}>
+                        <p className="text-sm font-japanese text-slate-800 mb-1 leading-relaxed">
+                          {parseFuriganaString(ex.example_sentence)}
+                        </p>
+                        <p className="text-xs text-slate-500 italic">{ex.sentence_meaning}</p>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
