@@ -1,6 +1,5 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import { SpeedInsights } from '@vercel/speed-insights/react';
 import StudyModule from './components/StudyModule';
 import VocabDeck from './components/VocabDeck';
 import AiSenseiChat from './components/AiSenseiChat'; // Import our new Chat
@@ -147,7 +146,6 @@ export default function App() {
           ✨
         </button>
       )}
-      <SpeedInsights />
     </div>
   );
 }
