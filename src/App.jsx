@@ -1,11 +1,9 @@
-// src/App.jsx
 import React, { useState, useEffect } from "react";
 import StudyModule from "./components/StudyModule";
 import VocabDeck from "./components/VocabDeck";
 import KanjiDeck from "./components/KanjiDeck";
 import AiSenseiChat from "./components/AiSenseiChat";
-// 1. Swapped the import
-import ImmersionGateway from "./components/ImmersionGateway"; 
+import ImmersionGateway from "./components/ImmersionGateway";
 import { supabase } from "./supabaseClient";
 
 export default function App() {
@@ -22,9 +20,6 @@ export default function App() {
   const [lessons, setLessons] = useState([]);
   const [vocabDecks, setVocabDecks] = useState([]);
   const [kanjiDecks, setKanjiDecks] = useState([]);
-
-  // 2. REMOVED: const [isImmersionActive, setIsImmersionActive] = useState(false);
-
   const [srsProgress, setSrsProgress] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -46,18 +41,17 @@ export default function App() {
       setLoading(true);
       const { data: decksData } = await supabase.from("decks").select("*, vocab_cards(id), kanji_cards(id)");
       const { data: lessonsData } = await supabase.from("essays").select("*");
-      const { data: progressData } = await supabase.from("srs_progress").select("*").gt("next_review", new Date().toISOString());
+      // Fetch ALL srs_progress so we can partition due vs. done in JS
+      const { data: progressData } = await supabase.from("srs_progress").select("*");
 
       if (decksData) {
         const sortedDecks = decksData.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true }));
         setVocabDecks(sortedDecks.filter((d) => d.deck_type === "vocab" || !d.deck_type));
         setKanjiDecks(sortedDecks.filter((d) => d.deck_type === "kanji"));
       }
-
       if (lessonsData) {
         setLessons(lessonsData.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true })));
       }
-
       if (progressData) {
         setSrsProgress(progressData);
       }
@@ -76,15 +70,26 @@ export default function App() {
     return () => document.removeEventListener("mouseup", handleSelection);
   }, []);
 
+  const now = new Date();
+
   const getDeckProgress = (deck) => {
     const isKanji = deck.deck_type === "kanji";
     const totalCards = isKanji ? deck.kanji_cards?.length || 0 : deck.vocab_cards?.length || 0;
-    if (totalCards === 0) return { total: 0, done: 0, percentage: 0 };
+    if (totalCards === 0) return { total: 0, done: 0, due: 0, percentage: 0 };
 
-    const cardIdsInDeck = isKanji ? deck.kanji_cards.map((c) => c.id) : deck.vocab_cards.map((c) => c.id);
-    const doneCards = srsProgress.filter((p) => isKanji ? cardIdsInDeck.includes(p.kanji_card_id) : cardIdsInDeck.includes(p.vocab_card_id)).length;
+    const cardIds = isKanji ? deck.kanji_cards.map(c => c.id) : deck.vocab_cards.map(c => c.id);
+    const relevant = srsProgress.filter(p =>
+      isKanji ? cardIds.includes(p.kanji_card_id) : cardIds.includes(p.vocab_card_id)
+    );
+    // "done" = reviewed and not yet due
+    const done = relevant.filter(p => new Date(p.next_review) > now).length;
+    // "due" = cards with no record or past next_review
+    const reviewedIds = new Set(relevant.map(p => isKanji ? p.kanji_card_id : p.vocab_card_id));
+    const neverReviewed = cardIds.filter(id => !reviewedIds.has(id)).length;
+    const pastDue = relevant.filter(p => new Date(p.next_review) <= now).length;
+    const due = neverReviewed + pastDue;
 
-    return { total: totalCards, done: doneCards, percentage: Math.round((doneCards / totalCards) * 100) };
+    return { total: totalCards, done, due, percentage: Math.round((done / totalCards) * 100) };
   };
 
   const ProgressDial = ({ progress }) => {
@@ -95,7 +100,7 @@ export default function App() {
       <div className="flex items-center gap-3">
         <div className="relative w-10 h-10 flex items-center justify-center">
           <svg className="w-full h-full transform -rotate-90" viewBox="0 0 40 40">
-            <circle cx="20" cy="20" r={radius} className="stroke-slate-600" strokeWidth="4" fill="transparent"/>
+            <circle cx="20" cy="20" r={radius} className="stroke-slate-600" strokeWidth="4" fill="transparent" />
             <circle cx="20" cy="20" r={radius} className="stroke-indigo-400 transition-all duration-500 ease-in-out" strokeWidth="4" fill="transparent" strokeDasharray={circumference} strokeDashoffset={strokeDashoffset} strokeLinecap="round" />
           </svg>
           <span className="absolute text-[10px] font-bold text-white">{progress.percentage}%</span>
@@ -108,7 +113,24 @@ export default function App() {
     );
   };
 
-  // --- 3. CLEANED UP RENDER LOGIC ---
+  const SkeletonCard = () => (
+    <div className="bg-slate-800/50 rounded-3xl p-6 animate-pulse min-h-50 flex flex-col justify-between">
+      <div>
+        <div className="h-4 bg-slate-700 rounded-full w-16 mb-4" />
+        <div className="h-6 bg-slate-700 rounded-full w-3/4 mb-2" />
+        <div className="h-4 bg-slate-700 rounded-full w-1/2" />
+      </div>
+      <div className="h-10 bg-slate-700 rounded-xl mt-4" />
+    </div>
+  );
+
+  // Derive chat context label from current view
+  const chatContext = activeLesson
+    ? `a reading lesson: "${activeLesson.title}"`
+    : activeDeckId
+      ? `a ${activeTab === 'kanji' ? 'kanji' : 'vocabulary'} deck`
+      : activeTab === 'lessons' ? 'reading lessons' : activeTab === 'vocab' ? 'vocabulary' : activeTab === 'kanji' ? 'kanji' : null;
+
   let mainContent;
   if (activeLesson) {
     mainContent = <StudyModule lessonData={activeLesson.content_data} onBack={() => setActiveLesson(null)} />;
@@ -120,7 +142,16 @@ export default function App() {
       mainContent = <VocabDeck deckId={activeDeckId} onBack={() => setActiveDeckId(null)} />;
     }
   } else if (loading) {
-    mainContent = <div className="min-h-screen flex items-center justify-center bg-slate-50 font-bold text-indigo-600 animate-pulse text-xl">Loading Library...</div>;
+    mainContent = (
+      <div className="min-h-screen bg-slate-50 p-6 md:p-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10 h-10 bg-slate-200 rounded-full w-64 animate-pulse" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[1, 2, 3, 4, 5, 6].map(i => <SkeletonCard key={i} />)}
+          </div>
+        </div>
+      </div>
+    );
   } else {
     mainContent = (
       <div className="min-h-screen bg-slate-50 p-6 md:p-12 font-sans">
@@ -130,9 +161,8 @@ export default function App() {
               <h1 className="text-4xl font-black text-slate-800 tracking-tight mb-2">My Study Library</h1>
               <p className="text-slate-500 font-medium text-lg">Master your Japanese reading, vocab, and kanji.</p>
             </div>
-            
+
             <div className="flex bg-slate-200/50 p-1.5 rounded-2xl overflow-x-auto w-full lg:w-auto">
-              {/* 4. IMMERSION NOW USES THE NATIVE TAB SYSTEM */}
               <button
                 onClick={() => setActiveTab("immersion")}
                 className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "immersion" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
@@ -160,16 +190,13 @@ export default function App() {
             </div>
           </header>
 
-          {/* 5. RENDER THE GATEWAY WHEN IMMERSION TAB IS ACTIVE */}
-          {activeTab === "immersion" && (
-            <ImmersionGateway />
-          )}
+          {activeTab === "immersion" && <ImmersionGateway />}
 
           {activeTab === "lessons" && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {lessons.map((lesson, idx) => (
                 <button key={lesson.id} onClick={() => setActiveLesson(lesson)} className="group text-left bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full">
-                  <div className="flex justify-between items-start mb-4">
+                  <div className="mb-4">
                     <span className="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">Module {idx + 1}</span>
                   </div>
                   <h2 className="text-2xl font-bold text-slate-800 mb-2 leading-tight">{lesson.title}</h2>
@@ -184,10 +211,15 @@ export default function App() {
               {(activeTab === "vocab" ? vocabDecks : kanjiDecks).map((deck, idx) => {
                 const progress = getDeckProgress(deck);
                 return (
-                  <button key={deck.id} onClick={() => setActiveDeckId(deck.id)} className="group text-left bg-slate-800 text-white p-6 rounded-3xl border border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-[200px]">
+                  <button key={deck.id} onClick={() => setActiveDeckId(deck.id)} className="group text-left bg-slate-800 text-white p-6 rounded-3xl border border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-50">
                     <div className="relative z-10 mb-6">
                       <div className="flex justify-between items-start mb-4">
                         <span className="bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">Deck {idx + 1}</span>
+                        {progress.due > 0 && (
+                          <span className="bg-orange-500 text-white px-2.5 py-1 rounded-full text-xs font-black">
+                            {progress.due} due
+                          </span>
+                        )}
                       </div>
                       <h2 className="text-2xl font-bold text-white mb-1 leading-tight">{deck.title}</h2>
                       <p className="text-sm text-slate-400">Level: {deck.jlpt_level}</p>
@@ -207,13 +239,22 @@ export default function App() {
 
   return (
     <div className="relative overflow-hidden w-full min-h-screen">
-      <div className={`transition-all duration-300 ${isChatOpen ? "mr-100 opacity-90" : "mr-0"}`}>
+      <div className={`transition-all duration-300 ${isChatOpen ? "mr-105 opacity-90" : "mr-0"}`}>
         {mainContent}
       </div>
-      <AiSenseiChat isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} selectedText={highlightedText} />
+      <AiSenseiChat
+        isOpen={isChatOpen}
+        onClose={() => setIsChatOpen(false)}
+        selectedText={highlightedText}
+        context={chatContext}
+      />
       {!isChatOpen && (
-        <button onClick={() => setIsChatOpen(true)} className="fixed bottom-8 right-8 bg-slate-800 hover:bg-indigo-600 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center text-2xl transition-all z-40">
-          ✨
+        <button
+          onClick={() => setIsChatOpen(true)}
+          className="fixed bottom-8 right-8 bg-slate-800 hover:bg-orange-500 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center transition-all z-40"
+          title="Ask Sensei"
+        >
+          <div className="font-black text-base tracking-widest" style={{ fontFamily: 'serif' }}>先生</div>
         </button>
       )}
     </div>

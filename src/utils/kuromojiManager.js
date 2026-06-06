@@ -19,21 +19,18 @@ export const loadDictionary = () => {
 
     // 3. Start the download using a more reliable CDN
     isInitializing = true;
-    console.log("Starting dictionary background download...");
 
     kuromoji
       .builder({ dicPath: "/dict" })
       .build((err, tokenizer) => {
-        isInitializing = false; // Free up the lock
+        isInitializing = false;
 
         if (err) {
-          console.error("Dictionary download failed:", err);
           initializationQueue.forEach((p) => p.reject(err));
           initializationQueue = [];
           return reject(err);
         }
 
-        console.log("Dictionary loaded successfully!");
         globalTokenizer = tokenizer;
         resolve(tokenizer);
 

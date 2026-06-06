@@ -1,6 +1,10 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-japanese {
   /* This is crucial for side-by-side view to prevent line crashing */
   line-height: 2.8 !important; 
