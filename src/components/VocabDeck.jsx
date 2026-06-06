@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from '../supabaseClient';
-import { parseFuriganaString } from '../utils/furigana';
+import { parseFuriganaString } from '../utils/furigana.jsx';
 
 // SM-2 algorithm: returns { nextIntervalDays, nextEaseFactor }
 function sm2(quality, intervalDays, easeFactor, reviewCount) {

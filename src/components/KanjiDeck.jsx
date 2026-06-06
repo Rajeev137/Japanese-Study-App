@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
-import { parseFuriganaString } from '../utils/furigana';
+import { parseFuriganaString } from '../utils/furigana.jsx';
 
 function sm2(quality, intervalDays, easeFactor, reviewCount) {
   let newEase = easeFactor + 0.1 - (5 - quality) * 0.08;
