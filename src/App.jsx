@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import StudyModule from "./components/StudyModule";
 import VocabDeck from "./components/VocabDeck";
 import KanjiDeck from "./components/KanjiDeck";
+import VerbDeck from "./components/VerbDeck";
 import AiSenseiChat from "./components/AiSenseiChat";
 import ImmersionGateway from "./components/ImmersionGateway";
 import { supabase } from "./supabaseClient";
@@ -129,7 +130,11 @@ export default function App() {
     ? `a reading lesson: "${activeLesson.title}"`
     : activeDeckId
       ? `a ${activeTab === 'kanji' ? 'kanji' : 'vocabulary'} deck`
-      : activeTab === 'lessons' ? 'reading lessons' : activeTab === 'vocab' ? 'vocabulary' : activeTab === 'kanji' ? 'kanji' : null;
+      : activeTab === 'lessons' ? 'reading lessons'
+      : activeTab === 'vocab' ? 'vocabulary'
+      : activeTab === 'kanji' ? 'kanji'
+      : activeTab === 'verbs' ? 'verb conjugations'
+      : null;
 
   let mainContent;
   if (activeLesson) {
@@ -159,7 +164,7 @@ export default function App() {
           <header className="mb-10 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
             <div>
               <h1 className="text-4xl font-black text-slate-800 tracking-tight mb-2">My Study Library</h1>
-              <p className="text-slate-500 font-medium text-lg">Master your Japanese reading, vocab, and kanji.</p>
+              <p className="text-slate-500 font-medium text-lg">Master your Japanese reading, vocab, kanji, and verbs.</p>
             </div>
 
             <div className="flex bg-slate-200/50 p-1.5 rounded-2xl overflow-x-auto w-full lg:w-auto">
@@ -187,6 +192,12 @@ export default function App() {
               >
                 ✍️ Kanji Decks
               </button>
+              <button
+                onClick={() => setActiveTab("verbs")}
+                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "verbs" ? "bg-white text-teal-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
+              >
+                動 Verb Deck
+              </button>
             </div>
           </header>
 
@@ -203,6 +214,16 @@ export default function App() {
                   <h3 className="text-sm font-japanese text-slate-500 mb-6">{lesson.content_data.topic_japanese}</h3>
                 </button>
               ))}
+            </div>
+          )}
+
+          {activeTab === "verbs" && (
+            <div>
+              <div className="mb-8">
+                <h2 className="text-3xl font-black text-slate-800 tracking-tight mb-1">Verb Deck</h2>
+                <p className="text-slate-500 font-medium">Verbs collected from your reading sessions.</p>
+              </div>
+              <VerbDeck />
             </div>
           )}
 
