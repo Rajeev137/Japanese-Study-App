@@ -234,14 +234,14 @@ export default function StudyModule({ lessonData, onBack }) {
                 className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch"
               >
                 {/* Japanese Card */}
-                <div
-                  className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-colors"
-                  onMouseUp={() => handleParagraphMouseUp(para, idx)}
-                >
+                <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-colors">
                   <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest block mb-4">
                     Paragraph {idx + 1}
                   </span>
-                  <div className="text-2xl leading-[2.8] text-slate-700 font-japanese mb-6">
+                  <div
+                    className="text-2xl leading-[2.8] text-slate-700 font-japanese mb-6 cursor-text select-text"
+                    onMouseUp={() => handleParagraphMouseUp(para, idx)}
+                  >
                     {tokenizedParagraphs[idx]?.map((token, tokenIdx) =>
                       renderToken(token, tokenIdx),
                     )}
