@@ -112,6 +112,6 @@ Progress dials in the deck grid show `done / total` (done = reviewed AND `next_r
 
 ---
 
-## Active Branch
+## Shipped Features (on `main`)
 
-`feature/verb-deck` — adds VerbDeck and verb extraction to all study modes. See `verb_deck_todo.md` for Supabase SQL to run before merging.
+- **Verb Deck** — verb extraction from all 3 study modes (Reading Module, VocabDeck, KanjiDeck), AI meaning fetch (Claude → Groq), duplicate guard, teal-themed collection view. See `verb_deck_todo.md` for the Supabase table SQL (run before using this feature).
