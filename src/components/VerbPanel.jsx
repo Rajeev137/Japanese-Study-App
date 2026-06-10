@@ -73,9 +73,14 @@ export default function VerbPanel({ verbPopover, isFetchingMeanings, onAdd, onCl
             </div>
             <button
               onClick={() => onAdd(v, verbPopover.sourceSentence)}
-              className="ml-3 shrink-0 text-xs bg-teal-700 hover:bg-teal-800 text-white px-3 py-1.5 rounded-lg font-bold transition-colors"
+              disabled={isFetchingMeanings}
+              className={`ml-3 shrink-0 text-xs px-3 py-1.5 rounded-lg font-bold transition-colors ${
+                isFetchingMeanings
+                  ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                  : 'bg-teal-700 hover:bg-teal-800 text-white'
+              }`}
             >
-              + Add
+              {isFetchingMeanings ? '…' : '+ Add'}
             </button>
           </div>
         ))}
