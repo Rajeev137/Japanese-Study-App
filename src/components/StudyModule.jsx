@@ -1,11 +1,7 @@
-import React, { useEffect, useState, useCallback } from "react";
-import { loadDictionary, getTokenizer } from "../utils/kuromojiManager";
-import { supabase } from "../supabaseClient";
-
-// --- GLOBAL CACHE (Runs only once, outside the component) ---
-let globalTokenizer = null;
-let isInitializing = false;
-let initializationQueue = [];
+import React, { useEffect, useState } from "react";
+import { loadDictionary } from "../utils/kuromojiManager";
+import { extractVerbsFromText, fetchVerbMeanings, addVerbToSupabase } from "../utils/verbUtils";
+import VerbPanel, { VerbToast } from "./VerbPanel";
 
 const convertToHiragana = (katakanaStr) => {
   if (!katakanaStr) return "";
@@ -13,39 +9,6 @@ const convertToHiragana = (katakanaStr) => {
     return String.fromCharCode(match.charCodeAt(0) - 0x60);
   });
 };
-
-const VERB_TYPE_MAP = {
-  "\u4e94\u6bb5\u52d5\u8a5e": "u-verb",
-  "\u4e00\u6bb5\u52d5\u8a5e": "ru-verb",
-  "\u30ab\u884c\u5909\u683c\u6d3b\u7528": "irregular (\u304f\u308b)",
-  "\u30b5\u884c\u5909\u683c\u6d3b\u7528": "irregular (\u3059\u308b)",
-};
-
-const INFLECTION_MAP = {
-  "\u57fa\u672c\u5f62": "dictionary form",
-  "\u9023\u7528\u5f62": "conjunctive (\u307e\u3059-stem)",
-  "\u672a\u7136\u5f62": "negative stem",
-  "\u547d\u4ee4\u5f62": "imperative",
-  "\u4eee\u5b9a\u5f62": "conditional (\u3070)",
-  "\u4f53\u8a00\u63a5\u7d9a": "noun modifier",
-  "\u9023\u7528\u30bf\u63a5\u7d9a": "past/\u3066 base",
-  "\u30ac\u30eb\u63a5\u7d9a": "-garu connecting",
-};
-
-function getVerbType(conjugatedType) {
-  return VERB_TYPE_MAP[conjugatedType] || "verb";
-}
-
-function getInflectionLabel(conjugatedForm) {
-  return INFLECTION_MAP[conjugatedForm] || conjugatedForm || "";
-}
-
-function getPlainFormReading(basicForm) {
-  const tok = getTokenizer();
-  if (!tok || !basicForm) return "";
-  const tokens = tok.tokenize(basicForm);
-  return tokens.map((t) => convertToHiragana(t.reading || t.surface_form)).join("");
-}
 
 export default function StudyModule({ lessonData, onBack }) {
   const [tokenizedParagraphs, setTokenizedParagraphs] = useState([]);
@@ -56,6 +19,7 @@ export default function StudyModule({ lessonData, onBack }) {
   const [isRecording, setIsRecording] = useState(null);
   const [userSpeech, setUserSpeech] = useState({});
   const [verbPopover, setVerbPopover] = useState(null);
+  const [isFetchingMeanings, setIsFetchingMeanings] = useState(false);
   const [toast, setToast] = useState(null);
 
   useEffect(() => {
@@ -153,68 +117,28 @@ export default function StudyModule({ lessonData, onBack }) {
     setTimeout(() => setToast(null), 3000);
   };
 
-  const handleParagraphMouseUp = (idx, paraText) => {
-    const sel = window.getSelection();
-    const selectedText = sel?.toString().trim();
-    if (!selectedText) {
-      setVerbPopover(null);
-      return;
-    }
+  const handleParagraphMouseUp = async (para, idx) => {
+    const selectedText = window.getSelection()?.toString().trim();
+    if (!selectedText) { setVerbPopover(null); return; }
 
-    const tokens = tokenizedParagraphs[idx] || [];
-    const verbTokens = tokens.filter(
-      (t) => t.pos === "動詞" && selectedText.includes(t.surface_form)
+    const verbs = await extractVerbsFromText(selectedText);
+    if (!verbs.length) { setVerbPopover(null); return; }
+
+    setVerbPopover({ paragraphIdx: idx, verbs, sourceSentence: para });
+
+    setIsFetchingMeanings(true);
+    const meanings = await fetchVerbMeanings(verbs.map((v) => v.plain_form));
+    setVerbPopover((prev) =>
+      prev ? { ...prev, verbs: prev.verbs.map((v) => ({ ...v, meaning_hinglish: meanings[v.plain_form] || '' })) } : null
     );
-
-    if (verbTokens.length === 0) {
-      setVerbPopover(null);
-      return;
-    }
-
-    const seen = new Set();
-    const uniqueVerbs = verbTokens.reduce((acc, t) => {
-      if (!seen.has(t.basic_form)) {
-        seen.add(t.basic_form);
-        acc.push({
-          plain_form: t.basic_form,
-          reading_hiragana: getPlainFormReading(t.basic_form),
-          verb_type: getVerbType(t.conjugated_type),
-          inflected_form: t.surface_form,
-          inflection_label: getInflectionLabel(t.conjugated_form),
-        });
-      }
-      return acc;
-    }, []);
-
-    setVerbPopover({ paragraphIdx: idx, verbs: uniqueVerbs, sourceSentence: paraText });
+    setIsFetchingMeanings(false);
   };
 
   const addVerbToDeck = async (verb, sourceSentence) => {
-    const { data: existing } = await supabase
-      .from("verb_cards")
-      .select("id")
-      .eq("plain_form", verb.plain_form)
-      .maybeSingle();
-
-    if (existing) {
-      showToast(`${verb.plain_form} is already in your Verb Deck`, "warning");
-      return;
-    }
-
-    const { error } = await supabase.from("verb_cards").insert({
-      plain_form: verb.plain_form,
-      reading_hiragana: verb.reading_hiragana,
-      verb_type: verb.verb_type,
-      inflected_form: verb.inflected_form,
-      inflection_label: verb.inflection_label,
-      source_sentence: sourceSentence,
-    });
-
-    if (error) {
-      showToast("Failed to add verb. Please try again.", "error");
-    } else {
-      showToast(`Added ${verb.plain_form} to Verb Deck!`);
-    }
+    const result = await addVerbToSupabase(verb, sourceSentence);
+    if (result.status === 'duplicate') showToast(`${verb.plain_form} is already in your Verb Deck`, 'warning');
+    else if (result.status === 'error') showToast('Failed to add verb. Please try again.', 'error');
+    else showToast(`Added ${verb.plain_form} to Verb Deck!`);
   };
 
   const renderToken = (token, index) => {
@@ -312,7 +236,7 @@ export default function StudyModule({ lessonData, onBack }) {
                 {/* Japanese Card */}
                 <div
                   className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-colors"
-                  onMouseUp={() => handleParagraphMouseUp(idx, para)}
+                  onMouseUp={() => handleParagraphMouseUp(para, idx)}
                 >
                   <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest block mb-4">
                     Paragraph {idx + 1}
@@ -429,57 +353,13 @@ export default function StudyModule({ lessonData, onBack }) {
                     </div>
                   )}
 
-                  {/* Verb Detection Panel */}
-                  {verbPopover?.paragraphIdx === idx && verbPopover.verbs.length > 0 && (
-                    <div className="mt-4 border-t border-teal-100 pt-4">
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-[10px] font-black text-teal-600 uppercase tracking-widest">
-                          Verbs Detected
-                        </span>
-                        <button
-                          onClick={() => setVerbPopover(null)}
-                          className="text-slate-400 hover:text-slate-600 text-xs"
-                        >
-                          ✕
-                        </button>
-                      </div>
-                      <div className="space-y-2">
-                        {verbPopover.verbs.map((v, i) => (
-                          <div
-                            key={i}
-                            className="flex items-center justify-between bg-teal-50 border border-teal-100 rounded-xl p-3"
-                          >
-                            <div className="flex-1 min-w-0">
-                              <div className="flex items-center gap-2 flex-wrap">
-                                <ruby className="text-xl font-bold font-japanese text-teal-900">
-                                  {v.plain_form}
-                                  {v.reading_hiragana && (
-                                    <rt className="text-[10px] text-teal-500 font-normal">
-                                      {v.reading_hiragana}
-                                    </rt>
-                                  )}
-                                </ruby>
-                                <span className="text-[10px] font-black bg-teal-100 text-teal-700 px-2 py-0.5 rounded-full">
-                                  {v.verb_type}
-                                </span>
-                              </div>
-                              {v.inflected_form && (
-                                <p className="text-xs text-slate-500 mt-1">
-                                  <span className="font-japanese">{v.inflected_form}</span>
-                                  {v.inflection_label && ` · ${v.inflection_label}`}
-                                </p>
-                              )}
-                            </div>
-                            <button
-                              onClick={() => addVerbToDeck(v, verbPopover.sourceSentence)}
-                              className="ml-3 shrink-0 text-xs bg-teal-700 hover:bg-teal-800 text-white px-3 py-1.5 rounded-lg font-bold transition-colors"
-                            >
-                              + Add
-                            </button>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                  {verbPopover?.paragraphIdx === idx && (
+                    <VerbPanel
+                      verbPopover={verbPopover}
+                      isFetchingMeanings={isFetchingMeanings}
+                      onAdd={addVerbToDeck}
+                      onClose={() => setVerbPopover(null)}
+                    />
                   )}
                 </div>
 
@@ -541,20 +421,7 @@ export default function StudyModule({ lessonData, onBack }) {
         </div>
       </section>
 
-      {/* Toast notification */}
-      {toast && (
-        <div
-          className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl shadow-xl text-sm font-bold transition-all ${
-            toast.type === "warning"
-              ? "bg-amber-500 text-white"
-              : toast.type === "error"
-              ? "bg-red-500 text-white"
-              : "bg-teal-700 text-white"
-          }`}
-        >
-          {toast.msg}
-        </div>
-      )}
+      <VerbToast toast={toast} />
     </div>
   );
 }

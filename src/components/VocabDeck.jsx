@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from '../supabaseClient';
 import { parseFuriganaString } from '../utils/furigana.jsx';
+import { extractVerbsFromText, fetchVerbMeanings, addVerbToSupabase } from '../utils/verbUtils';
+import VerbPanel, { VerbToast } from './VerbPanel';
 
 // SM-2 algorithm: returns { nextIntervalDays, nextEaseFactor }
 function sm2(quality, intervalDays, easeFactor, reviewCount) {
@@ -41,6 +43,9 @@ export default function VocabDeck({ deckId, onBack }) {
   const [srsData, setSrsData] = useState({});
   const [flippedCards, setFlippedCards] = useState({});
   const [loading, setLoading] = useState(true);
+  const [verbPopover, setVerbPopover] = useState(null);
+  const [isFetchingMeanings, setIsFetchingMeanings] = useState(false);
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -107,6 +112,35 @@ export default function VocabDeck({ deckId, onBack }) {
       ease_factor: nextEaseFactor,
       review_count: reviewCount + 1,
     }, { onConflict: 'vocab_card_id' });
+  };
+
+  const showToast = (msg, type = 'success') => {
+    setToast({ msg, type });
+    setTimeout(() => setToast(null), 3000);
+  };
+
+  const handleSentenceMouseUp = async (sentenceText, cardId) => {
+    const selectedText = window.getSelection()?.toString().trim();
+    if (!selectedText) { setVerbPopover(null); return; }
+
+    const verbs = await extractVerbsFromText(selectedText);
+    if (!verbs.length) { setVerbPopover(null); return; }
+
+    setVerbPopover({ cardId, verbs, sourceSentence: sentenceText });
+
+    setIsFetchingMeanings(true);
+    const meanings = await fetchVerbMeanings(verbs.map((v) => v.plain_form));
+    setVerbPopover((prev) =>
+      prev ? { ...prev, verbs: prev.verbs.map((v) => ({ ...v, meaning_hinglish: meanings[v.plain_form] || '' })) } : null
+    );
+    setIsFetchingMeanings(false);
+  };
+
+  const addVerbToDeck = async (verb, sourceSentence) => {
+    const result = await addVerbToSupabase(verb, sourceSentence);
+    if (result.status === 'duplicate') showToast(`${verb.plain_form} is already in your Verb Deck`, 'warning');
+    else if (result.status === 'error') showToast('Failed to add verb', 'error');
+    else showToast(`Added ${verb.plain_form} to Verb Deck!`);
   };
 
   if (loading) {
@@ -189,7 +223,10 @@ export default function VocabDeck({ deckId, onBack }) {
                     <span className={`absolute -left-2.5 top-1 w-4 h-4 rounded-full flex items-center justify-center text-[10px] font-black ${!isDue ? 'bg-slate-200 text-slate-500' : 'bg-indigo-100 text-indigo-600'}`}>
                       {exIdx + 1}
                     </span>
-                    <p className="text-xl font-japanese text-slate-800 mb-2 leading-[2.5]">
+                    <p
+                      className="text-xl font-japanese text-slate-800 mb-2 leading-[2.5] cursor-text select-text"
+                      onMouseUp={() => handleSentenceMouseUp(ex.japanese_sentence, item.id)}
+                    >
                       {parseFuriganaString(ex.japanese_sentence)}
                     </p>
                     <p className="text-sm text-slate-500 italic mb-3">{ex.english_translation}</p>
@@ -198,6 +235,14 @@ export default function VocabDeck({ deckId, onBack }) {
                     </div>
                   </div>
                 ))}
+                {verbPopover?.cardId === item.id && (
+                  <VerbPanel
+                    verbPopover={verbPopover}
+                    isFetchingMeanings={isFetchingMeanings}
+                    onAdd={addVerbToDeck}
+                    onClose={() => setVerbPopover(null)}
+                  />
+                )}
               </div>
 
               {/* SRS footer */}
@@ -243,6 +288,7 @@ export default function VocabDeck({ deckId, onBack }) {
           );
         })}
       </div>
+      <VerbToast toast={toast} />
     </div>
   );
 }
