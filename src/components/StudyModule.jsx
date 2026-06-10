@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { loadDictionary } from "../utils/kuromojiManager";
-
-// --- GLOBAL CACHE (Runs only once, outside the component) ---
-let globalTokenizer = null;
-let isInitializing = false;
-let initializationQueue = [];
+import { extractVerbsFromText, fetchVerbMeanings, addVerbToSupabase } from "../utils/verbUtils";
+import VerbPanel, { VerbToast } from "./VerbPanel";
 
 const convertToHiragana = (katakanaStr) => {
   if (!katakanaStr) return "";
@@ -21,6 +18,9 @@ export default function StudyModule({ lessonData, onBack }) {
   const [isSpeaking, setIsSpeaking] = useState(null);
   const [isRecording, setIsRecording] = useState(null);
   const [userSpeech, setUserSpeech] = useState({});
+  const [verbPopover, setVerbPopover] = useState(null);
+  const [isFetchingMeanings, setIsFetchingMeanings] = useState(false);
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     setIsDictLoading(true);
@@ -110,6 +110,35 @@ export default function StudyModule({ lessonData, onBack }) {
     let matches = 0;
     for (let char of s) if (o.includes(char)) matches++;
     return Math.round((matches / o.length) * 100);
+  };
+
+  const showToast = (msg, type = "success") => {
+    setToast({ msg, type });
+    setTimeout(() => setToast(null), 3000);
+  };
+
+  const handleParagraphMouseUp = async (para, idx) => {
+    const selectedText = window.getSelection()?.toString().trim();
+    if (!selectedText) { setVerbPopover(null); return; }
+
+    const verbs = await extractVerbsFromText(selectedText);
+    if (!verbs.length) { setVerbPopover(null); return; }
+
+    setVerbPopover({ paragraphIdx: idx, verbs, sourceSentence: para });
+
+    setIsFetchingMeanings(true);
+    const meanings = await fetchVerbMeanings(verbs.map((v) => v.plain_form));
+    setVerbPopover((prev) =>
+      prev ? { ...prev, verbs: prev.verbs.map((v) => ({ ...v, meaning_hinglish: meanings[v.plain_form] || '' })) } : null
+    );
+    setIsFetchingMeanings(false);
+  };
+
+  const addVerbToDeck = async (verb, sourceSentence) => {
+    const result = await addVerbToSupabase(verb, sourceSentence);
+    if (result.status === 'duplicate') showToast(`${verb.plain_form} is already in your Verb Deck`, 'warning');
+    else if (result.status === 'error') showToast('Failed to add verb. Please try again.', 'error');
+    else showToast(`Added ${verb.plain_form} to Verb Deck!`);
   };
 
   const renderToken = (token, index) => {
@@ -209,7 +238,10 @@ export default function StudyModule({ lessonData, onBack }) {
                   <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest block mb-4">
                     Paragraph {idx + 1}
                   </span>
-                  <div className="text-2xl leading-[2.8] text-slate-700 font-japanese mb-6">
+                  <div
+                    className="text-2xl leading-[2.8] text-slate-700 font-japanese mb-6 cursor-text select-text"
+                    onMouseUp={() => handleParagraphMouseUp(para, idx)}
+                  >
                     {tokenizedParagraphs[idx]?.map((token, tokenIdx) =>
                       renderToken(token, tokenIdx),
                     )}
@@ -320,6 +352,15 @@ export default function StudyModule({ lessonData, onBack }) {
                       </p>
                     </div>
                   )}
+
+                  {verbPopover?.paragraphIdx === idx && (
+                    <VerbPanel
+                      verbPopover={verbPopover}
+                      isFetchingMeanings={isFetchingMeanings}
+                      onAdd={addVerbToDeck}
+                      onClose={() => setVerbPopover(null)}
+                    />
+                  )}
                 </div>
 
                 {/* Hinglish Card */}
@@ -379,6 +420,8 @@ export default function StudyModule({ lessonData, onBack }) {
           })}
         </div>
       </section>
+
+      <VerbToast toast={toast} />
     </div>
   );
 }

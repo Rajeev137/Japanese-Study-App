@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
 import { parseFuriganaString } from '../utils/furigana.jsx';
+import { extractVerbsFromText, fetchVerbMeanings, addVerbToSupabase } from '../utils/verbUtils';
+import VerbPanel, { VerbToast } from './VerbPanel';
 
 function sm2(quality, intervalDays, easeFactor, reviewCount) {
   let newEase = easeFactor + 0.1 - (5 - quality) * 0.08;
@@ -39,6 +41,9 @@ export default function KanjiDeck({ deckId, onBack }) {
   const [srsData, setSrsData] = useState({});
   const [flippedCards, setFlippedCards] = useState({});
   const [loading, setLoading] = useState(true);
+  const [verbPopover, setVerbPopover] = useState(null);
+  const [isFetchingMeanings, setIsFetchingMeanings] = useState(false);
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -104,6 +109,35 @@ export default function KanjiDeck({ deckId, onBack }) {
       ease_factor: nextEaseFactor,
       review_count: reviewCount + 1,
     }, { onConflict: 'kanji_card_id' });
+  };
+
+  const showToast = (msg, type = 'success') => {
+    setToast({ msg, type });
+    setTimeout(() => setToast(null), 3000);
+  };
+
+  const handleSentenceMouseUp = async (sentenceText, cardId) => {
+    const selectedText = window.getSelection()?.toString().trim();
+    if (!selectedText) { setVerbPopover(null); return; }
+
+    const verbs = await extractVerbsFromText(selectedText);
+    if (!verbs.length) { setVerbPopover(null); return; }
+
+    setVerbPopover({ cardId, verbs, sourceSentence: sentenceText });
+
+    setIsFetchingMeanings(true);
+    const meanings = await fetchVerbMeanings(verbs.map((v) => v.plain_form));
+    setVerbPopover((prev) =>
+      prev ? { ...prev, verbs: prev.verbs.map((v) => ({ ...v, meaning_hinglish: meanings[v.plain_form] || '' })) } : null
+    );
+    setIsFetchingMeanings(false);
+  };
+
+  const addVerbToDeck = async (verb, sourceSentence) => {
+    const result = await addVerbToSupabase(verb, sourceSentence);
+    if (result.status === 'duplicate') showToast(`${verb.plain_form} is already in your Verb Deck`, 'warning');
+    else if (result.status === 'error') showToast('Failed to add verb', 'error');
+    else showToast(`Added ${verb.plain_form} to Verb Deck!`);
   };
 
   if (loading) {
@@ -196,8 +230,11 @@ export default function KanjiDeck({ deckId, onBack }) {
                       <span className="text-sm font-semibold text-slate-600">{ex.meaning_hinglish}</span>
                     </div>
                     {ex.example_sentence && (
-                      <div className={`p-3 rounded-xl border ${!isDue ? 'bg-slate-100 border-slate-100' : 'bg-indigo-50/50 border-indigo-50/80'}`}>
-                        <p className="text-sm font-japanese text-slate-800 mb-1 leading-relaxed">
+                      <div
+                        className={`p-3 rounded-xl border ${!isDue ? 'bg-slate-100 border-slate-100' : 'bg-indigo-50/50 border-indigo-50/80'}`}
+                        onMouseUp={() => handleSentenceMouseUp(ex.example_sentence, item.id)}
+                      >
+                        <p className="text-sm font-japanese text-slate-800 mb-1 leading-relaxed cursor-text select-text">
                           {parseFuriganaString(ex.example_sentence)}
                         </p>
                         <p className="text-xs text-slate-500 italic">{ex.sentence_meaning}</p>
@@ -205,6 +242,14 @@ export default function KanjiDeck({ deckId, onBack }) {
                     )}
                   </div>
                 ))}
+                {verbPopover?.cardId === item.id && (
+                  <VerbPanel
+                    verbPopover={verbPopover}
+                    isFetchingMeanings={isFetchingMeanings}
+                    onAdd={addVerbToDeck}
+                    onClose={() => setVerbPopover(null)}
+                  />
+                )}
               </div>
 
               {/* SRS footer */}
@@ -250,6 +295,7 @@ export default function KanjiDeck({ deckId, onBack }) {
           );
         })}
       </div>
+      <VerbToast toast={toast} />
     </div>
   );
 }

@@ -4,6 +4,8 @@ let globalTokenizer = null;
 let isInitializing = false;
 let initializationQueue = [];
 
+export const getTokenizer = () => globalTokenizer;
+
 export const loadDictionary = () => {
   return new Promise((resolve, reject) => {
     // 1. If it's already loaded, return it instantly
