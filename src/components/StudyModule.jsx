@@ -153,7 +153,7 @@ export default function StudyModule({ lessonData, onBack }) {
     if (hasKanji) {
       return (
         <span key={index} className="group relative inline-block mx-px">
-          <ruby className={`ruby-position ${isTargetVocab ? "text-blue-600 font-bold" : "text-slate-700"}`}>
+          <ruby className={`ruby-position ${isTargetVocab ? "text-blue-600 dark:text-blue-400 font-bold" : "text-slate-700 dark:text-slate-200"}`}>
             {surface_form}
             {showFurigana && furiganaText && (
               <rt className="text-[10px] text-slate-400 font-normal select-none">{furiganaText}</rt>
@@ -174,50 +174,28 @@ export default function StudyModule({ lessonData, onBack }) {
   };
 
   if (errorMessage)
-    return <div className="p-8 text-red-500 text-center">{errorMessage}</div>;
+    return <div className="p-8 text-red-500 dark:text-red-400 text-center">{errorMessage}</div>;
   if (isDictLoading)
     return (
-      <div className="min-h-screen flex items-center justify-center text-xl text-indigo-500 animate-pulse">
+      <div className="min-h-screen flex items-center justify-center text-xl text-indigo-500 dark:text-indigo-400 animate-pulse">
         Loading ...
       </div>
     );
 
   return (
-    <div className="max-w-6xl mx-auto p-4 md:p-8 bg-slate-50 min-h-screen">
-      <button
-        onClick={onBack}
-        className="mb-6 flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold text-sm transition-colors"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={3}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15 19l-7-7 7-7"
-          />
-        </svg>
-        Back to Library
-      </button>
-
+    <div className="max-w-6xl mx-auto p-4 md:p-8 bg-slate-50 dark:bg-slate-900 min-h-screen">
       <header className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
         <div>
-          <h1 className="text-4xl font-black text-slate-800 tracking-tight">
+          <h1 className="text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight">
             {lessonData?.topic_english}
           </h1>
-          <p className="text-slate-500 font-medium mt-1">
+          <p className="text-slate-500 dark:text-slate-400 font-medium mt-1">
             {lessonData?.topic_japanese}
           </p>
         </div>
         <button
           onClick={() => setShowFurigana(!showFurigana)}
-          className={`px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg active:scale-95 ${showFurigana ? "bg-indigo-600 text-white shadow-indigo-200" : "bg-white text-indigo-600 border-2 border-indigo-100"}`}
+          className={`px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg active:scale-95 ${showFurigana ? "bg-indigo-600 text-white shadow-indigo-200" : "bg-white dark:bg-slate-800 text-indigo-600 dark:text-indigo-400 border-2 border-indigo-100 dark:border-slate-700"}`}
         >
           {showFurigana ? "Reading Mode: ON" : "Reading Mode: OFF"}
         </button>
@@ -234,12 +212,12 @@ export default function StudyModule({ lessonData, onBack }) {
                 className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch"
               >
                 {/* Japanese Card */}
-                <div className="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 hover:border-indigo-200 transition-colors">
-                  <span className="text-[10px] font-black text-indigo-400 uppercase tracking-widest block mb-4">
+                <div className="bg-white dark:bg-slate-800 p-6 md:p-8 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-indigo-200 dark:hover:border-indigo-700 transition-colors">
+                  <span className="text-[10px] font-black text-indigo-400 dark:text-indigo-500 uppercase tracking-widest block mb-4">
                     Paragraph {idx + 1}
                   </span>
                   <div
-                    className="text-2xl leading-[2.8] text-slate-700 font-japanese mb-6 cursor-text select-text"
+                    className="text-2xl leading-[2.8] text-slate-700 dark:text-slate-200 font-japanese mb-6 cursor-text select-text"
                     onMouseUp={() => handleParagraphMouseUp(para, idx)}
                   >
                     {tokenizedParagraphs[idx]?.map((token, tokenIdx) =>
@@ -248,10 +226,10 @@ export default function StudyModule({ lessonData, onBack }) {
                   </div>
 
                   {/* Audio & Mic Controls */}
-                  <div className="flex items-center gap-2 border-t pt-4">
+                  <div className="flex items-center gap-2 border-t dark:border-slate-700 pt-4">
                     <button
                       onClick={() => toggleSpeech(para, idx)}
-                      className={`p-2 rounded-lg transition-all ${isSpeaking === idx ? "bg-indigo-600 text-white" : "bg-slate-100 text-indigo-500 hover:bg-indigo-100"}`}
+                      className={`p-2 rounded-lg transition-all ${isSpeaking === idx ? "bg-indigo-600 text-white" : "bg-slate-100 dark:bg-slate-700 text-indigo-500 dark:text-indigo-400 hover:bg-indigo-100 dark:hover:bg-indigo-900/40"}`}
                     >
                       {isSpeaking === idx && !window.speechSynthesis.paused ? (
                         <svg
@@ -313,7 +291,7 @@ export default function StudyModule({ lessonData, onBack }) {
                     )}
                     <button
                       onClick={() => startRecording(idx)}
-                      className={`p-2 rounded-lg transition-all ml-auto ${isRecording === idx ? "bg-red-500 text-white animate-pulse" : "bg-slate-100 text-slate-500 hover:bg-red-50 hover:text-red-500"}`}
+                      className={`p-2 rounded-lg transition-all ml-auto ${isRecording === idx ? "bg-red-500 text-white animate-pulse" : "bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-500 dark:hover:text-red-400"}`}
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -336,18 +314,18 @@ export default function StudyModule({ lessonData, onBack }) {
 
                   {/* User Feedback */}
                   {userSpeech[idx] && (
-                    <div className="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-200">
+                    <div className="mt-4 p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">
+                        <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
                           Your Attempt
                         </span>
                         <span
-                          className={`text-xs font-bold px-2 py-0.5 rounded-full ${getMatchScore(para, userSpeech[idx]) > 80 ? "bg-green-100 text-green-700" : "bg-orange-100 text-orange-700"}`}
+                          className={`text-xs font-bold px-2 py-0.5 rounded-full ${getMatchScore(para, userSpeech[idx]) > 80 ? "bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400" : "bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-400"}`}
                         >
                           Score: {getMatchScore(para, userSpeech[idx])}%
                         </span>
                       </div>
-                      <p className="text-sm text-slate-500 italic">
+                      <p className="text-sm text-slate-500 dark:text-slate-400 italic">
                         "{userSpeech[idx]}"
                       </p>
                     </div>
@@ -364,11 +342,11 @@ export default function StudyModule({ lessonData, onBack }) {
                 </div>
 
                 {/* Hinglish Card */}
-                <div className="bg-slate-100/50 p-6 md:p-8 rounded-3xl border border-dashed border-slate-200 flex flex-col justify-center">
-                  <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-4">
+                <div className="bg-slate-100/50 dark:bg-slate-800/40 p-6 md:p-8 rounded-3xl border border-dashed border-slate-200 dark:border-slate-700 flex flex-col justify-center">
+                  <span className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest block mb-4">
                     Translation
                   </span>
-                  <p className="text-lg text-slate-600 leading-relaxed italic font-medium">
+                  <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed italic font-medium">
                     {hinglishPara}
                   </p>
                 </div>
@@ -380,7 +358,7 @@ export default function StudyModule({ lessonData, onBack }) {
 
       {/* Grammar section */}
       <section className="mt-16 mb-20">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-slate-100 mb-6 flex items-center gap-2">
           <span className="bg-indigo-600 text-white p-1 rounded">📚</span>{" "}
           Grammar Masterlist
         </h2>
@@ -392,24 +370,24 @@ export default function StudyModule({ lessonData, onBack }) {
             if (!pointsAtLevel || pointsAtLevel.length === 0) return null;
             return (
               <div key={level}>
-                <h3 className="text-sm font-black text-indigo-400 uppercase tracking-widest mb-4 border-b pb-1">
+                <h3 className="text-sm font-black text-indigo-400 dark:text-indigo-500 uppercase tracking-widest mb-4 border-b dark:border-slate-700 pb-1">
                   Level {level} Concepts
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {pointsAtLevel.map((grammar, idx) => (
                     <div
                       key={idx}
-                      className="bg-white border border-indigo-100 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-indigo-500"
+                      className="bg-white dark:bg-slate-800 border border-indigo-100 dark:border-slate-700 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-indigo-500"
                     >
                       <div className="flex justify-between items-start mb-2">
-                        <span className="text-xl font-bold text-indigo-900 font-japanese">
+                        <span className="text-xl font-bold text-indigo-900 dark:text-indigo-300 font-japanese">
                           {grammar.grammar_structure}
                         </span>
-                        <span className="text-[10px] bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full font-bold">
+                        <span className="text-[10px] bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded-full font-bold">
                           {level}
                         </span>
                       </div>
-                      <p className="text-gray-600 text-sm leading-relaxed italic">
+                      <p className="text-gray-600 dark:text-slate-300 text-sm leading-relaxed italic">
                         {grammar.explanation_hinglish}
                       </p>
                     </div>

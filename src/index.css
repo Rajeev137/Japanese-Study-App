@@ -1,8 +1,17 @@
 
 @import "tailwindcss";
 
+/* Enable dark: variants triggered by .dark class on <html> */
+@variant dark (&:where(.dark, .dark *));
+
 html {
   scroll-behavior: smooth;
+}
+
+/* Dark mode page-level defaults */
+html.dark body {
+  background-color: #0f172a; /* slate-900 */
+  color: #f1f5f9; /* slate-100 */
 }
 
 .font-japanese {

@@ -27,6 +27,29 @@ export default function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [highlightedText, setHighlightedText] = useState("");
 
+  const [isDarkMode, setIsDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark",
+  );
+
+  // Sidebar open/closed — persisted
+  const [isSidebarOpen, setIsSidebarOpen] = useState(
+    () => localStorage.getItem("sidebar_open") !== "false",
+  );
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    localStorage.setItem("sidebar_open", isSidebarOpen ? "true" : "false");
+  }, [isSidebarOpen]);
+
   useEffect(() => {
     localStorage.setItem("study_tab", activeTab);
     activeDeckId
@@ -42,7 +65,6 @@ export default function App() {
       setLoading(true);
       const { data: decksData } = await supabase.from("decks").select("*, vocab_cards(id), kanji_cards(id)");
       const { data: lessonsData } = await supabase.from("essays").select("*");
-      // Fetch ALL srs_progress so we can partition due vs. done in JS
       const { data: progressData } = await supabase.from("srs_progress").select("*");
 
       if (decksData) {
@@ -82,9 +104,7 @@ export default function App() {
     const relevant = srsProgress.filter(p =>
       isKanji ? cardIds.includes(p.kanji_card_id) : cardIds.includes(p.vocab_card_id)
     );
-    // "done" = reviewed and not yet due
     const done = relevant.filter(p => new Date(p.next_review) > now).length;
-    // "due" = cards with no record or past next_review
     const reviewedIds = new Set(relevant.map(p => isKanji ? p.kanji_card_id : p.vocab_card_id));
     const neverReviewed = cardIds.filter(id => !reviewedIds.has(id)).length;
     const pastDue = relevant.filter(p => new Date(p.next_review) <= now).length;
@@ -115,17 +135,16 @@ export default function App() {
   };
 
   const SkeletonCard = () => (
-    <div className="bg-slate-800/50 rounded-3xl p-6 animate-pulse min-h-50 flex flex-col justify-between">
+    <div className="bg-slate-200 dark:bg-slate-800/50 rounded-3xl p-6 animate-pulse min-h-50 flex flex-col justify-between">
       <div>
-        <div className="h-4 bg-slate-700 rounded-full w-16 mb-4" />
-        <div className="h-6 bg-slate-700 rounded-full w-3/4 mb-2" />
-        <div className="h-4 bg-slate-700 rounded-full w-1/2" />
+        <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded-full w-16 mb-4" />
+        <div className="h-6 bg-slate-300 dark:bg-slate-700 rounded-full w-3/4 mb-2" />
+        <div className="h-4 bg-slate-300 dark:bg-slate-700 rounded-full w-1/2" />
       </div>
-      <div className="h-10 bg-slate-700 rounded-xl mt-4" />
+      <div className="h-10 bg-slate-300 dark:bg-slate-700 rounded-xl mt-4" />
     </div>
   );
 
-  // Derive chat context label from current view
   const chatContext = activeLesson
     ? `a reading lesson: "${activeLesson.title}"`
     : activeDeckId
@@ -135,6 +154,32 @@ export default function App() {
       : activeTab === 'kanji' ? 'kanji'
       : activeTab === 'verbs' ? 'verb conjugations'
       : null;
+
+  const handleGoBack = () => {
+    if (activeLesson) setActiveLesson(null);
+    else if (activeDeckId) setActiveDeckId(null);
+  };
+
+  const isInSubView = !!(activeLesson || activeDeckId);
+
+  // Sidebar nav items — icon separate from label so icon shows when collapsed
+  const navItems = [
+    { id: "immersion", icon: "🎧", label: "Native Immersion" },
+    { id: "lessons",   icon: "📖", label: "Reading Modules" },
+    { id: "vocab",     icon: "🗂️", label: "Vocab Decks" },
+    { id: "kanji",     icon: "✍️", label: "Kanji Decks" },
+    { id: "verbs",     icon: "動",  label: "Verb Deck", isKanji: true },
+  ];
+
+  const handleNavClick = (tabId) => {
+    setActiveTab(tabId);
+    // If currently in a sub-view, return to library first
+    setActiveLesson(null);
+    setActiveDeckId(null);
+  };
+
+  const sidebarW = isSidebarOpen ? "w-56" : "w-14";
+  const contentML = isSidebarOpen ? "ml-56" : "ml-14";
 
   let mainContent;
   if (activeLesson) {
@@ -148,9 +193,9 @@ export default function App() {
     }
   } else if (loading) {
     mainContent = (
-      <div className="min-h-screen bg-slate-50 p-6 md:p-12">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-6 md:p-12">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10 h-10 bg-slate-200 rounded-full w-64 animate-pulse" />
+          <div className="mb-10 h-10 bg-slate-200 dark:bg-slate-800 rounded-full w-64 animate-pulse" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map(i => <SkeletonCard key={i} />)}
           </div>
@@ -159,46 +204,15 @@ export default function App() {
     );
   } else {
     mainContent = (
-      <div className="min-h-screen bg-slate-50 p-6 md:p-12 font-sans">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-6 md:p-12 font-sans">
         <div className="max-w-6xl mx-auto">
-          <header className="mb-10 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
-            <div>
-              <h1 className="text-4xl font-black text-slate-800 tracking-tight mb-2">My Study Library</h1>
-              <p className="text-slate-500 font-medium text-lg">Master your Japanese reading, vocab, kanji, and verbs.</p>
-            </div>
-
-            <div className="flex bg-slate-200/50 p-1.5 rounded-2xl overflow-x-auto w-full lg:w-auto">
-              <button
-                onClick={() => setActiveTab("immersion")}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "immersion" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
-              >
-                🎧 Native Immersion
-              </button>
-              <button
-                onClick={() => setActiveTab("lessons")}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "lessons" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
-              >
-                📖 Reading Modules
-              </button>
-              <button
-                onClick={() => setActiveTab("vocab")}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "vocab" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
-              >
-                🗂️ Vocab Decks
-              </button>
-              <button
-                onClick={() => setActiveTab("kanji")}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "kanji" ? "bg-white text-indigo-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
-              >
-                ✍️ Kanji Decks
-              </button>
-              <button
-                onClick={() => setActiveTab("verbs")}
-                className={`whitespace-nowrap px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${activeTab === "verbs" ? "bg-white text-teal-600 shadow-sm" : "text-slate-500 hover:text-slate-700"}`}
-              >
-                動 Verb Deck
-              </button>
-            </div>
+          <header className="mb-10">
+            <h1 className="text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-2">
+              My Study Library
+            </h1>
+            <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">
+              Master your Japanese reading, vocab, kanji, and verbs.
+            </p>
           </header>
 
           {activeTab === "immersion" && <ImmersionGateway />}
@@ -206,12 +220,22 @@ export default function App() {
           {activeTab === "lessons" && (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {lessons.map((lesson, idx) => (
-                <button key={lesson.id} onClick={() => setActiveLesson(lesson)} className="group text-left bg-white p-6 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full">
+                <button
+                  key={lesson.id}
+                  onClick={() => setActiveLesson(lesson)}
+                  className="group text-left bg-white dark:bg-slate-800 p-6 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col h-full"
+                >
                   <div className="mb-4">
-                    <span className="bg-indigo-50 text-indigo-600 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">Module {idx + 1}</span>
+                    <span className="bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">
+                      Module {idx + 1}
+                    </span>
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-800 mb-2 leading-tight">{lesson.title}</h2>
-                  <h3 className="text-sm font-japanese text-slate-500 mb-6">{lesson.content_data.topic_japanese}</h3>
+                  <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2 leading-tight">
+                    {lesson.title}
+                  </h2>
+                  <h3 className="text-sm font-japanese text-slate-500 dark:text-slate-400 mb-6">
+                    {lesson.content_data.topic_japanese}
+                  </h3>
                 </button>
               ))}
             </div>
@@ -220,8 +244,12 @@ export default function App() {
           {activeTab === "verbs" && (
             <div>
               <div className="mb-8">
-                <h2 className="text-3xl font-black text-slate-800 tracking-tight mb-1">Verb Deck</h2>
-                <p className="text-slate-500 font-medium">Verbs collected from your reading sessions.</p>
+                <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-1">
+                  Verb Deck
+                </h2>
+                <p className="text-slate-500 dark:text-slate-400 font-medium">
+                  Verbs collected from your reading sessions.
+                </p>
               </div>
               <VerbDeck />
             </div>
@@ -232,10 +260,16 @@ export default function App() {
               {(activeTab === "vocab" ? vocabDecks : kanjiDecks).map((deck, idx) => {
                 const progress = getDeckProgress(deck);
                 return (
-                  <button key={deck.id} onClick={() => setActiveDeckId(deck.id)} className="group text-left bg-slate-800 text-white p-6 rounded-3xl border border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-50">
+                  <button
+                    key={deck.id}
+                    onClick={() => setActiveDeckId(deck.id)}
+                    className="group text-left bg-slate-800 dark:bg-slate-700 text-white p-6 rounded-3xl border border-slate-700 dark:border-slate-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-50"
+                  >
                     <div className="relative z-10 mb-6">
                       <div className="flex justify-between items-start mb-4">
-                        <span className="bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">Deck {idx + 1}</span>
+                        <span className="bg-slate-700 dark:bg-slate-600 text-slate-300 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">
+                          Deck {idx + 1}
+                        </span>
                         {progress.due > 0 && (
                           <span className="bg-orange-500 text-white px-2.5 py-1 rounded-full text-xs font-black">
                             {progress.due} due
@@ -245,7 +279,7 @@ export default function App() {
                       <h2 className="text-2xl font-bold text-white mb-1 leading-tight">{deck.title}</h2>
                       <p className="text-sm text-slate-400">Level: {deck.jlpt_level}</p>
                     </div>
-                    <div className="relative z-10 pt-4 border-t border-slate-700">
+                    <div className="relative z-10 pt-4 border-t border-slate-700 dark:border-slate-600">
                       <ProgressDial progress={progress} />
                     </div>
                   </button>
@@ -259,20 +293,132 @@ export default function App() {
   }
 
   return (
-    <div className="relative overflow-hidden w-full min-h-screen">
-      <div className={`transition-all duration-300 ${isChatOpen ? "mr-105 opacity-90" : "mr-0"}`}>
+    <div className="relative w-full min-h-screen bg-slate-50 dark:bg-slate-900">
+
+      {/* ── Fixed Top Header ── */}
+      <header className="fixed top-0 left-0 right-0 z-50 h-14 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 shadow-sm">
+        <div className="h-full px-3 flex items-center gap-3">
+
+          {/* Sidebar hamburger toggle */}
+          <button
+            onClick={() => setIsSidebarOpen(prev => !prev)}
+            className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+            title={isSidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+
+          {/* Back to Library — only in sub-views */}
+          {isInSubView && (
+            <button
+              onClick={handleGoBack}
+              className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-bold text-sm transition-colors whitespace-nowrap"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Library
+            </button>
+          )}
+
+          <div className="flex-1" />
+
+          {/* Dark mode toggle */}
+          <button
+            onClick={() => setIsDarkMode(prev => !prev)}
+            className="shrink-0 w-9 h-9 rounded-xl flex items-center justify-center bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all"
+            title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+          >
+            {isDarkMode ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            )}
+          </button>
+
+        </div>
+      </header>
+
+      {/* ── Collapsible Left Sidebar ── */}
+      <aside
+        className={`fixed top-14 left-0 bottom-0 z-40 flex flex-col bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-700 transition-[width] duration-300 overflow-hidden ${sidebarW}`}
+      >
+        {/* Section label — only when open */}
+        <div className="px-3 pt-5 pb-2">
+          <span className={`text-[10px] font-black text-slate-400 dark:text-slate-600 uppercase tracking-widest transition-opacity duration-200 ${isSidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
+            Navigation
+          </span>
+        </div>
+
+        <nav className="flex-1 px-2 space-y-0.5">
+          {navItems.map(item => {
+            const isActive = activeTab === item.id;
+            return (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                title={!isSidebarOpen ? item.label : undefined}
+                className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl font-bold transition-all group ${
+                  isActive
+                    ? item.id === "verbs"
+                      ? "bg-teal-50 dark:bg-teal-900/20 text-teal-700 dark:text-teal-400"
+                      : "bg-indigo-50 dark:bg-indigo-900/25 text-indigo-700 dark:text-indigo-400"
+                    : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-slate-800 dark:hover:text-slate-200"
+                }`}
+              >
+                {/* Icon — always visible */}
+                <span
+                  className={`flex-shrink-0 w-5 text-center leading-none ${item.isKanji ? "text-base font-black" : "text-lg"}`}
+                >
+                  {item.icon}
+                </span>
+
+                {/* Label — visible only when sidebar is open */}
+                <span className="text-sm truncate whitespace-nowrap">
+                  {item.label}
+                </span>
+
+                {/* Active indicator dot */}
+                {isActive && isSidebarOpen && (
+                  <span className={`ml-auto w-1.5 h-1.5 rounded-full flex-shrink-0 ${item.id === "verbs" ? "bg-teal-500" : "bg-indigo-500"}`} />
+                )}
+              </button>
+            );
+          })}
+        </nav>
+
+        {/* Bottom divider spacer */}
+        <div className="pb-4" />
+      </aside>
+
+      {/* ── Main Content ── */}
+      <div className={`pt-14 transition-[margin-left] duration-300 ${contentML} ${isChatOpen ? "mr-105 opacity-90" : "mr-0"}`}>
         {mainContent}
       </div>
+
       <AiSenseiChat
         isOpen={isChatOpen}
         onClose={() => setIsChatOpen(false)}
         selectedText={highlightedText}
         context={chatContext}
       />
+
       {!isChatOpen && (
         <button
           onClick={() => setIsChatOpen(true)}
-          className="fixed bottom-8 right-8 bg-slate-800 hover:bg-orange-500 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center transition-all z-40"
+          className="fixed bottom-8 right-8 bg-slate-800 dark:bg-slate-700 hover:bg-orange-500 dark:hover:bg-orange-500 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center transition-all z-40"
           title="Ask Sensei"
         >
           <div className="font-black text-base tracking-widest" style={{ fontFamily: 'serif' }}>先生</div>
