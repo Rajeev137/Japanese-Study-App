@@ -12,9 +12,9 @@ export const parseFuriganaString = (text) => {
       elements.push(text.substring(lastIndex, match.index));
     }
     elements.push(
-      <ruby key={match.index} className="mx-px text-slate-800">
+      <ruby key={match.index} className="mx-px text-slate-800 dark:text-slate-200">
         {match[1]}
-        <rt className="text-[10px] text-slate-400 font-normal pb-0.5 select-none">{match[2]}</rt>
+        <rt className="text-[10px] text-slate-400 dark:text-slate-500 font-normal pb-0.5 select-none">{match[2]}</rt>
       </ruby>
     );
     lastIndex = regex.lastIndex;
