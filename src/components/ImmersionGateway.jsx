@@ -5,7 +5,7 @@ export default function ImmersionGateway() {
   return (
     <div className="bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 rounded-3xl p-8 max-w-2xl w-full shadow-sm mx-auto mt-8">
       <div className="mb-8 text-center">
-        <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight flex items-center justify-center gap-3">
+        <h2 className="font-display text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight flex items-center justify-center gap-3">
           <span className="text-indigo-600">🎧</span> 
           Native Immersion Portal
         </h2>
