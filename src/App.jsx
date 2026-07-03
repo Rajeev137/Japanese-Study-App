@@ -232,13 +232,17 @@ export default function App() {
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 md:p-12 font-sans">
         <div className="max-w-6xl mx-auto">
           {["lessons", "vocab", "kanji", "verbs", "immersion"].includes(activeTab) && (
-            <header className="mb-10">
-              <h1 className="text-3xl md:text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-2">
+            <header className="mb-10 relative">
+              <span className="absolute -top-3 left-0 text-[11px] font-japanese font-bold text-indigo-400 dark:text-indigo-500 tracking-[0.4em]">
+                としょかん
+              </span>
+              <h1 className="font-display text-3xl md:text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-2 pt-3">
                 My Study Library
               </h1>
               <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">
                 Master your Japanese reading, vocab, kanji, and verbs.
               </p>
+              <div className="mt-4 h-0.5 w-16 rounded-full bg-indigo-500/70" />
             </header>
           )}
 
@@ -305,8 +309,10 @@ export default function App() {
                   <button
                     key={deck.id}
                     onClick={() => setActiveDeckId(deck.id)}
-                    className="group text-left bg-slate-800 dark:bg-slate-700 text-white p-6 rounded-3xl border border-slate-700 dark:border-slate-600 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-50"
+                    className="group text-left bg-slate-800 dark:bg-slate-800 text-white p-6 rounded-3xl border border-slate-700 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-indigo-500/60 transition-all flex flex-col justify-between h-full relative overflow-hidden min-h-50"
                   >
+                    {/* rising-sun accent */}
+                    <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-indigo-600/20 group-hover:bg-indigo-600/35 transition-colors" />
                     <div className="relative z-10 mb-6">
                       <div className="flex justify-between items-start mb-4">
                         <span className="bg-slate-700 dark:bg-slate-600 text-slate-300 px-3 py-1 rounded-full text-xs font-black tracking-widest uppercase">
@@ -354,16 +360,28 @@ export default function App() {
             </svg>
           </button>
 
+          {/* Brand mark */}
+          <div className="flex items-center gap-2.5 select-none">
+            <div className="w-8 h-8 rounded-full bg-indigo-600 flex items-center justify-center shadow-sm shrink-0">
+              <span className="text-white font-japanese font-bold text-sm leading-none">学</span>
+            </div>
+            <div className="hidden sm:flex flex-col leading-none">
+              <span className="font-display font-bold text-[15px] text-slate-800 dark:text-slate-100 tracking-tight">Nihongo Sensei</span>
+              <span className="text-[9px] font-japanese text-slate-400 tracking-[0.3em] mt-0.5">日本語センセイ</span>
+            </div>
+          </div>
+
           {/* Back to Library — only in sub-views */}
           {isInSubView && (
             <button
               onClick={handleGoBack}
-              className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-bold text-sm transition-colors whitespace-nowrap"
+              className="ml-2 flex items-center gap-1.5 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-bold text-sm transition-colors whitespace-nowrap"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Library
+              <span className="hidden md:inline">Back to Library</span>
+              <span className="md:hidden">Back</span>
             </button>
           )}
 
@@ -408,7 +426,7 @@ export default function App() {
         {/* Section label — only when open */}
         <div className="px-3 pt-5 pb-2">
           <span className={`text-[10px] font-black text-slate-400 dark:text-slate-600 uppercase tracking-widest transition-opacity duration-200 ${isSidebarOpen ? 'opacity-100' : 'opacity-0'}`}>
-            Navigation
+            メニュー · Menu
           </span>
         </div>
 
@@ -468,10 +486,10 @@ export default function App() {
       {!isChatOpen && (
         <button
           onClick={() => setIsChatOpen(true)}
-          className="fixed bottom-8 right-8 bg-slate-800 dark:bg-slate-700 hover:bg-orange-500 dark:hover:bg-orange-500 text-white w-14 h-14 rounded-2xl shadow-xl flex items-center justify-center transition-all z-40"
+          className="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-indigo-600 hover:bg-indigo-500 hover:scale-105 active:scale-95 text-white w-14 h-14 rounded-full shadow-xl shadow-indigo-600/30 flex items-center justify-center transition-all z-40"
           title="Ask Sensei"
         >
-          <div className="font-black text-base tracking-widest" style={{ fontFamily: 'serif' }}>先生</div>
+          <div className="font-display font-black text-base tracking-widest">先生</div>
         </button>
       )}
     </div>

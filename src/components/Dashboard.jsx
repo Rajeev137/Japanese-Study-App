@@ -1,13 +1,26 @@
 import React from 'react';
 import { getStreak, streakIsAlive } from '../utils/srs';
 
+// Gradients follow traditional Japanese colors: matcha → asagi → fuji → kin → beni
 const LEVELS = [
-  { id: 'N5', tagline: 'Foundations', color: 'from-emerald-500 to-teal-500' },
-  { id: 'N4', tagline: 'Everyday Japanese', color: 'from-sky-500 to-indigo-500' },
-  { id: 'N3', tagline: 'Bridge to fluency', color: 'from-indigo-500 to-violet-500' },
-  { id: 'N2', tagline: 'Native media', color: 'from-violet-500 to-fuchsia-500' },
-  { id: 'N1', tagline: 'Mastery', color: 'from-fuchsia-500 to-rose-500' },
+  { id: 'N5', tagline: 'Foundations', color: 'from-teal-400 to-teal-600' },
+  { id: 'N4', tagline: 'Everyday Japanese', color: 'from-sky-400 to-sky-600' },
+  { id: 'N3', tagline: 'Bridge to fluency', color: 'from-violet-400 to-violet-600' },
+  { id: 'N2', tagline: 'Native media', color: 'from-amber-400 to-orange-500' },
+  { id: 'N1', tagline: 'Mastery', color: 'from-indigo-500 to-indigo-700' },
 ];
+
+// Japanese cloud (kumo) line-art accent
+function Kumo({ className }) {
+  return (
+    <svg viewBox="0 0 140 48" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className={className}>
+      <path d="M14 36c0-10 8-18 18-18 7 0 13 4 16 9" />
+      <path d="M50 27c2-8 10-14 19-12 8 1 13 8 12 16" />
+      <path d="M6 36h100" />
+      <path d="M106 36c8 0 14-6 14-13 0-5-4-9-9-9-4 0-7 3-7 7 0 3 2 5 5 5" />
+    </svg>
+  );
+}
 
 export default function Dashboard({ vocabDecks, kanjiDecks, lessons, srsProgress, onStartSession, onNavigate }) {
   const now = new Date();
@@ -56,7 +69,7 @@ export default function Dashboard({ vocabDecks, kanjiDecks, lessons, srsProgress
       {/* Greeting + streak */}
       <header className="mb-8 flex items-start justify-between gap-4 flex-wrap">
         <div>
-          <h1 className="text-3xl md:text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-1">
+          <h1 className="font-display text-3xl md:text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-1">
             おかえりなさい！
           </h1>
           <p className="text-slate-500 dark:text-slate-400 font-medium">
@@ -73,28 +86,37 @@ export default function Dashboard({ vocabDecks, kanjiDecks, lessons, srsProgress
         </div>
       </header>
 
-      {/* Today's session hero */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-violet-600 text-white p-8 mb-8 shadow-lg">
-        <div className="absolute -right-6 -top-8 text-[120px] opacity-10 font-japanese font-black select-none">学</div>
+      {/* Today's session hero — sakura sky (light) / rising sun over ink (dark) */}
+      <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-indigo-600 via-indigo-500 to-indigo-400 dark:from-slate-900 dark:via-[#1d1512] dark:to-[#251316] dark:border dark:border-slate-700 text-white p-6 md:p-9 mb-8 shadow-lg shadow-indigo-600/20 dark:shadow-none">
+        {/* seigaiha wash */}
+        <div className="absolute inset-0 bg-seigaiha opacity-60 dark:opacity-30" />
+        {/* rising sun */}
+        <div className="absolute -right-12 -top-20 w-64 h-64 rounded-full bg-white/15 dark:bg-indigo-600/90 animate-[floatSlow_7s_ease-in-out_infinite]" />
+        <div className="absolute right-16 top-24 w-16 h-16 rounded-full bg-white/10 dark:bg-indigo-500/30" />
+        {/* kumo clouds */}
+        <Kumo className="absolute right-4 top-8 w-32 text-white/70 dark:text-slate-100/80 animate-[floatSlow_9s_ease-in-out_infinite]" />
+        <Kumo className="absolute right-40 -bottom-3 w-24 text-white/40 dark:text-slate-100/40 rotate-2" />
+        <div className="absolute right-24 top-16 hidden md:block font-display font-black text-5xl text-white/20 dark:text-white/25 select-none">学</div>
+
         {totalDue > 0 ? (
           <>
-            <p className="text-indigo-200 text-xs font-black uppercase tracking-widest mb-2">Today's bite-sized session</p>
-            <h2 className="text-3xl font-black mb-1">{sessionSize} cards · ~{estMins} min</h2>
-            <p className="text-indigo-200 text-sm font-medium mb-6">
+            <p className="relative text-indigo-100 dark:text-indigo-300 text-xs font-black uppercase tracking-[0.25em] mb-2">今日の練習 · Today's session</p>
+            <h2 className="relative font-display text-3xl md:text-4xl font-black mb-1">{sessionSize} cards · ~{estMins} min</h2>
+            <p className="relative text-indigo-100 dark:text-slate-300 text-sm font-medium mb-6 max-w-md">
               {totalDue > sessionSize ? `${totalDue} due in total — we'll serve them in small rounds.` : 'That’s everything due today.'}
             </p>
             <button
               onClick={onStartSession}
-              className="px-8 py-3.5 rounded-2xl bg-white text-indigo-700 font-black hover:bg-indigo-50 hover:scale-[1.02] active:scale-95 transition-all shadow-md"
+              className="relative px-8 py-3.5 rounded-full bg-white text-indigo-700 dark:bg-indigo-600 dark:text-white font-black hover:scale-[1.03] active:scale-95 transition-all shadow-md"
             >
               ▶ Start review
             </button>
           </>
         ) : (
           <>
-            <p className="text-indigo-200 text-xs font-black uppercase tracking-widest mb-2">Reviews</p>
-            <h2 className="text-3xl font-black mb-1">All caught up! 🎉</h2>
-            <p className="text-indigo-200 text-sm font-medium">Come back tomorrow, or add a new deck in the Content Studio.</p>
+            <p className="relative text-indigo-100 dark:text-indigo-300 text-xs font-black uppercase tracking-[0.25em] mb-2">復習 · Reviews</p>
+            <h2 className="relative font-display text-3xl md:text-4xl font-black mb-1">All caught up! 🎉</h2>
+            <p className="relative text-indigo-100 dark:text-slate-300 text-sm font-medium">Come back tomorrow, or add a new deck in the Content Studio.</p>
           </>
         )}
       </div>
@@ -115,7 +137,9 @@ export default function Dashboard({ vocabDecks, kanjiDecks, lessons, srsProgress
       </div>
 
       {/* JLPT path */}
-      <h3 className="text-lg font-black text-slate-800 dark:text-slate-100 mb-4">Your JLPT path</h3>
+      <h3 className="font-display text-lg font-black text-slate-800 dark:text-slate-100 mb-4">
+        Your JLPT path <span className="font-japanese text-xs text-slate-400 font-bold tracking-[0.3em] ml-2">みち</span>
+      </h3>
       <div className="space-y-3">
         {LEVELS.map((lvl) => {
           const s = levelStats[lvl.id];

@@ -127,7 +127,7 @@ export default function ReviewSession({ mode, onClose }) {
       <SessionShell onClose={() => onClose(0)}>
         <div className="text-center py-24">
           <div className="text-6xl mb-4">🎉</div>
-          <h2 className="text-2xl font-black text-slate-800 dark:text-slate-100 mb-2">All caught up!</h2>
+          <h2 className="font-display text-2xl font-black text-slate-800 dark:text-slate-100 mb-2">All caught up!</h2>
           <p className="text-slate-500 dark:text-slate-400 font-medium mb-8">No cards due right now. Go enjoy some immersion instead.</p>
           <button onClick={() => onClose(0)} className="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold transition-colors">
             Back
@@ -144,7 +144,7 @@ export default function ReviewSession({ mode, onClose }) {
       <SessionShell onClose={() => onClose(reviewedCount)}>
         <div className="text-center py-16">
           <div className="text-6xl mb-4">🏆</div>
-          <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 mb-2">Session complete!</h2>
+          <h2 className="font-display text-3xl font-black text-slate-800 dark:text-slate-100 mb-2">Session complete!</h2>
           <p className="text-slate-500 dark:text-slate-400 font-medium mb-8">
             {reviewedCount} cards in {mins} min. お疲れ様でした！
           </p>

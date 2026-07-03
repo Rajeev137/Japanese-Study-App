@@ -155,7 +155,7 @@ export default function ContentStudio({ onUploaded }) {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="mb-8">
-        <h2 className="text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-1">Content Studio</h2>
+        <h2 className="font-display text-3xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-1">Content Studio <span className="font-japanese text-sm text-indigo-400 font-bold tracking-[0.3em] ml-1">こうぼう</span></h2>
         <p className="text-slate-500 dark:text-slate-400 font-medium">
           Paste raw material → Sensei structures it → one click into your database.
         </p>
