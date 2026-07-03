@@ -5,11 +5,14 @@ import KanjiDeck from "./components/KanjiDeck";
 import VerbDeck from "./components/VerbDeck";
 import AiSenseiChat from "./components/AiSenseiChat";
 import ImmersionGateway from "./components/ImmersionGateway";
+import Dashboard from "./components/Dashboard";
+import ContentStudio from "./components/ContentStudio";
+import ReviewSession from "./components/ReviewSession";
 import { supabase } from "./supabaseClient";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState(
-    () => localStorage.getItem("study_tab") || "lessons",
+    () => localStorage.getItem("study_tab") || "home",
   );
   const [activeLesson, setActiveLesson] = useState(
     () => JSON.parse(localStorage.getItem("study_lesson")) || null,
@@ -26,6 +29,8 @@ export default function App() {
 
   const [isChatOpen, setIsChatOpen] = useState(false);
   const [highlightedText, setHighlightedText] = useState("");
+  const [reviewSession, setReviewSession] = useState(null); // null | {scope:'global'}
+  const [refreshKey, setRefreshKey] = useState(0);
 
   const [isDarkMode, setIsDarkMode] = useState(
     () => localStorage.getItem("theme") === "dark",
@@ -81,8 +86,8 @@ export default function App() {
       setLoading(false);
     }
 
-    if (!activeLesson && !activeDeckId) fetchLibrary();
-  }, [activeLesson, activeDeckId]);
+    if (!activeLesson && !activeDeckId && !reviewSession) fetchLibrary();
+  }, [activeLesson, activeDeckId, reviewSession, refreshKey]);
 
   useEffect(() => {
     const handleSelection = () => {
@@ -164,11 +169,13 @@ export default function App() {
 
   // Sidebar nav items — icon separate from label so icon shows when collapsed
   const navItems = [
-    { id: "immersion", icon: "🎧", label: "Native Immersion" },
+    { id: "home",      icon: "🏠", label: "Home" },
     { id: "lessons",   icon: "📖", label: "Reading Modules" },
     { id: "vocab",     icon: "🗂️", label: "Vocab Decks" },
     { id: "kanji",     icon: "✍️", label: "Kanji Decks" },
     { id: "verbs",     icon: "動",  label: "Verb Deck", isKanji: true },
+    { id: "immersion", icon: "🎧", label: "Native Immersion" },
+    { id: "studio",    icon: "✨", label: "Content Studio" },
   ];
 
   const handleNavClick = (tabId) => {
@@ -176,13 +183,31 @@ export default function App() {
     // If currently in a sub-view, return to library first
     setActiveLesson(null);
     setActiveDeckId(null);
+    setReviewSession(null);
+    // On phones the sidebar is an overlay — close it after navigating
+    if (window.innerWidth < 768) setIsSidebarOpen(false);
   };
 
-  const sidebarW = isSidebarOpen ? "w-56" : "w-14";
-  const contentML = isSidebarOpen ? "ml-56" : "ml-14";
+  // Mobile: sidebar slides in as an overlay. Desktop: collapses to icon rail.
+  const sidebarCls = isSidebarOpen
+    ? "translate-x-0 w-56"
+    : "-translate-x-full w-56 md:translate-x-0 md:w-14";
+  const contentML = isSidebarOpen ? "ml-0 md:ml-56" : "ml-0 md:ml-14";
 
   let mainContent;
-  if (activeLesson) {
+  if (reviewSession) {
+    mainContent = (
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+        <ReviewSession
+          mode={reviewSession}
+          onClose={() => {
+            setReviewSession(null);
+            setRefreshKey(k => k + 1);
+          }}
+        />
+      </div>
+    );
+  } else if (activeLesson) {
     mainContent = <StudyModule lessonData={activeLesson.content_data} onBack={() => setActiveLesson(null)} />;
   } else if (activeDeckId) {
     const activeDeck = [...vocabDecks, ...kanjiDecks].find((d) => d.id === activeDeckId);
@@ -204,16 +229,33 @@ export default function App() {
     );
   } else {
     mainContent = (
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-6 md:p-12 font-sans">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 p-4 md:p-12 font-sans">
         <div className="max-w-6xl mx-auto">
-          <header className="mb-10">
-            <h1 className="text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-2">
-              My Study Library
-            </h1>
-            <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">
-              Master your Japanese reading, vocab, kanji, and verbs.
-            </p>
-          </header>
+          {["lessons", "vocab", "kanji", "verbs", "immersion"].includes(activeTab) && (
+            <header className="mb-10">
+              <h1 className="text-3xl md:text-4xl font-black text-slate-800 dark:text-slate-100 tracking-tight mb-2">
+                My Study Library
+              </h1>
+              <p className="text-slate-500 dark:text-slate-400 font-medium text-lg">
+                Master your Japanese reading, vocab, kanji, and verbs.
+              </p>
+            </header>
+          )}
+
+          {activeTab === "home" && (
+            <Dashboard
+              vocabDecks={vocabDecks}
+              kanjiDecks={kanjiDecks}
+              lessons={lessons}
+              srsProgress={srsProgress}
+              onStartSession={() => setReviewSession({ scope: "global" })}
+              onNavigate={handleNavClick}
+            />
+          )}
+
+          {activeTab === "studio" && (
+            <ContentStudio onUploaded={() => setRefreshKey(k => k + 1)} />
+          )}
 
           {activeTab === "immersion" && <ImmersionGateway />}
 
@@ -351,9 +393,17 @@ export default function App() {
         </div>
       </header>
 
+      {/* Mobile backdrop when sidebar is open */}
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 top-14 z-30 bg-slate-900/40 md:hidden"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
       {/* ── Collapsible Left Sidebar ── */}
       <aside
-        className={`fixed top-14 left-0 bottom-0 z-40 flex flex-col bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-700 transition-[width] duration-300 overflow-hidden ${sidebarW}`}
+        className={`fixed top-14 left-0 bottom-0 z-40 flex flex-col bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-700 transition-all duration-300 overflow-hidden ${sidebarCls}`}
       >
         {/* Section label — only when open */}
         <div className="px-3 pt-5 pb-2">
@@ -404,7 +454,7 @@ export default function App() {
       </aside>
 
       {/* ── Main Content ── */}
-      <div className={`pt-14 transition-[margin-left] duration-300 ${contentML} ${isChatOpen ? "mr-105 opacity-90" : "mr-0"}`}>
+      <div className={`pt-14 transition-[margin-left] duration-300 ${contentML} ${isChatOpen ? "md:mr-105 opacity-90" : "mr-0"}`}>
         {mainContent}
       </div>
 

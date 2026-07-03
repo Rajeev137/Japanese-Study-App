@@ -3,6 +3,7 @@ import { supabase } from '../supabaseClient';
 import { parseFuriganaString } from '../utils/furigana.jsx';
 import { extractVerbsFromText, fetchVerbMeanings, addVerbToSupabase } from '../utils/verbUtils';
 import VerbPanel, { VerbToast } from './VerbPanel';
+import ReviewSession from './ReviewSession';
 
 function sm2(quality, intervalDays, easeFactor, reviewCount) {
   let newEase = easeFactor + 0.1 - (5 - quality) * 0.08;
@@ -44,6 +45,8 @@ export default function KanjiDeck({ deckId, onBack }) {
   const [verbPopover, setVerbPopover] = useState(null);
   const [isFetchingMeanings, setIsFetchingMeanings] = useState(false);
   const [toast, setToast] = useState(null);
+  const [inSession, setInSession] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -75,7 +78,7 @@ export default function KanjiDeck({ deckId, onBack }) {
       setLoading(false);
     }
     fetchData();
-  }, [deckId]);
+  }, [deckId, inSession, refreshKey]);
 
   const flipCard = (cardId) => {
     setFlippedCards(prev => ({ ...prev, [cardId]: true }));
@@ -154,6 +157,17 @@ export default function KanjiDeck({ deckId, onBack }) {
 
   if (!deckData) return <div className="p-10 text-center dark:text-slate-300">Deck not found.</div>;
 
+  if (inSession) {
+    return (
+      <div className="bg-slate-50 dark:bg-slate-900 min-h-screen pt-4">
+        <ReviewSession
+          mode={{ scope: 'deck', deckId, deckType: 'kanji' }}
+          onClose={() => { setInSession(false); setRefreshKey(k => k + 1); }}
+        />
+      </div>
+    );
+  }
+
   const now = new Date();
   const dueCount = deckData.kanji_cards?.filter(c => {
     const rec = srsData[c.id];
@@ -169,9 +183,17 @@ export default function KanjiDeck({ deckId, onBack }) {
             {deckData.kanji_cards?.length || 0} Kanji
           </span>
           {dueCount > 0 && (
-            <span className="inline-block bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-400 px-3 py-1 rounded-full text-sm font-bold">
-              {dueCount} due for review
-            </span>
+            <>
+              <span className="inline-block bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-400 px-3 py-1 rounded-full text-sm font-bold">
+                {dueCount} due for review
+              </span>
+              <button
+                onClick={() => setInSession(true)}
+                className="inline-flex items-center gap-1.5 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-1.5 rounded-full text-sm font-black transition-colors shadow-sm"
+              >
+                ▶ Study now
+              </button>
+            </>
           )}
           {dueCount === 0 && deckData.kanji_cards?.length > 0 && (
             <span className="inline-block bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400 px-3 py-1 rounded-full text-sm font-bold">
