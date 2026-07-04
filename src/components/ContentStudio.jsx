@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { supabase } from '../supabaseClient';
 import { generateVocabCards, generateKanjiCards, generateReadingLesson } from '../utils/aiClient';
 import { parseFuriganaString } from '../utils/furigana.jsx';
 
@@ -87,47 +86,13 @@ export default function ContentStudio({ onUploaded }) {
     setError(null);
     setBusy('Uploading to your database…');
     try {
-      if (type === 'reading') {
-        const { error: e } = await supabase.from('essays').insert({
-          title: preview.topic_english || title.trim() || 'Reading Lesson',
-          content_data: preview,
-        });
-        if (e) throw new Error(e.message);
-      } else {
-        const { data: newDeck, error: de } = await supabase
-          .from('decks')
-          .insert({
-            title: title.trim() || `${meta.label} ${new Date().toLocaleDateString()}`,
-            jlpt_level: level,
-            deck_type: type,
-            is_system_deck: true,
-          })
-          .select()
-          .single();
-        if (de) throw new Error(de.message);
-
-        const rows = type === 'vocab'
-          ? preview.map(c => ({
-              deck_id: newDeck.id,
-              word_kanji: c.word_kanji,
-              reading_hiragana: c.reading_furigana || c.reading_hiragana || c.word_kanji,
-              meaning_hinglish: c.meaning_english || c.meaning_hinglish,
-              jlpt_level: level,
-              usage_details: { examples: c.examples || [] },
-            }))
-          : preview.map(c => ({
-              deck_id: newDeck.id,
-              kanji_character: c.kanji_character,
-              onyomi: c.onyomi,
-              kunyomi: c.kunyomi,
-              meaning_hinglish: c.meaning_hinglish,
-              usage_examples: c.usage_examples || [],
-            }));
-
-        const table = type === 'vocab' ? 'vocab_cards' : 'kanji_cards';
-        const { error: ce } = await supabase.from(table).insert(rows);
-        if (ce) throw new Error(ce.message);
-      }
+      const res = await fetch('/api/upload-content', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type, title: title.trim(), level, preview }),
+      });
+      const body = await res.json();
+      if (!res.ok) throw new Error(body.error || 'Upload failed');
       setUploadedMsg(type === 'reading'
         ? '✅ Lesson uploaded! Find it under Reading Modules.'
         : `✅ Deck uploaded with ${preview.length} cards! Find it under ${meta.label}s.`);
