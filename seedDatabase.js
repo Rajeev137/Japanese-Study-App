@@ -21,7 +21,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function migrateLessons() {
   console.log('🚀 Starting Lesson (Essay) Migration...');
-  const lessonsDir = path.join(__dirname, 'src', 'data', 'lessons');
+  const lessonsDir = path.join(__dirname, '..', 'data', 'lessons');
   
   if (!fs.existsSync(lessonsDir)) {
     console.log('⚠️ No lessons folder found. Skipping...');
